@@ -9,9 +9,18 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
 from pathlib import Path
+from dotenv import load_dotenv
 
+
+# parse env file
+load_dotenv('C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\stack\\keys.env')
+databaseName = os.getenv('databaseName')
+databaseUser = os.getenv('databaseUser')
+databaseUserPassword = os.getenv('databaseUserPassword')
+databaseHost = os.getenv('databaseHost')
+databasePort = os.getenv('databasePort')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,12 +85,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "db_name",
-        'USER': "db_username",
-        'PASSWORD': "db_password",
-        'HOST': "db_host",
-        'PORT': "db_port",  # 5432 by default
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': databaseName,
+        'USER': databaseUser,
+        'PASSWORD': databaseUserPassword,
+        'HOST': databaseHost,
+        'PORT': databasePort,  
     }
 }
 
