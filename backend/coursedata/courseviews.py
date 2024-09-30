@@ -4,7 +4,7 @@ from django.http import JsonResponse
 from django.conf import settings
 
 def get_course_data(request):
-    folder_path = os.path.join(settings.BASE_DIR, 'C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\stack\\backend\\backend\\data\\courses')  # Folder where your JSON files are stored
+    folder_path = os.path.join(settings.BASE_DIR, 'C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\YU-Sync\\backend\\backend\\data\\courses')
     data = []
     
     for filename in os.listdir(folder_path):
