@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'coursedata',
 ]
 
 CORS_ALLOWED_ORIGINS = [

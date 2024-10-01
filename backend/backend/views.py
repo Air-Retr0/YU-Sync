@@ -1,20 +1,23 @@
-from rest_framework import viewsets
-from django.db.models import Q
-from coursedata.models import Course
-from .serializers import CourseSerializer
+# from django.db.models import Q
+# from django.http import JsonResponse
+# from coursedata.models import Course
+# import json
 
-class CourseViewSet(viewsets.ModelViewSet):
-    queryset = Course.objects.all()
-    serializer_class = CourseSerializer
-
-    # Override the get_queryset method to filter based on the 'search' query param
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        search = self.request.query_params.get('search', None)
-        if search:
-            queryset = queryset.filter(
-                Q(name__icontains=search) | 
-                Q(dept__icontains=search) | 
-                Q(code__icontains=search)
-            )
-        return queryset
+# def search_courses(request):
+#     query = request.GET.get('query', '')
+#     print(f"Received search query: {query}")  # Debug print
+    
+#     if query:
+#         courses = Course.objects.filter(
+#             Q(dept__icontains=query) |
+#             Q(code__icontains=query) |
+#             Q(name__icontains=query)
+#         ).values('dept', 'code', 'name', 'credit')[:20]  # Limit to 20 results for performance
+        
+#         results = list(courses)
+#         print(f"Found {len(results)} results")  # Debug print
+#         print(f"Results: {json.dumps(results, indent=2)}")  # Debug print
+#         return JsonResponse(results, safe=False)
+    
+#     print("No query provided, returning empty list")
+#     return JsonResponse([], safe=False)

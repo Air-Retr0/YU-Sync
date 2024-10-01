@@ -18,5 +18,5 @@ from django.urls import path
 from coursedata.courseviews import get_course_data
 
 urlpatterns = [
-    path('coursedata/courses', get_course_data, name='get_course_data'),
+    path('coursedata/courses/', get_course_data, name='get_course_data'),
 ]

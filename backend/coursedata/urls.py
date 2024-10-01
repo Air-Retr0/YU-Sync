@@ -1,10 +1,9 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from backend.views import CourseViewSet
+from courseviews import get_course_data
 
-router = DefaultRouter()
-router.register(r'coursedata/courses', CourseViewSet, basename='course')
+
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('coursedata/courses/', get_course_data, name='get_course_data'),
 ]
