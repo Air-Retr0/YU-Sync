@@ -1,12 +1,21 @@
-# # your_app/views.py
-# from rest_framework.decorators import api_view
-# from rest_framework.response import Response
-# from coursedata.models import Course  # Make sure your Course model is imported
-# from backend.serializers import CourseSerializer  # Import your serializer
+from django.http import JsonResponse
+from coursedata.models import Course 
 
-# @api_view(['GET'])
-# def course_list(request):
-#     # Fetch all courses from the database
-#     courses = Course.objects.all()  # This should return all courses
-#     serializer = CourseSerializer(courses, many=True)  # Serialize the data
-#     return Response(serializer.data)  # Return the serialized data as JSON
+def get_course_data(request):
+    search_query = request.GET.get('search', '')
+    # Fetch courses based on the search query
+    courses = Course.objects.filter(name__icontains=search_query)  # Adjust filtering as needed
+
+    # Prepare the response data
+    response_data = []
+    for course in courses:
+        response_data.append({
+            "dept": course.dept,
+            "code": course.code,
+            "credit": course.credit,
+            "name": course.name,
+            "prereqs": course.prereqs if course.prereqs else 'None',
+            "desc": course.desc if course.desc else 'No description available',
+        })
+
+    return JsonResponse(response_data, safe=False)
