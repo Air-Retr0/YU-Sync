@@ -1,11 +1,11 @@
-
+import Homebackground from "./homebackground";
 
 function App() {
 
 
   return (
 
-    <div></div>
+    <Homebackground />
 
   );
 }

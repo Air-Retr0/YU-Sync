@@ -14,7 +14,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 
-# parse env file
+# parse env file, replace my filepath to the env with yours
 load_dotenv('C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\stack\\keys.env')
 databaseName = os.getenv('databaseName')
 databaseUser = os.getenv('databaseUser')
@@ -47,11 +47,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
