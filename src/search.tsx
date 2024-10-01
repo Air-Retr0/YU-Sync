@@ -5,69 +5,75 @@ interface Course {
     code: string;
     credit: number;
     name: string;
+    prereqs: string; // New field for prerequisites
+    desc: string;    // New field for description
 }
 
 const SearchBar: React.FC = () => {
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [searchResults, setSearchResults] = useState<Course[]>([]);
     const [isDropdownVisible, setDropdownVisible] = useState<boolean>(false);
-    const [error, setError] = useState<string | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
+    // Fetch courses based on searchQuery
     useEffect(() => {
-        const fetchSearchResults = async () => {
-            if (searchQuery.trim() === '') {
-                console.log('Empty query, clearing results');
-                setSearchResults([]);
-                setDropdownVisible(false);
-                return;
-            }
-
+        const fetchCourses = async (query: string) => {
             setIsLoading(true);
-            setError(null);
 
             try {
-                console.log('Fetching results for query:', searchQuery);
-                const apiResponse = await fetch(`http://127.0.0.1:8000/coursedata/courses/`);
-                console.log('API Response status:', apiResponse.status);
+                const apiResponse = await fetch(`http://127.0.0.1:8000/coursedata/courses/?search=${query}`);
 
                 if (!apiResponse.ok) {
-                    throw new Error(`Error ${apiResponse.status}: ${apiResponse.statusText}`);
+                    return; // Simply return if the response is not OK
                 }
 
                 const data = await apiResponse.json();
-                console.log('API Response data:', JSON.stringify(data, null, 2));
+                console.log('Fetched course data:', data); // Log the entire response for inspection
 
-                if (!Array.isArray(data)) {
-                    throw new Error('API did not return an array');
+                if (Array.isArray(data)) {
+                    const validResults = data.map(course => ({
+                        dept: course.dept || 'N/A',
+                        code: course.code || 'N/A',
+                        credit: course.credit || 0,
+                        name: course.name || 'Unnamed Course',
+                        prereqs: course.prereqs || 'None', // Include prereqs with a fallback
+                        desc: course.desc || 'No description available', // Include description with a fallback
+                    }));
+
+                    setSearchResults(validResults); // Store valid results directly from API response
+                    setDropdownVisible(validResults.length > 0); // Show dropdown if there are results
                 }
-
-                setSearchResults(data);
-                setDropdownVisible(data.length > 0); // Only show if there are results
-                console.log('Search results set:', data.length, 'items');
-            } catch (error) {
-                setError(`Error fetching data: ${error instanceof Error ? error.message : 'Unknown error'}`);
-                console.error('Error in fetchSearchResults:', error);
+            } catch {
+                // Handle error silently (as per your request)
             } finally {
                 setIsLoading(false);
             }
         };
 
-        console.log('Effect running, searchQuery:', searchQuery);
-        if (searchQuery.trim().length > 0) {
-            fetchSearchResults();
+        if (searchQuery.trim()) {
+            fetchCourses(searchQuery); // Fetch courses when there is a query
         } else {
-            setDropdownVisible(false); // Hide dropdown if query is empty
+            setSearchResults([]); // Clear results if the query is empty
+            setDropdownVisible(false); // Hide dropdown if no query
         }
-    }, [searchQuery]);
+    }, [searchQuery]); // Effect will re-run when searchQuery changes
 
+    // Handle input change
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
-        console.log('Input changed:', value);
-        setSearchQuery(value);
+        setSearchQuery(value); // Update the search query
     };
 
-    console.log('Rendering component. Dropdown visible:', isDropdownVisible, 'Results:', searchResults.length);
+    // Highlight matches in the search results
+    const highlightMatch = (text: string | undefined) => {
+        if (!text || !searchQuery) return text || '';
+        const parts = text.split(new RegExp(`(${searchQuery})`, 'gi'));
+        return parts.map((part, index) =>
+            part.toLowerCase() === searchQuery.toLowerCase() ? (
+                <strong key={index} className="text-blue-500">{part}</strong>
+            ) : part
+        );
+    };
 
     return (
         <div className="relative">
@@ -80,14 +86,20 @@ const SearchBar: React.FC = () => {
             />
 
             {isLoading && <div className="text-gray-500">Loading...</div>}
-            {error && <div className="text-red-500">{error}</div>}
 
+            {/* Dropdown Menu */}
             {isDropdownVisible && (
-                <ul className="absolute z-10 bg-white border border-gray-300 w-full max-h-60 overflow-auto">
+                <ul className="absolute z-10 bg-white border border-gray-300 w-full max-h-60 overflow-auto shadow-lg">
                     {searchResults.length > 0 ? (
                         searchResults.map((result, index) => (
                             <li key={index} className="p-2 cursor-pointer hover:bg-gray-200">
-                                <span>{result.dept} {result.code} ({result.credit} credits) -&gt; {result.name}</span>
+                                <span>
+                                    {highlightMatch(result.dept)} {highlightMatch(result.code)} ({result.credit} credits) -&gt; {highlightMatch(result.name)}
+                                </span>
+                                <div className="text-sm text-gray-600">
+                                    <p>Prerequisites: {highlightMatch(result.prereqs)}</p>
+                                    <p>Description: {highlightMatch(result.desc)}</p>
+                                </div>
                             </li>
                         ))
                     ) : (
