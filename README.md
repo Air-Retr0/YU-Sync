@@ -17,6 +17,6 @@ After this, you should give your IDE a moment to read and update **ALL packages*
 
 I will add any npm packages you need here to render some of the stuff:
 npm i react-type-animation
-
+npm i install react-router-dom
 ### File Errors
 you may often find that a file shows many errors, pay *no mind* to them if they do not make the site **crash**, this is just typescript pointing out potential syntax errors.

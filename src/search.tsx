@@ -76,7 +76,7 @@ const SearchBar: React.FC = () => {
             {isDropdownVisible && searchResults.length > 0 && (
                 <ul className="absolute z-10 bg-white border border-gray-300 w-full max-h-60 overflow-auto shadow-lg">
                     {searchResults.map((result, index) => (
-                        <li key={index} className="p-2 cursor-pointer hover:bg-gray-200">
+                        <li key={index} className="p-2 cursor-pointer hover:bg-red-200">
                             <span>
                                 <strong>{result.dept} {result.code} - </strong>
                                 {result.name}<br />

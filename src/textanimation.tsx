@@ -10,7 +10,7 @@ const textanimation = () => {
             ]}
             wrapper="span"
             speed={55}
-            style={{ fontSize: '3em', display: 'inline-block' }}
+            style={{ fontSize: '3em', display: 'inline-block', "color": "white" }}
             repeat={Infinity}
         />
     )

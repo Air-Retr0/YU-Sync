@@ -1,12 +1,10 @@
-import Homebackground from "./homebackground";
+import AppRoutes from "./routes";
 
 function App() {
 
 
   return (
-
-    <Homebackground />
-
+    <AppRoutes />
   );
 }
 
