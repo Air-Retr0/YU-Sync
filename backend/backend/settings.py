@@ -15,12 +15,10 @@ from dotenv import load_dotenv
 
 
 # parse env file, replace my filepath to the env with yours
-load_dotenv('C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\stack\\keys.env')
+load_dotenv('C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\Yu-Sync\\keys.env')
 databaseName = os.getenv('databaseName')
 databaseUser = os.getenv('databaseUser')
-databaseUserPassword = os.getenv('databaseUserPassword')
 databaseHost = os.getenv('databaseHost')
-databasePort = os.getenv('databasePort')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -49,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'coursedata',
+    'transfer'
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -95,9 +94,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': databaseName,
         'USER': databaseUser,
-        'PASSWORD': databaseUserPassword,
+        'PASSWORD': os.getenv('databaseUserPassword'),
         'HOST': databaseHost,
-        'PORT': databasePort,  
+        'PORT': 5432,  
     }
 }
 

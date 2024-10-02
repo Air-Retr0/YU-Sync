@@ -1,21 +1,24 @@
-from django.http import JsonResponse
-from coursedata.models import Course 
+# from django.http import JsonResponse
+# from .models import Course
 
-def get_course_data(request):
-    search_query = request.GET.get('search', '')
-    # Fetch courses based on the search query
-    courses = Course.objects.filter(name__icontains=search_query)  # Adjust filtering as needed
+# def course_list(request):
+#     search_query = request.GET.get('search', '')
+#     # Fetch courses based on the search query, ensure fields are correct
+#     courses = Course.objects.filter(name__icontains=search_query)
 
-    # Prepare the response data
-    response_data = []
-    for course in courses:
-        response_data.append({
-            "dept": course.dept,
-            "code": course.code,
-            "credit": course.credit,
-            "name": course.name,
-            "prereqs": course.prereqs if course.prereqs else 'None',
-            "desc": course.desc if course.desc else 'No description available',
-        })
+#     # Prepare the response data
+#     response_data = []
+#     for course in courses:
+#         response_data.append({
+#             "dept": course.dept or 'N/A',  
+#             "code": course.code or 'N/A', 
+#             "credit": course.credit or 0,  
+#             "name": course.name or 'Unnamed Course', 
+#             "prereqs": course.prereqs or 'None',  
+#             "desc": course.desc or 'No description available',  #
+#         })
 
-    return JsonResponse(response_data, safe=False)
+#     # Log response data for debugging
+#     print('Response Data:', response_data)  # Add logging here
+
+#     return JsonResponse(response_data, safe=False)

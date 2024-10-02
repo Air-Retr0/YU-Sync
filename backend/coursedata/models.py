@@ -5,6 +5,8 @@ class Course(models.Model):
     code = models.CharField(max_length=10)
     credit = models.IntegerField()
     name = models.CharField(max_length=200)
+    prereqs = models.CharField(max_length=200, blank=True, null=True)
+    desc = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f"{self.dept} {self.code}: {self.name}"
+        return f"{self.dept} {self.code} - {self.name}"

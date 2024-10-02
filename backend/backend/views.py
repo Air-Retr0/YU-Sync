@@ -21,3 +21,16 @@
     
 #     print("No query provided, returning empty list")
 #     return JsonResponse([], safe=False)
+# from django.http import JsonResponse
+# from coursedata.models import Course  # Assuming the Course model exists in your app
+
+# def course_list(request):
+#     search_query = request.GET.get('search', '')
+    
+#     # Filtering courses based on search query (assuming case-insensitive search)
+#     courses = Course.objects.filter(name__icontains=search_query) | Course.objects.filter(dept__icontains=search_query) | Course.objects.filter(code__icontains=search_query)
+    
+#     # Format the results
+#     course_data = list(courses.values('dept', 'code', 'credit', 'name', 'prereqs', 'desc'))
+    
+#     return JsonResponse(course_data, safe=False)

@@ -1,22 +1,32 @@
-import os
-import json
 from django.http import JsonResponse
-from django.conf import settings
+from django.views import View
+from coursedata.models import Course
+from django.shortcuts import get_object_or_404
 
-def get_course_data(request):
-    folder_path = os.path.join(settings.BASE_DIR, 'C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\YU-Sync\\backend\\backend\\data\\courses')
-    data = []
-    
-    for filename in os.listdir(folder_path):
-        if filename.endswith('.json'):
-            filePath = os.path.join(folder_path, filename)
-            
-            with open(filePath, 'r') as f:
-                try:
-                    course_info = json.load(f)
-                    data.append(course_info)
-                except json.JSONDecodeError:
-                    pass
+class CourseListView(View):
+    def get(self, request):
+        # Retrieve all courses or filter based on query parameters
+        courses = Course.objects.all()
 
-    return JsonResponse(data, safe=False)
+        # Optionally, handle search queries from the frontend
+        search_query = request.GET.get('search', '').strip().lower()
+        if search_query:
+            courses = courses.filter(name__icontains=search_query)
 
+        # Convert the queryset to a list of dictionaries
+        data = list(courses.values('dept', 'code', 'credit', 'name', 'prereqs', 'desc'))
+        return JsonResponse(data, safe=False)
+
+# Optionally, create a detailed view for individual courses
+class CourseDetailView(View):
+    def get(self, request, course_id):
+        course = get_object_or_404(Course, id=course_id)
+        data = {
+            'dept': course.dept,
+            'code': course.code,
+            'credit': course.credit,
+            'name': course.name,
+            'prereqs': course.prereqs,
+            'desc': course.desc,
+        }
+        return JsonResponse(data)
