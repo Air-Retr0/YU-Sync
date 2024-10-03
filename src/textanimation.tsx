@@ -17,3 +17,4 @@ const textanimation = () => {
 }
 
 export default textanimation
+
