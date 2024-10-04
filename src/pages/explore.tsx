@@ -14,12 +14,11 @@ interface Course {
 }
 
 const Explore: React.FC = () => {
-    const [courses, setCourses] = useState<Course[]>([]);
-    const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
+    const [courses, setCourses] = useState<Course[]>([]);  // Ensure it's initialized as an array
     const [minRating, setMinRating] = useState<number>(0);
     const [maxDifficulty, setMaxDifficulty] = useState<number>(1);
-    const [sortCriteria, setSortCriteria] = useState<string>(''); // For storing current sort criteria
-    const [sortOrder, setSortOrder] = useState<boolean>(true); // True for ascending, false for descending
+    const [sortCriteria, setSortCriteria] = useState<string>('');  // Sorting criteria
+    const [sortOrder, setSortOrder] = useState<boolean>(true);     // Sorting order
 
     useEffect(() => {
         const fetchCourses = async () => {
@@ -30,7 +29,6 @@ const Explore: React.FC = () => {
                 }
                 const data: Course[] = await response.json();
                 setCourses(data);
-                setFilteredCourses(data);
             } catch (error) {
                 console.error('Error fetching courses:', error);
             }
@@ -39,49 +37,12 @@ const Explore: React.FC = () => {
         fetchCourses();
     }, []);
 
-    useEffect(() => {
-        const filtered = courses.filter(course => {
-            const ratingCondition = course.ratings === undefined || course.ratings >= minRating;
-            const difficultyCondition = course.difficulty === undefined || course.difficulty >= maxDifficulty;
-
-            return ratingCondition && difficultyCondition;
-        });
-
-        // Sort courses based on selected criteria and order
-        const sorted = filtered.sort((a, b) => {
-            let aValue = 0;
-            let bValue = 0;
-
-            if (sortCriteria === 'ratings') {
-                aValue = a.ratings || 0;
-                bValue = b.ratings || 0;
-            } else if (sortCriteria === 'difficulty') {
-                aValue = a.difficulty || 0;
-                bValue = b.difficulty || 0;
-            } else if (sortCriteria === 'avgGrade') {
-                aValue = a.avgGrade || 0;
-                bValue = b.avgGrade || 0;
-            } else if (sortCriteria === 'enjoyed') {
-                aValue = a.enjoyed || 0;
-                bValue = b.enjoyed || 0;
-            } else if (sortCriteria === 'year') {
-                aValue = parseInt(a.code.charAt(0), 10);
-                bValue = parseInt(b.code.charAt(0), 10);
-            }
-
-            return sortOrder ? aValue - bValue : bValue - aValue; // Ascending or descending
-        });
-
-        setFilteredCourses(sorted);
-    }, [courses, minRating, maxDifficulty, sortCriteria, sortOrder]);
-
-    // Function to handle filter clicks
     const handleSort = (criteria: string) => {
         if (sortCriteria === criteria) {
-            setSortOrder(!sortOrder); // Toggle order 
+            setSortOrder(!sortOrder);  // Toggle the sort order if the same criteria is clicked
         } else {
             setSortCriteria(criteria);
-            setSortOrder(true);
+            setSortOrder(true);  // Reset to ascending order for new criteria
         }
     };
 
@@ -93,23 +54,18 @@ const Explore: React.FC = () => {
                 <div className="col-span-3">
                     <h1 className="text-2xl font-bold mb-4">Explore Courses</h1>
 
-                    {/* Filters */}
-                    <div className="flex space-x-4 mb-4">
-                        <button onClick={() => handleSort('ratings')} className="btn">
-                            Ratings {sortCriteria === 'ratings' ? (sortOrder ? '↑' : '↓') : ''}
-                        </button>
-                        <button onClick={() => handleSort('difficulty')} className="btn">
-                            Difficulty {sortCriteria === 'difficulty' ? (sortOrder ? '↑' : '↓') : ''}
-                        </button>
-                        <button onClick={() => handleSort('avgGrade')} className="btn">
-                            Avg Grade {sortCriteria === 'avgGrade' ? (sortOrder ? '↑' : '↓') : ''}
-                        </button>
-                        <button onClick={() => handleSort('enjoyed')} className="btn">
-                            Enjoyed {sortCriteria === 'enjoyed' ? (sortOrder ? '↑' : '↓') : ''}
-                        </button>
-                    </div>
-
-                    <CourseList courses={filteredCourses} />
+                    {/* Course List */}
+                    <CourseList
+                        courses={courses.map(course => ({
+                            ...course,
+                            dept: course.dept.toUpperCase()  // Normalize department case
+                        }))}
+                        minRating={minRating}
+                        maxDifficulty={maxDifficulty}
+                        sortCriteria={sortCriteria}
+                        sortOrder={sortOrder}
+                        handleSort={handleSort}
+                    />
                 </div>
 
                 {/* Filter Card on the right */}

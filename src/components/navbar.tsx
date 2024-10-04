@@ -24,7 +24,9 @@ const Navbar = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/explore">Explore All Courses</Link></li>
-                        <li>Course Matcher</li>
+                        <div className='justify-center'>
+                            <li>Course Matcher</li>
+                        </div>
                         <li><Link to="/about">About</Link></li>
                     </ul>
                 </div>

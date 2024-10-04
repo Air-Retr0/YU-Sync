@@ -1,4 +1,4 @@
-import Textanimation from "../textanimation";
+import Textanimation from "../components/textanimation";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
