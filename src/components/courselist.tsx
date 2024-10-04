@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface Course {
     dept: string;
@@ -89,8 +90,12 @@ const CourseList: React.FC<CourseListProps> = ({
                     <tbody>
                         {sortedCourses.map((course, index) => (
                             <tr key={index} className="border-b">
-                                <td className="py-2 px-4 text-red-600">{course.dept}</td>
-                                <td className="py-2 px-4 text-red-600">{course.code}</td>
+                                <td className="py-2 px-4 text-red-600">
+                                    <Link to={`/explore/${course.dept.toLowerCase()}`}>{course.dept}</Link>
+                                </td>
+                                <td className="py-2 px-4 text-red-600">
+                                    <Link to={`/explore/${course.dept.toLowerCase()}/${course.code}`}>{course.code}</Link>
+                                </td>
                                 <td className="py-2 px-4">{course.name}</td>
                                 <td className="py-2 px-4">{course.ratings !== undefined ? course.ratings : '-'}</td>
                                 <td className="py-2 px-4">{course.difficulty !== undefined ? course.difficulty : '-'}</td>

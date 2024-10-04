@@ -5,6 +5,8 @@ import Lost from './pages/lost';
 import About from './pages/about';
 import Privacy from './pages/privacy';
 import Cookies from './pages/cookies';
+import CourseDetails from './pages/course_details';
+import DepartmentCourses from './pages/department_courses';
 
 const AppRoutes = () => {
     return (
@@ -16,6 +18,8 @@ const AppRoutes = () => {
                 <Route path='/about' element={<About />} />
                 <Route path='/privacy' element={<Privacy />} />
                 <Route path='/cookies' element={<Cookies />} />
+                <Route path='/explore/dept/courses' element={<CourseDetails />} />
+                <Route path='/explore/dept' element={<DepartmentCourses />} />
                 <Route path="*" element={<Navigate to="/lost" />} /> {/* Redirect any unmatched routes to the homepage */}
             </Routes>
         </Router>
