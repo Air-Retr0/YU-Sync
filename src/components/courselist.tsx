@@ -21,7 +21,7 @@ interface CourseListProps {
 }
 
 const CourseList: React.FC<CourseListProps> = ({
-    courses = [],  // Ensure courses defaults to an empty array
+    courses = [],
     minRating,
     maxDifficulty,
     sortCriteria,
@@ -74,6 +74,9 @@ const CourseList: React.FC<CourseListProps> = ({
 
     return (
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div className="p-4 text-gray-700 font-bold">
+                Total Courses: {filteredCourses.length}
+            </div>
             {sortedCourses.length > 0 ? (
                 <table className="min-w-full">
                     <thead className="bg-gray-200">

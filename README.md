@@ -9,7 +9,9 @@ Then come back to the repo, click on **code** and copy the Https url.
 Then type in Git Bash: git clone <*url*>: you can paste it using **CTRL+SHIFT+V**
 
 ## Modifying repo
-Upon opening the project in your IDE you will find errors all over the place, enter the following commands in your terminal, **make sure it is in the project directory**:
+Upon opening the project in your IDE you will find errors all over the place,  enter the following commands in your terminal, **make sure it is in the project directory**:
+
+**CREATE A PYTHON VIRTUAL ENV FOR THE SECOND COMMAND**
 npm update
 pip install -r requirements.txt
 

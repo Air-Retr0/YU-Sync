@@ -13,7 +13,7 @@ interface Course {
 }
 
 const CourseDetails: React.FC = () => {
-    const { dept, code } = useParams<{ dept: string, code: string }>();  // Get the department and code from URL
+    const { dept, code } = useParams<{ dept: string, code: string }>();
     const [course, setCourse] = React.useState<Course | null>(null);
 
     React.useEffect(() => {
@@ -21,7 +21,6 @@ const CourseDetails: React.FC = () => {
             try {
                 const response = await fetch('http://127.0.0.1:8000/api/courses/');
                 const data: Course[] = await response.json();
-                // Find the specific course
                 const foundCourse = data.find(course =>
                     course.dept.toLowerCase() === dept?.toLowerCase() &&
                     course.code === code

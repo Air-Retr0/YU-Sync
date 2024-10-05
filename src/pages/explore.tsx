@@ -39,10 +39,10 @@ const Explore: React.FC = () => {
 
     const handleSort = (criteria: string) => {
         if (sortCriteria === criteria) {
-            setSortOrder(!sortOrder);  // Toggle the sort order if the same criteria is clicked
+            setSortOrder(!sortOrder);
         } else {
             setSortCriteria(criteria);
-            setSortOrder(true);  // Reset to ascending order for new criteria
+            setSortOrder(true);
         }
     };
 

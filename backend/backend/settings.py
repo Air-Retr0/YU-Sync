@@ -13,12 +13,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-
 # parse env file, replace my filepath to the env with yours
 load_dotenv('C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\Yu-Sync\\keys.env')
-databaseName = os.getenv('databaseName')
-databaseUser = os.getenv('databaseUser')
-databaseHost = os.getenv('databaseHost')
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -92,10 +89,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': databaseName,
-        'USER': databaseUser,
+        'NAME': os.getenv('databaseName'),
+        'USER': os.getenv('databaseUser'),
         'PASSWORD': os.getenv('databaseUserPassword'),
-        'HOST': databaseHost,
+        'HOST': os.getenv('databaseHost'),
         'PORT': 5432,  
     }
 }
