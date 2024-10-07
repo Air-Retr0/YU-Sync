@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import SearchBar from './search';
+
 
 const ExploreNavBar = () => {
     return (
@@ -37,13 +37,8 @@ const ExploreNavBar = () => {
                 </div>
             </div>
 
-            {/* Centered Search Bar */}
-            <div className="flex-1 flex justify-center mx-4"> {/* Added margin for spacing */}
-                <SearchBar />
-            </div>
-
-            {/* Navbar End with Notification Button */}
-            <div className="navbar-end">
+            {/* Notification Section */}
+            <div className="ml-auto flex items-center">
                 <button className="btn btn-ghost btn-circle">
                     <div className="indicator">
                         <svg

@@ -14,11 +14,11 @@ interface Course {
 }
 
 const Explore: React.FC = () => {
-    const [courses, setCourses] = useState<Course[]>([]);  // Ensure it's initialized as an array
+    const [courses, setCourses] = useState<Course[]>([]);
     const [minRating, setMinRating] = useState<number>(0);
     const [maxDifficulty, setMaxDifficulty] = useState<number>(1);
-    const [sortCriteria, setSortCriteria] = useState<string>('');  // Sorting criteria
-    const [sortOrder, setSortOrder] = useState<boolean>(true);     // Sorting order
+    const [sortCriteria, setSortCriteria] = useState<string>('');
+    const [sortOrder, setSortOrder] = useState<boolean>(true);
 
     useEffect(() => {
         const fetchCourses = async () => {
@@ -51,14 +51,14 @@ const Explore: React.FC = () => {
             <ExploreNavBar />
             <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
                 {/* Courses Table */}
-                <div className="col-span-3">
-                    <h1 className="text-2xl font-bold mb-4">Explore Courses</h1>
+                <div className="col-span-3 bg-neutral-100">
+                    <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Courses</h1>
 
                     {/* Course List */}
                     <CourseList
                         courses={courses.map(course => ({
                             ...course,
-                            dept: course.dept.toUpperCase()  // Normalize department case
+                            dept: course.dept.toUpperCase()
                         }))}
                         minRating={minRating}
                         maxDifficulty={maxDifficulty}
