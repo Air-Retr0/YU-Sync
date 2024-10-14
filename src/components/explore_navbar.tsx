@@ -37,6 +37,14 @@ const ExploreNavBar = () => {
                 </div>
             </div>
 
+            <div className="flex grow justify-center">
+                <input
+                    type="text"
+                    placeholder="functionality in progress"
+                    className="input input-bordered w-full max-w-xs"
+                    disabled />
+            </div>
+
             {/* Notification Section */}
             <div className="ml-auto flex items-center">
                 <button className="btn btn-ghost btn-circle">
