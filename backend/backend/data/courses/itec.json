@@ -358,7 +358,7 @@
             "credit": 3.0,
             "name": "Advanced Topics in Information Technology ",
             "prereqs": "",
-            "desc": "Introduces emerging and &quot;hot&quot; topics in information technology discussed in the research literature.  Topics will rotate annually and will focus on a specific area of interest to the instructor that is not covered in existing courses.  Proposed topics include information systems security, service-oriented architecture, management of IT, web services.\r\nPrerequisite: None."
+            "desc": "Introduces emerging and hot topics in information technology discussed in the research literature.  Topics will rotate annually and will focus on a specific area of interest to the instructor that is not covered in existing courses.  Proposed topics include information systems security, service-oriented architecture, management of IT, web services.\r\nPrerequisite: None."
         }
     ]
 }

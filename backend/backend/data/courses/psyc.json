@@ -918,7 +918,7 @@
             "credit": 3.0,
             "name": "Structural Equation Modeling",
             "prereqs": "",
-            "desc": "This course covers structural equalization modelling (SEM) concepts and methodology, including &quot;causation&quot; and correlation, path analysis, confirmatory factor analysis and latent variables. Students gain experience with computer programs (e.g., EQS) and practical applications.  Previous knowledge of multivariate methods is desirable."
+            "desc": "This course covers structural equalization modelling (SEM) concepts and methodology, including causation and correlation, path analysis, confirmatory factor analysis and latent variables. Students gain experience with computer programs (e.g., EQS) and practical applications.  Previous knowledge of multivariate methods is desirable."
         },
         {
             "dept": "psyc",
@@ -942,7 +942,7 @@
             "credit": 3.0,
             "name": "Neuroimaging of Cognition - fMRI Methods",
             "prereqs": "",
-            "desc": "This course offers fundamental knowledge on neuroimaging of cognition using fMRI, including practical aspects of experimental design and analytical approaches. The course provides the necessary theoretical perspectives of fMRI experiments and provides extensive &quot;hands-on&quot; experience in fMRI analysis.  "
+            "desc": "This course offers fundamental knowledge on neuroimaging of cognition using fMRI, including practical aspects of experimental design and analytical approaches. The course provides the necessary theoretical perspectives of fMRI experiments and provides extensive hands-on experience in fMRI analysis.  "
         },
         {
             "dept": "psyc",
@@ -1076,7 +1076,7 @@
             "dept": "psyc",
             "code": "6445P",
             "credit": 6.0,
-            "name": "&quot;Advanced Psychological Intervention&quot; as a practicum",
+            "name": "Advanced Psychological Intervention as a practicum",
             "prereqs": "psyc6420 psyc6430p psyc6435",
             "desc": "Provides advanced training in theory of intervention. Specific methods of active psychotherapeutic intervention and research evidence on their impact will be covered. This course includes more broad ranging rehabilitation and systems approaches to intervention. Prerequisites: GS/PSYC 6420 6.00, GS/PSYC 6430P 6.00, GS/PSYC 6435 6.00."
         },

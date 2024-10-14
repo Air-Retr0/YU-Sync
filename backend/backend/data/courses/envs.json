@@ -174,7 +174,7 @@
             "credit": 3.0,
             "name": "Race/Racism and Environmental Justice",
             "prereqs": "",
-            "desc": "Examines the intersection of &quot;race&quot;/racism and environmentalism. It begins from the premise that environmental issues are always already racialized. Issues as diverse as toxic facility siting, environmental assessment practices, ecological philosophies, and popular nature representations (re)produce powerful assumptions that turn on racist/ racialized constructs. Discussion may include: the history and current practices of environmental justice movements; questions of race and representation in green politics; the significance of environmentalism's silence about race; cross-cultural and anti-racist environmental politics; and postcolonial perspectives on global environmental issues.\r\n\r\nPrerequisite: Third-year or fourth- year standing or by permission of the instructor."
+            "desc": "Examines the intersection of race/racism and environmentalism. It begins from the premise that environmental issues are always already racialized. Issues as diverse as toxic facility siting, environmental assessment practices, ecological philosophies, and popular nature representations (re)produce powerful assumptions that turn on racist/ racialized constructs. Discussion may include: the history and current practices of environmental justice movements; questions of race and representation in green politics; the significance of environmentalism's silence about race; cross-cultural and anti-racist environmental politics; and postcolonial perspectives on global environmental issues.\r\n\r\nPrerequisite: Third-year or fourth- year standing or by permission of the instructor."
         },
         {
             "dept": "envs",
@@ -246,7 +246,7 @@
             "credit": 3.0,
             "name": "Business and Sustainability: Issues and Strategies",
             "prereqs": "",
-            "desc": "An introduction to key dimensions of business and sustainability including: what is sustainability?; &quot;values-driven&quot; business models and practices; eco-production in key economic sectors (food, manufacturing, energy, building); financing sustainability; indicators of sustainability; green regulation; and green business strategies. \r\n\r\nPrerequisite: Third- year or fourth-year standing or by permission of the Instructor."
+            "desc": "An introduction to key dimensions of business and sustainability including: what is sustainability?; values-driven business models and practices; eco-production in key economic sectors (food, manufacturing, energy, building); financing sustainability; indicators of sustainability; green regulation; and green business strategies. \r\n\r\nPrerequisite: Third- year or fourth-year standing or by permission of the Instructor."
         },
         {
             "dept": "envs",
@@ -254,7 +254,7 @@
             "credit": 3.0,
             "name": "Ecological Economics",
             "prereqs": "",
-            "desc": "This course provides an introduction to the emerging new field of ecological economics.  Areas of focus include &quot;local economies&quot; and the appropriate scale of the economy in relation to the environment, the role of discount rates in mediating intergenerational and interspecies equity, environmental valuation, full-cost accounting, environmental risk assessment, alterative environmental policies, and the application of thermodynamic and ecological principles in economic analysis."
+            "desc": "This course provides an introduction to the emerging new field of ecological economics.  Areas of focus include local economies and the appropriate scale of the economy in relation to the environment, the role of discount rates in mediating intergenerational and interspecies equity, environmental valuation, full-cost accounting, environmental risk assessment, alterative environmental policies, and the application of thermodynamic and ecological principles in economic analysis."
         },
         {
             "dept": "envs",
@@ -326,7 +326,7 @@
             "credit": 6.0,
             "name": "Inter-disciplinary Capstone Project (C4)",
             "prereqs": "",
-            "desc": "The Interdisciplinary Capstone Project course (also known as C4: Cross-Campus Capstone Classroom) brings together upper-year undergraduate and Master level students from faculties across the university to work together in multi-disciplinary teams on pressing, &quot;real-world&quot; challenges, which are posed by organizations operating in both the for-profit and not-for-profit worlds. They research, design, test and reflect on potential solutions to their challenge that build on their existing skills and knowledge within their disciplines.\r\nPre-requisite:  Completion of 60- 90 credits and in student's final year of study for either the Bachelor's or Honours degree. \r\n"
+            "desc": "The Interdisciplinary Capstone Project course (also known as C4: Cross-Campus Capstone Classroom) brings together upper-year undergraduate and Master level students from faculties across the university to work together in multi-disciplinary teams on pressing, real-world challenges, which are posed by organizations operating in both the for-profit and not-for-profit worlds. They research, design, test and reflect on potential solutions to their challenge that build on their existing skills and knowledge within their disciplines.\r\nPre-requisite:  Completion of 60- 90 credits and in student's final year of study for either the Bachelor's or Honours degree. \r\n"
         },
         {
             "dept": "envs",
@@ -582,7 +582,7 @@
             "credit": 3.0,
             "name": "Fundamentals of Renewable Energy: Theory, Policy and Practice",
             "prereqs": "",
-            "desc": "&quot;Provides students with a critical understanding of key renewable energy options for electricity generation, heating and cooling of buildings and transportation. Students will be introduced to a critical analysis of renewable energy as a strategy for climate change mitigation, community empowerment, industrial development, and energy security. Integrated with ENVS 4400. Exclusion: Students who already took ENVS 4400."
+            "desc": "Provides students with a critical understanding of key renewable energy options for electricity generation, heating and cooling of buildings and transportation. Students will be introduced to a critical analysis of renewable energy as a strategy for climate change mitigation, community empowerment, industrial development, and energy security. Integrated with ENVS 4400. Exclusion: Students who already took ENVS 4400."
         },
         {
             "dept": "envs",
@@ -590,7 +590,7 @@
             "credit": 3.0,
             "name": "Fundamentals in Energy Efficiency: Theory, Policy and Practice in the Canadian Context",
             "prereqs": "",
-            "desc": "&quot;This course is designed to allow students to explore the policy and technical dimensions of energy efficiency and energy conservation in greater depth, with particular focus their potential contributions to the sustainability of energy systems and climate change mitigation in a Canadian context. Integrated with ENVS 4401. Exclusion: Students who already took ENVS 4401."
+            "desc": "This course is designed to allow students to explore the policy and technical dimensions of energy efficiency and energy conservation in greater depth, with particular focus their potential contributions to the sustainability of energy systems and climate change mitigation in a Canadian context. Integrated with ENVS 4401. Exclusion: Students who already took ENVS 4401."
         },
         {
             "dept": "envs",
@@ -654,15 +654,15 @@
             "credit": 3.0,
             "name": "Environmental Policy: Institutions, Ideas and Interests",
             "prereqs": "",
-            "desc": "&quot;Examines the development and implementation of public policies related to the environment and sustainability in a Canadian context. The course focuses on the interaction of institutions, societal forces and ideas in the Canadian environmental policy experience."
+            "desc": "Examines the development and implementation of public policies related to the environment and sustainability in a Canadian context. The course focuses on the interaction of institutions, societal forces and ideas in the Canadian environmental policy experience."
         },
         {
             "dept": "envs",
             "code": "5191",
             "credit": 3.0,
-            "name": "&quot;Ethics and Spirit: Introduction to Philosophy, Religions and the Environment",
+            "name": "Ethics and Spirit: Introduction to Philosophy, Religions and the Environment",
             "prereqs": "",
-            "desc": "&quot;This course is an introduction to environmental philosophy, with a special focus on religious and spiritual traditions. The main emphasis is on the major ethical traditions including environmental ethics, but concepts of Nature, power, the body, and animal/human relations will also be of concern."
+            "desc": "This course is an introduction to environmental philosophy, with a special focus on religious and spiritual traditions. The main emphasis is on the major ethical traditions including environmental ethics, but concepts of Nature, power, the body, and animal/human relations will also be of concern."
         },
         {
             "dept": "envs",
@@ -822,7 +822,7 @@
             "credit": 3.0,
             "name": "Environmental Analytics:  Data, Models and Methods",
             "prereqs": "",
-            "desc": "&quot;The application of analytics including optimization, simulation, regression, and time series analysis, to problems in environmental studies such as food systems, political change, emergency response systems, and homeless shelter policy. Solutions will be implemented in spreadsheets and statistical software (Excel and R)."
+            "desc": "The application of analytics including optimization, simulation, regression, and time series analysis, to problems in environmental studies such as food systems, political change, emergency response systems, and homeless shelter policy. Solutions will be implemented in spreadsheets and statistical software (Excel and R)."
         },
         {
             "dept": "envs",

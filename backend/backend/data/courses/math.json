@@ -478,7 +478,7 @@
             "credit": 3.0,
             "name": "Introduction to Graph Theory",
             "prereqs": "",
-            "desc": "Introductory graph theory with applications. Graphs, digraphs. Eulerian and Hamiltonian graphs. The travelling salesman. Path algorithms; connectivity; trees; planarity; colourings; scheduling; minimal cost networks. Tree searches and sorting, minimal connectors and applications from physical and biological sciences. Prerequisite: At least six credits from 2000-level SC/MATH courses without second digit &quot;5&quot;."
+            "desc": "Introductory graph theory with applications. Graphs, digraphs. Eulerian and Hamiltonian graphs. The travelling salesman. Path algorithms; connectivity; trees; planarity; colourings; scheduling; minimal cost networks. Tree searches and sorting, minimal connectors and applications from physical and biological sciences. Prerequisite: At least six credits from 2000-level SC/MATH courses without second digit 5."
         },
         {
             "dept": "math",
@@ -510,7 +510,7 @@
             "credit": 3.0,
             "name": "Mathematical Finance",
             "prereqs": "math2131 math2281",
-            "desc": "A comprehensive introduction to continuous-time Mathematical Finance. This course introduces Brownian motion and Ito calculus and covers interest rate models and derivatives, the Black-Scholes model and the Black-Scholes partial differential equation, implied volatility and Merton's optimal portfolio problem. This course, together with MATH 2281 3.0 &quot;Models for Financial Economics&quot;, prepares students for topics covered in the IFM and QFI Core exams of the Society of Actuaries.\n\nPrerequisites: SC/MATH 2131 3.0, SC/MATH 2281 3.0\n"
+            "desc": "A comprehensive introduction to continuous-time Mathematical Finance. This course introduces Brownian motion and Ito calculus and covers interest rate models and derivatives, the Black-Scholes model and the Black-Scholes partial differential equation, implied volatility and Merton's optimal portfolio problem. This course, together with MATH 2281 3.0 Models for Financial Economics, prepares students for topics covered in the IFM and QFI Core exams of the Society of Actuaries.\n\nPrerequisites: SC/MATH 2131 3.0, SC/MATH 2281 3.0\n"
         },
         {
             "dept": "math",
@@ -678,7 +678,7 @@
             "credit": 3.0,
             "name": "Topics in Mathematics Education: Theory and Practice",
             "prereqs": "",
-            "desc": "Provides opportunities for students to examine topics in mathematics, and themes in mathematics education. The main focus will be on developing students' ability to unpack and communicate concepts in mathematics, and to think critically about what mathematicians do and what students do when they are learning mathematics. Prerequisites: A minimum of 21 credits in SC/MATH courses without second digit &quot;5&quot;; permission of the course coordinator."
+            "desc": "Provides opportunities for students to examine topics in mathematics, and themes in mathematics education. The main focus will be on developing students' ability to unpack and communicate concepts in mathematics, and to think critically about what mathematicians do and what students do when they are learning mathematics. Prerequisites: A minimum of 21 credits in SC/MATH courses without second digit 5; permission of the course coordinator."
         },
         {
             "dept": "math",
@@ -726,7 +726,7 @@
             "credit": 3.0,
             "name": "Mathematics of Cryptography",
             "prereqs": "eecs3101",
-            "desc": "Probability, information theory and number theory and applications to cryptography. Classical codes such as Caesar shift, Vigenere, ADFGVX, rectangular substitution, and others. Other topics: comma free codes, perfect secrecy, index of coincidence, public key systems, primality testing and factorization algorithms. Prerequisites: At least 12 credits from 2000-level (or higher) MATH courses (without second digit &quot;5&quot;, or second digit &quot;7&quot;); or LE/EECS 3101 3.00 or permission of the Instructor."
+            "desc": "Probability, information theory and number theory and applications to cryptography. Classical codes such as Caesar shift, Vigenere, ADFGVX, rectangular substitution, and others. Other topics: comma free codes, perfect secrecy, index of coincidence, public key systems, primality testing and factorization algorithms. Prerequisites: At least 12 credits from 2000-level (or higher) MATH courses (without second digit 5, or second digit 7); or LE/EECS 3101 3.00 or permission of the Instructor."
         },
         {
             "dept": "math",
@@ -1158,7 +1158,7 @@
             "credit": 3.0,
             "name": "Mathematical Epidemiology",
             "prereqs": "",
-            "desc": "This course will cover the basic tools required to critically read modelling papers and to develop and use models as research tools.  Models of infectious disease; threshold conditions for epidemic outbreaks, the basic reproductive rate of a disease; vaccination strategies to control infection. Emphasis will be placed on setting up and utilizing mathematical models to understand infectious disease processes and to evaluate potential control strategies. This course will provide an opportunity for students who are interested in using mathematical modelling techniques to study  the transmission dynamics of infectious disease on a  population level. The course will help to develop modelling, analytical and computational expertise in both continuous time and discrete time dynamical models for the study of infectious diseases.  Prerequisites: Atkinson/Arts/Science Mathematics & Statistics 2270 3.0: &quot;Differential equations or equivalent and some numerical skills&quot; or equivalent and familiarity with Maple or Matlab or Mathematica"
+            "desc": "This course will cover the basic tools required to critically read modelling papers and to develop and use models as research tools.  Models of infectious disease; threshold conditions for epidemic outbreaks, the basic reproductive rate of a disease; vaccination strategies to control infection. Emphasis will be placed on setting up and utilizing mathematical models to understand infectious disease processes and to evaluate potential control strategies. This course will provide an opportunity for students who are interested in using mathematical modelling techniques to study  the transmission dynamics of infectious disease on a  population level. The course will help to develop modelling, analytical and computational expertise in both continuous time and discrete time dynamical models for the study of infectious diseases.  Prerequisites: Atkinson/Arts/Science Mathematics & Statistics 2270 3.0: Differential equations or equivalent and some numerical skills or equivalent and familiarity with Maple or Matlab or Mathematica"
         },
         {
             "dept": "math",

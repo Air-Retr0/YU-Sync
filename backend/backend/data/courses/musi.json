@@ -14,7 +14,7 @@
             "credit": 3.0,
             "name": "Guitar for Non-Majors and Majors",
             "prereqs": "",
-            "desc": "Explores elementary guitar performance in a class for non-majors. Topics include: basic performance technique, introductory theory, repertoire development. Also open to majors wishing to learn a &quot;secondary instrument&quot;."
+            "desc": "Explores elementary guitar performance in a class for non-majors. Topics include: basic performance technique, introductory theory, repertoire development. Also open to majors wishing to learn a secondary instrument."
         },
         {
             "dept": "musi",
@@ -22,7 +22,7 @@
             "credit": 3.0,
             "name": "Flute for Non-Majors and Majors",
             "prereqs": "",
-            "desc": "Explores flute performance setting for non-majors in a class. Topics include: breath control, coordination skill, performance technique, introductory theory, scales, studies, repertoire development. Also open to majors wishing to learn a &quot;secondary instrument.&quot;"
+            "desc": "Explores flute performance setting for non-majors in a class. Topics include: breath control, coordination skill, performance technique, introductory theory, scales, studies, repertoire development. Also open to majors wishing to learn a secondary instrument."
         },
         {
             "dept": "musi",
@@ -558,7 +558,7 @@
             "credit": 3.0,
             "name": "Jazz Percussion ",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors only, and not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors only, and not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -598,7 +598,7 @@
             "credit": 6.0,
             "name": "Jazz Percussion ",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -614,7 +614,7 @@
             "credit": 3.0,
             "name": "York Rhythm and Blues Ensemble",
             "prereqs": "",
-            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other &quot;soul&quot; artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of Instructor by audition."
+            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other soul artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of Instructor by audition."
         },
         {
             "dept": "musi",
@@ -1110,7 +1110,7 @@
             "credit": 6.0,
             "name": "Workshop in Musicianship II ",
             "prereqs": "",
-            "desc": "Continues to develop the practical and conceptual musical skills introduced in FA/MUSI 1000 6.00 through the study of more advanced concepts in music theory and musicianship. Students examine the pedagogy of counterpoint and harmony as they relate to current diversified practices. The adaptation of such techniques to a broad range of music styles and genres including Jazz, World, and Popular music are examined in order to enhance creativity and critical analysis skills. Correlated components of this course include composition, analysis, improvisation, digital literacy, and the development of aural skills. Course Credit Exclusions: FA/MUSI 2201 3.00 and FA/MUSI 2202 3.00\r\nPrerequisites: FA/MUSI 1000 6.00 and FA/MUSI 1200 6.00 or a minimum grade of C+ on a Department of Music proficiency exam and the permission of the department.&quot;"
+            "desc": "Continues to develop the practical and conceptual musical skills introduced in FA/MUSI 1000 6.00 through the study of more advanced concepts in music theory and musicianship. Students examine the pedagogy of counterpoint and harmony as they relate to current diversified practices. The adaptation of such techniques to a broad range of music styles and genres including Jazz, World, and Popular music are examined in order to enhance creativity and critical analysis skills. Correlated components of this course include composition, analysis, improvisation, digital literacy, and the development of aural skills. Course Credit Exclusions: FA/MUSI 2201 3.00 and FA/MUSI 2202 3.00\r\nPrerequisites: FA/MUSI 1000 6.00 and FA/MUSI 1200 6.00 or a minimum grade of C+ on a Department of Music proficiency exam and the permission of the department."
         },
         {
             "dept": "musi",
@@ -1126,7 +1126,7 @@
             "credit": 3.0,
             "name": "Guitar for Non-Majors and Majors",
             "prereqs": "",
-            "desc": "Explores elementary guitar performance in a class for non-majors. Topics include: basic performance technique, introductory theory, repertoire development. Also open to majors wishing to learn a &quot;secondary instrument&quot;. Prerequisite: MUSI 1012. Open to non-majors."
+            "desc": "Explores elementary guitar performance in a class for non-majors. Topics include: basic performance technique, introductory theory, repertoire development. Also open to majors wishing to learn a secondary instrument. Prerequisite: MUSI 1012. Open to non-majors."
         },
         {
             "dept": "musi",
@@ -1630,7 +1630,7 @@
             "credit": 3.0,
             "name": "Jazz Percussion",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors and non-majors but not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors and non-majors but not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -1702,7 +1702,7 @@
             "credit": 6.0,
             "name": "Jazz Percussion",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -1710,7 +1710,7 @@
             "credit": 3.0,
             "name": "York Rhythm and Blues Ensemble",
             "prereqs": "",
-            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other &quot;soul&quot; artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of Instructor by audition."
+            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other soul artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of Instructor by audition."
         },
         {
             "dept": "musi",
@@ -2166,7 +2166,7 @@
             "credit": 3.0,
             "name": "Guitar for Non-Majors and Majors",
             "prereqs": "",
-            "desc": "Explores elementary guitar performance in a class for non-majors. Topics include: basic performance technique, introductory theory, repertoire development. Also open to majors wishing to learn a &quot;secondary instrument&quot;.  Prerequisite: MUSI 2012. Open to non-majors."
+            "desc": "Explores elementary guitar performance in a class for non-majors. Topics include: basic performance technique, introductory theory, repertoire development. Also open to majors wishing to learn a secondary instrument.  Prerequisite: MUSI 2012. Open to non-majors."
         },
         {
             "dept": "musi",
@@ -2710,7 +2710,7 @@
             "credit": 6.0,
             "name": "Jazz Percussion",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -2750,7 +2750,7 @@
             "credit": 3.0,
             "name": "Jazz Percussion",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors and non-majors but not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors and non-majors but not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -2758,7 +2758,7 @@
             "credit": 3.0,
             "name": "York Rhythm and Blues Ensemble",
             "prereqs": "",
-            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other &quot;soul&quot; artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of instructor by audition. Open to non-majors. PRIOR TO WINTER 2012: course credit exclusion: FA/MUSI 3055 3.00."
+            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other soul artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of instructor by audition. Open to non-majors. PRIOR TO WINTER 2012: course credit exclusion: FA/MUSI 3055 3.00."
         },
         {
             "dept": "musi",
@@ -3174,7 +3174,7 @@
             "credit": 3.0,
             "name": "Introduction to Scoring for Film, Games, and Motion Media",
             "prereqs": "musi2110",
-            "desc": "This course is an introduction to the art of composing music for film and other digital media. Students use technological tools such as the Digital Audio Workstation (DAW) and continue to develop their skills as composers and orchestrators. The main focus is on finding ways to add value and meaning to a media project through musical expression, creativity and exploration.\r\n\r\nDAW skills include MIDI and &quot;MIDIstration,&quot; sampling and sample playback; audio recording; sequencing; and synchronization with film. Software includes: Logic Pro X, Ableton Live, Finale, Reason, and Audacity, among others.\r\n\r\nOther topics include aesthetic considerations, film history, and the professional aspects of being a film composer.\r\n\r\nPrerequisites: FA/MUSI 2140 Digital and Electronic Media II 3.0 or FA/MUSI 2110 3.0, or permission of the instructor. open to non-majors."
+            "desc": "This course is an introduction to the art of composing music for film and other digital media. Students use technological tools such as the Digital Audio Workstation (DAW) and continue to develop their skills as composers and orchestrators. The main focus is on finding ways to add value and meaning to a media project through musical expression, creativity and exploration.\r\n\r\nDAW skills include MIDI and MIDIstration, sampling and sample playback; audio recording; sequencing; and synchronization with film. Software includes: Logic Pro X, Ableton Live, Finale, Reason, and Audacity, among others.\r\n\r\nOther topics include aesthetic considerations, film history, and the professional aspects of being a film composer.\r\n\r\nPrerequisites: FA/MUSI 2140 Digital and Electronic Media II 3.0 or FA/MUSI 2110 3.0, or permission of the instructor. open to non-majors."
         },
         {
             "dept": "musi",
@@ -3214,7 +3214,7 @@
             "credit": 3.0,
             "name": "Classical Music: Murder, Mayhem, and Order",
             "prereqs": "",
-            "desc": "Explores issues associated with the &quot;classical era&quot; in music (ca. 1750-1820), with possible excursions beyond, to trace the beginnings of &quot;genius&quot; and situate musical creativity within contexts of politics, gendered economies, evolving performance practices, rise of the free-lance musician, a fickle public, among topics. Prerequisites or corequisites: FA/MUSI 2000 6.00 and FA/MUSI 2200 6.00, or permission of Instructor for non-majors/minors."
+            "desc": "Explores issues associated with the classical era in music (ca. 1750-1820), with possible excursions beyond, to trace the beginnings of genius and situate musical creativity within contexts of politics, gendered economies, evolving performance practices, rise of the free-lance musician, a fickle public, among topics. Prerequisites or corequisites: FA/MUSI 2000 6.00 and FA/MUSI 2200 6.00, or permission of Instructor for non-majors/minors."
         },
         {
             "dept": "musi",
@@ -3230,7 +3230,7 @@
             "credit": 3.0,
             "name": "Music of the Americas",
             "prereqs": "",
-            "desc": "A study of the musics and cultural traditions contributing to the Americas (&quot;Turtle Island&quot; or the colonial &quot;New World&quot;) as part of a history of colonial exploitation, circum-Atlantic networks, arrivals of newcomers (refugees, immigrants), and Indigenous survival and resurgence. Various traditional and syncretic musical genres, styles and performance practices are explored, with prominence given to Indigenous peoples (Canada and First Nations, Inuit and M\u00e9tis traditions; Native idioms and cultures across the Americas). \nPrerequisites: Foundation courses. Course credit exclusion: FA/MUSI 3350 6.00."
+            "desc": "A study of the musics and cultural traditions contributing to the Americas (Turtle Island or the colonial New World) as part of a history of colonial exploitation, circum-Atlantic networks, arrivals of newcomers (refugees, immigrants), and Indigenous survival and resurgence. Various traditional and syncretic musical genres, styles and performance practices are explored, with prominence given to Indigenous peoples (Canada and First Nations, Inuit and M\u00e9tis traditions; Native idioms and cultures across the Americas). \nPrerequisites: Foundation courses. Course credit exclusion: FA/MUSI 3350 6.00."
         },
         {
             "dept": "musi",
@@ -3806,7 +3806,7 @@
             "credit": 6.0,
             "name": "Jazz Percussion",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors and non-majors but not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Open to majors and non-majors but not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -3822,7 +3822,7 @@
             "credit": 3.0,
             "name": "Jazz Percussion",
             "prereqs": "",
-            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum &quot;set&quot; or &quot;kit&quot; includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
+            "desc": "Focuses on performance dealing primarily with the tradition of jazz percussion performance styles. Practical instruction in jazz drum set or kit includes an emphasis on developing proper technique, stylistic fluency and repertoire competency. Prerequisite: Permission of the Instructor, by audition. Not intended for beginners. Basic technical ability and theoretical knowledge is required."
         },
         {
             "dept": "musi",
@@ -3910,7 +3910,7 @@
             "credit": 3.0,
             "name": "York Rhythm and Blues Ensemble",
             "prereqs": "",
-            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other &quot;soul&quot; artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of Instructor by audition."
+            "desc": "Performs gospel-inspired repertoire of James Brown, Otis Redding, Aretha Franklin, Smokey Robinson, and other soul artists. A mixed vocal/instrumental ensemble will focus on cohesion and balance. Students are encouraged to contribute musical arrangements for the ensemble. Prerequisite: Permission of Instructor by audition."
         },
         {
             "dept": "musi",
@@ -4486,7 +4486,7 @@
             "credit": 3.0,
             "name": "Performance Option                     ",
             "prereqs": "",
-            "desc": "This course involves performance study, generally in a\ncross-cultural context, with a view to exploring such issues in cross-cultural learning as the relationship between the performance of music and the intellectual discourse about it. Central to the course is an academic component about issues which emerge in a set of &quot;field notes&quot; about the lessons. By permission of the Graduate Executive Committee.\n"
+            "desc": "This course involves performance study, generally in a\ncross-cultural context, with a view to exploring such issues in cross-cultural learning as the relationship between the performance of music and the intellectual discourse about it. Central to the course is an academic component about issues which emerge in a set of field notes about the lessons. By permission of the Graduate Executive Committee.\n"
         },
         {
             "dept": "musi",

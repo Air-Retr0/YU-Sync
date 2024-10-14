@@ -294,7 +294,7 @@
             "credit": 3.0,
             "name": "Space Mission Design",
             "prereqs": "esse4360",
-            "desc": "This course covers the basic aspects of space mission design from a &quot;blank sheet&quot;. It includes mission design structure using systems engineering approaches to the design problem. Mission design starts with a set of mission objectives and aims to develop a viable solution for meeting these objectives given a set of technical cost and programmatic constraints. This course brings together systems engineering, mission types, objectives, technical readiness, risk mitigation, mission subsystems, and cost estimation. Prerequisites: LE/ESSE 4360 3.00 or permission of the Instructor."
+            "desc": "This course covers the basic aspects of space mission design from a blank sheet. It includes mission design structure using systems engineering approaches to the design problem. Mission design starts with a set of mission objectives and aims to develop a viable solution for meeting these objectives given a set of technical cost and programmatic constraints. This course brings together systems engineering, mission types, objectives, technical readiness, risk mitigation, mission subsystems, and cost estimation. Prerequisites: LE/ESSE 4360 3.00 or permission of the Instructor."
         },
         {
             "dept": "esse",

@@ -102,7 +102,7 @@
             "credit": 3.0,
             "name": "Creating Intercultural Safety  ",
             "prereqs": "hlst1010 ihst1010 psyc1010",
-            "desc": "Global health requires students to understand the core concepts in understanding and navigating &quot;differences&quot; as these are socially produced and embedded within power relations. Students critically examine theoretical approaches to cultural safety, cultural competence and anti-oppression to develop an integrative approach to intercultural awareness and safety. Working with a broad definition of culture that explicitly includes an intersectional understanding of culture/diversity students explore the impact of cultural patterns and social locations on self and others. Through reflective assignments, students gain insight into their own cultural positionality and explore how to be an affective ally and advocate to promote equity and health for all. Understanding varied definitions of health and healing and different approaches to communication are fundamental tools for developing effective health care policies, strategies, and care approaches.\r\nPrerequisites: HH/HLST 1010 3.00 or HH/IHST 1010 3.00 or HH/PSYC 1010 6.00 \r\nNote: This course does not count as a science credit for BSc degree programs."
+            "desc": "Global health requires students to understand the core concepts in understanding and navigating differences as these are socially produced and embedded within power relations. Students critically examine theoretical approaches to cultural safety, cultural competence and anti-oppression to develop an integrative approach to intercultural awareness and safety. Working with a broad definition of culture that explicitly includes an intersectional understanding of culture/diversity students explore the impact of cultural patterns and social locations on self and others. Through reflective assignments, students gain insight into their own cultural positionality and explore how to be an affective ally and advocate to promote equity and health for all. Understanding varied definitions of health and healing and different approaches to communication are fundamental tools for developing effective health care policies, strategies, and care approaches.\r\nPrerequisites: HH/HLST 1010 3.00 or HH/IHST 1010 3.00 or HH/PSYC 1010 6.00 \r\nNote: This course does not count as a science credit for BSc degree programs."
         },
         {
             "dept": "nurs",
@@ -460,7 +460,7 @@
             "dept": "nurs",
             "code": "5830",
             "credit": 3.0,
-            "name": "Advanced Health Assessment and Diagnosis I&quot;",
+            "name": "Advanced Health Assessment and Diagnosis I",
             "prereqs": "",
             "desc": "Analyzes and critiques concepts and frameworks essential to advanced health assessment and diagnosis using clinical reasoning skills. Applies clinical, theoretical and research knowledge in relation to comprehensive and focused health assessment for the individual client\u0092s diagnostic plan of care./Pre- or Corequisite 5810 3.0 "
         },
@@ -476,7 +476,7 @@
             "dept": "nurs",
             "code": "5850",
             "credit": 3.0,
-            "name": "Therapeutics in Primary Health Care I&quot;",
+            "name": "Therapeutics in Primary Health Care I",
             "prereqs": "",
             "desc": "Critically appraises and interprets concepts and frameworks integral to pharmacotherapy, advanced counselling, and complementary therapies for common conditions across the lifespan. Develops, initiates, manages, and evaluates therapeutic plans of care that incorporate client values and acceptability, goals of therapy, analysis of different approaches, pharmacotherapeutic principles./Co- or prerequisite: Nursing 5830 3.0 and 5810 3.0 "
         },
@@ -542,7 +542,7 @@
             "credit": 3.0,
             "name": "Social Justice Nursing: Philosophies and Practices",
             "prereqs": "",
-            "desc": "The centrality of social justice for nursing is embraced across Canada. The Canadian Nurses Association views social justice as &quot;means to an end and an end in itself,&quot;  acknowledging its consistency with the values set out in our code of ethics. To that end, with social justice as our ethos, nursing can be argued as social justice. "
+            "desc": "The centrality of social justice for nursing is embraced across Canada. The Canadian Nurses Association views social justice as means to an end and an end in itself,  acknowledging its consistency with the values set out in our code of ethics. To that end, with social justice as our ethos, nursing can be argued as social justice. "
         },
         {
             "dept": "nurs",

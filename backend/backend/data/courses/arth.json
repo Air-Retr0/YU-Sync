@@ -62,7 +62,7 @@
             "credit": 3.0,
             "name": "Cabinets of Curiosities",
             "prereqs": "",
-            "desc": "Considers the Cabinet of Curiosities, a Renaissance invention designed to classify and preserve collections of &quot;precious&quot; objects, and its more recent manifestations (including museums, artists' installations, and Web sites) to explore a wide range of issues associated with Cultural Studies. Prerequisite: Third-year standing or permission of the Instructor. Course credit exclusion: FA/FACS 3400 3.00."
+            "desc": "Considers the Cabinet of Curiosities, a Renaissance invention designed to classify and preserve collections of precious objects, and its more recent manifestations (including museums, artists' installations, and Web sites) to explore a wide range of issues associated with Cultural Studies. Prerequisite: Third-year standing or permission of the Instructor. Course credit exclusion: FA/FACS 3400 3.00."
         },
         {
             "dept": "arth",
@@ -166,7 +166,7 @@
             "credit": 3.0,
             "name": "Artisans and Artists: Early Modern Italy",
             "prereqs": "",
-            "desc": "Considers the changing role and status of the artist in Early Modern Italy, often characterized as marking the transformation of the professional artisan dedicated to the craft of production into a &quot;divine&quot; intellect with the ability consciously to conceptualize an artistic idea. "
+            "desc": "Considers the changing role and status of the artist in Early Modern Italy, often characterized as marking the transformation of the professional artisan dedicated to the craft of production into a divine intellect with the ability consciously to conceptualize an artistic idea. "
         },
         {
             "dept": "arth",
@@ -254,7 +254,7 @@
             "credit": 3.0,
             "name": "Individualized reading",
             "prereqs": "",
-            "desc": "A supervised reading course on a topic for which there is no current course offering. Permission of the Graduate Program Director is required.&quot;"
+            "desc": "A supervised reading course on a topic for which there is no current course offering. Permission of the Graduate Program Director is required."
         },
         {
             "dept": "arth",
@@ -286,7 +286,7 @@
             "credit": 3.0,
             "name": "Performance Art: Politics and Aesthetics\u0094",
             "prereqs": "",
-            "desc": "Explores major figures and artworks that have defined performance art as a genre. This course examines a range of interdisciplinary practices that fall under the rubric of &quot;performance,&quot; including solo shows, installations, photographic portraiture, happenings, site-specific performance, and stand-up comedy."
+            "desc": "Explores major figures and artworks that have defined performance art as a genre. This course examines a range of interdisciplinary practices that fall under the rubric of performance, including solo shows, installations, photographic portraiture, happenings, site-specific performance, and stand-up comedy."
         }
     ]
 }

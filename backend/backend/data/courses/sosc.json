@@ -86,7 +86,7 @@
             "credit": 6.0,
             "name": "Introduction to Criminology",
             "prereqs": "",
-            "desc": "This course critically investigates processes that define criminality; the relationship between control and consent; the administration of &quot;justice,&quot; and the social contexts within which legal contests occur. It introduces students to critical and contemporary approaches as well as mainstream/traditional explanations. Note: Students must achieve a grade of at least B in this course in order to be permitted to continue as a major in criminology, or to pursue additional criminology courses at the 2000-, 3000- and 4000-levels. Under exceptional circumstances, non-majors who have not obtained a grade of at least B may apply for special consideration to enrol in a criminology course for which AP/CRIM 1650 6.00 or AP/SOSC 1650 9.00 is a prerequisite. This application should be made to the criminology program coordinator. \r\nCourse credit exclusion: AP/CRIM 1650 9.00, AP/SOSC 1650 9.00."
+            "desc": "This course critically investigates processes that define criminality; the relationship between control and consent; the administration of justice, and the social contexts within which legal contests occur. It introduces students to critical and contemporary approaches as well as mainstream/traditional explanations. Note: Students must achieve a grade of at least B in this course in order to be permitted to continue as a major in criminology, or to pursue additional criminology courses at the 2000-, 3000- and 4000-levels. Under exceptional circumstances, non-majors who have not obtained a grade of at least B may apply for special consideration to enrol in a criminology course for which AP/CRIM 1650 6.00 or AP/SOSC 1650 9.00 is a prerequisite. This application should be made to the criminology program coordinator. \r\nCourse credit exclusion: AP/CRIM 1650 9.00, AP/SOSC 1650 9.00."
         },
         {
             "dept": "sosc",
@@ -222,7 +222,7 @@
             "credit": 6.0,
             "name": "Ideology and Everyday Life",
             "prereqs": "",
-            "desc": "The concept &quot;ideology&quot; plays a central and unique role in how we understand ourselves. We will examine ideas and structures of power in relation to identity, society, democracy, freedom, knowledge, art, popular culture, and our vision of the future. Course credit exclusion: AP/SOSC 3560 6.00 (prior to Fall 2010)."
+            "desc": "The concept ideology plays a central and unique role in how we understand ourselves. We will examine ideas and structures of power in relation to identity, society, democracy, freedom, knowledge, art, popular culture, and our vision of the future. Course credit exclusion: AP/SOSC 3560 6.00 (prior to Fall 2010)."
         },
         {
             "dept": "sosc",
@@ -806,7 +806,7 @@
             "credit": 6.0,
             "name": "Political Economy as a Moral Science: The Economics of Marx and Keynes",
             "prereqs": "",
-            "desc": "The course develops a conception of &quot;political economy&quot; as a &quot;moral science&quot; through study of the economics of Karl Marx and John Maynard Keynes. It also explores the relation of the conception to German idealist philosophy and psychoanalytic psychology."
+            "desc": "The course develops a conception of political economy as a moral science through study of the economics of Karl Marx and John Maynard Keynes. It also explores the relation of the conception to German idealist philosophy and psychoanalytic psychology."
         },
         {
             "dept": "sosc",
@@ -1222,7 +1222,7 @@
             "credit": 6.0,
             "name": "Ethics and Economics",
             "prereqs": "sosc2340 sosc2349",
-            "desc": "This course looks at the relationship between ethics and economics both in the historical development of the &quot;political economy&quot; and in modern &quot;economics&quot;. Both symbioses and tensions between economics and ethics will be explored. Prerequisites: AP/SOSC 2340 6.00 or AP/SOSC 2349 6.00."
+            "desc": "This course looks at the relationship between ethics and economics both in the historical development of the political economy and in modern economics. Both symbioses and tensions between economics and ethics will be explored. Prerequisites: AP/SOSC 2340 6.00 or AP/SOSC 2349 6.00."
         },
         {
             "dept": "sosc",
@@ -1270,7 +1270,7 @@
             "credit": 6.0,
             "name": "Interdisciplinary Capstone Project",
             "prereqs": "",
-            "desc": "The Interdisciplinary Capstone Project course brings together upper-year undergraduate and Master level students from faculties across the university to work together in multi-disciplinary teams on pressing, &quot;real-world&quot; challenges, which are posed by organizations operating in both the for-profit and not-for-profit worlds. They research, design, test and reflect on potential solutions to their challenge that build on their existing skills and knowledge within their disciplines."
+            "desc": "The Interdisciplinary Capstone Project course brings together upper-year undergraduate and Master level students from faculties across the university to work together in multi-disciplinary teams on pressing, real-world challenges, which are posed by organizations operating in both the for-profit and not-for-profit worlds. They research, design, test and reflect on potential solutions to their challenge that build on their existing skills and knowledge within their disciplines."
         },
         {
             "dept": "sosc",
@@ -1390,7 +1390,7 @@
             "credit": 6.0,
             "name": "Law and Society Honours Seminar: Social Movements and Legal Mobilization",
             "prereqs": "sosc2350",
-            "desc": "&quot;Does law matter? Do court decisions make a difference? Does legal change lead to social change? This course explores these questions through a consideration of the literatures on social movements, legal mobilization, and litigation, mainly in Canada and the US.\r\nThe course will consider how social movements have used courts to achieve their goals. Case studies may include the women's movement, the environmental movement, indigenous peoples' movements, the civil rights movement and religious movements, among others. Students may pursue their own interests through the completion of a research paper. Students must complete AP/SOSC 2350 6.00 Law and Society, with a minimum grade of C+, prior to enrolling in any of the Law and Society Honours Seminars. Prerequisite: AP/SOSC 2350 6.00 with a minimum of C+.\n&quot;"
+            "desc": "Does law matter? Do court decisions make a difference? Does legal change lead to social change? This course explores these questions through a consideration of the literatures on social movements, legal mobilization, and litigation, mainly in Canada and the US.\r\nThe course will consider how social movements have used courts to achieve their goals. Case studies may include the women's movement, the environmental movement, indigenous peoples' movements, the civil rights movement and religious movements, among others. Students may pursue their own interests through the completion of a research paper. Students must complete AP/SOSC 2350 6.00 Law and Society, with a minimum grade of C+, prior to enrolling in any of the Law and Society Honours Seminars. Prerequisite: AP/SOSC 2350 6.00 with a minimum of C+.\n"
         },
         {
             "dept": "sosc",

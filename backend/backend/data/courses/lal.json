@@ -140,7 +140,7 @@
             "dept": "lal",
             "code": "6410",
             "credit": 3.0,
-            "name": "&quot;Language, Culture and Ideology",
+            "name": "Language, Culture and Ideology",
             "prereqs": "",
             "desc": "N/A"
         },
@@ -156,9 +156,9 @@
             "dept": "lal",
             "code": "6480",
             "credit": 3.0,
-            "name": "&quot;Language, Gender and Sexuality",
+            "name": "Language, Gender and Sexuality",
             "prereqs": "",
-            "desc": "&quot;This course explores some of the complex ways in which gender, sexuality and language interact, drawing upon a variety of theoretical perspectives, methodologies, and findings from recent research in feminist linguistics. The course traces the major debates in the field of language, gender and sexuality, from earlier perspectives that focused on gender difference to more recent approaches that view gender and sexuality as enacted through language.\r\n\r\n"
+            "desc": "This course explores some of the complex ways in which gender, sexuality and language interact, drawing upon a variety of theoretical perspectives, methodologies, and findings from recent research in feminist linguistics. The course traces the major debates in the field of language, gender and sexuality, from earlier perspectives that focused on gender difference to more recent approaches that view gender and sexuality as enacted through language.\r\n\r\n"
         },
         {
             "dept": "lal",

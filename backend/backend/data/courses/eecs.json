@@ -46,7 +46,7 @@
             "credit": 3.0,
             "name": "Object Oriented Programming from Sensors to Actuators",
             "prereqs": "eecs1011",
-            "desc": "&quot;Introduces student to computational thinking - a process-based approach to problem solving. It uses a problem-based pedagogy to expose the underlying concepts and an experiential laboratory to implement them. The programming language is chosen so that it is widely used in a variety of applications, is object-oriented, and is of industrial strength (Java is an example of such a language). The problems are chosen in order to expose abstract programming concepts by immersing them in relevant and engaging applications. The experiential laboratory is based on sensors and actuators that connect to a computer. The problems are chosen with consultation with the various engineering disciplines in the Faculty with a view of exposing how computing is used in these disciplines. Prerequisites: LE/EECS1011 3.00. Course credit exclusions: LE/EECS 1022 3.00. Previously offered as: LE/EECS1020 3.00, LE/CSE 1020 3.00."
+            "desc": "Introduces student to computational thinking - a process-based approach to problem solving. It uses a problem-based pedagogy to expose the underlying concepts and an experiential laboratory to implement them. The programming language is chosen so that it is widely used in a variety of applications, is object-oriented, and is of industrial strength (Java is an example of such a language). The problems are chosen in order to expose abstract programming concepts by immersing them in relevant and engaging applications. The experiential laboratory is based on sensors and actuators that connect to a computer. The problems are chosen with consultation with the various engineering disciplines in the Faculty with a view of exposing how computing is used in these disciplines. Prerequisites: LE/EECS1011 3.00. Course credit exclusions: LE/EECS 1022 3.00. Previously offered as: LE/EECS1020 3.00, LE/CSE 1020 3.00."
         },
         {
             "dept": "eecs",
@@ -150,7 +150,7 @@
             "credit": 3.0,
             "name": "Introduction to the Theory of Computation",
             "prereqs": "eecs1021 eecs1022 eecs1720 eecs1030 eecs1028 math1028 eecs1019 math1019",
-            "desc": "Introduction to the theory of computing, including automata theory, formal languages and Turing machines; theoretical models and their applications in various fields of computer science. The emphasis is on practical applications of the theory and concepts rather than formal rigour. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 1021 3.00 or LE/EECS 1022 3.00 or LE/EECS 1720 3.00 or LE/EECS 1030 3.00; LE/EECS 1028 3.00 or SC/MATH 1028 3.00 or LE/EECS 1019 3.00 or SC/MATH 1019 3.00. Previously offered as: LE/CSE 2001 3.00. PRIOR TO SUMMER 2013: SC/CSE 2001 3.00."
+            "desc": "Introduction to the theory of computing, including automata theory, formal languages and Turing machines; theoretical models and their applications in various fields of computer science. The emphasis is on practical applications of the theory and concepts rather than formal rigour. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 1021 3.00 or LE/EECS 1022 3.00 or LE/EECS 1720 3.00 or LE/EECS 1030 3.00; LE/EECS 1028 3.00 or SC/MATH 1028 3.00 or LE/EECS 1019 3.00 or SC/MATH 1019 3.00. Previously offered as: LE/CSE 2001 3.00. PRIOR TO SUMMER 2013: SC/CSE 2001 3.00."
         },
         {
             "dept": "eecs",
@@ -158,7 +158,7 @@
             "credit": 3.0,
             "name": "Fundamentals of Data Structures",
             "prereqs": "eecs1030 eecs2030 eecs1028 math1028 eecs1019 math1019",
-            "desc": "A study of fundamental data structures and their use in the efficient implementation of algorithms. Topics include abstract data types, lists, stacks, queues, trees and graphs. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 1030 3.00 or LE/EECS 2030 3.00, LE/EECS 1028 3.00 OR SC/MATH 1028 3.00 or LE/EECS 1019 3.00 or SC/MATH 1019 3.00. Previously offered as: LE/CSE 2011 3.00.\n\nThe course discusses the fundamental data structures commonly used in the design of algorithms. Abstract operations on data structures are specified using pre and post conditions and/or system invariants. Trade-offs between a number of different implementations of each abstract data types (ADT) are analyzed. Each algorithm operating on data structures is proved correct using loop invariants or induction. Both formal and informal proofs are introduced though most of the reasoning is done informally. Data structures are coded and unit tested in an object-oriented language. Selecting the appropriate ADT and a suitable implementation depending on the application is covered. Prerequisites: EECS1019 or EECS1028, EECS1030 or 2030, MATHS1090\nDate of submission: 2013-13-03"
+            "desc": "A study of fundamental data structures and their use in the efficient implementation of algorithms. Topics include abstract data types, lists, stacks, queues, trees and graphs. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 1030 3.00 or LE/EECS 2030 3.00, LE/EECS 1028 3.00 OR SC/MATH 1028 3.00 or LE/EECS 1019 3.00 or SC/MATH 1019 3.00. Previously offered as: LE/CSE 2011 3.00.\n\nThe course discusses the fundamental data structures commonly used in the design of algorithms. Abstract operations on data structures are specified using pre and post conditions and/or system invariants. Trade-offs between a number of different implementations of each abstract data types (ADT) are analyzed. Each algorithm operating on data structures is proved correct using loop invariants or induction. Both formal and informal proofs are introduced though most of the reasoning is done informally. Data structures are coded and unit tested in an object-oriented language. Selecting the appropriate ADT and a suitable implementation depending on the application is covered. Prerequisites: EECS1019 or EECS1028, EECS1030 or 2030, MATHS1090\nDate of submission: 2013-13-03"
         },
         {
             "dept": "eecs",
@@ -166,7 +166,7 @@
             "credit": 4.0,
             "name": "Computer Organization",
             "prereqs": "eecs1021 eecs1022 eecs1720 eecs1030",
-            "desc": "Introduction to computer organization and instruction set architecture, covering assembly language, machine language and encoding, addressing modes, single/multicycle datapaths (including functional units and controls), pipelining, memory segments and memory hierarchy. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 1021 3.00 or LE/EECS 1022 3.00 or LE/EECS 1720 3.00 or LE/EECS 1030 3.00. Previously offered as: LE/CSE 2021 4.00, SC/CSE 2021 4.00."
+            "desc": "Introduction to computer organization and instruction set architecture, covering assembly language, machine language and encoding, addressing modes, single/multicycle datapaths (including functional units and controls), pipelining, memory segments and memory hierarchy. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 1021 3.00 or LE/EECS 1022 3.00 or LE/EECS 1720 3.00 or LE/EECS 1030 3.00. Previously offered as: LE/CSE 2021 4.00, SC/CSE 2021 4.00."
         },
         {
             "dept": "eecs",
@@ -174,7 +174,7 @@
             "credit": 3.0,
             "name": "Advanced Object Oriented Programming",
             "prereqs": "eecs1021 eecs1022 eecs1720",
-            "desc": "This course continues the separation of concern theme introduced in LE/EECS 1020 3.00 and LE/EECS1021 3.00. While 1020 and 1021 focuses on the client concern, this course focuses on the concern of the implementer. Hence, rather than using an API (Application Programming Interface) to build an application, the student is asked to implement a given API. Topics include implementing classes (non-utilities, delegation within the class definition, documentation and API generation, implementing contracts), aggregations (implementing aggregates versus compositions and implementing collections), inheritance hierarchies (attribute visibility, overriding methods, abstract classes versus interfaces, inner classes);\r\napplications of aggregation and inheritance in concurrent programming and event-driven programming; recursion; searching and sorting including quick and merge sorts); stacks and queues; linked lists; binary trees. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS1021 3.00 or LE/EECS 1020 (prior to Fall 2015) 3.00 or LE/EECS1022 3.00 or LE/EECS 1720 3.00. Course credit exclusions: AP/ITEC 2620 3.00. Previously offered as: LE/EECS1030 3.00, LE/CSE 1030 3.00."
+            "desc": "This course continues the separation of concern theme introduced in LE/EECS 1020 3.00 and LE/EECS1021 3.00. While 1020 and 1021 focuses on the client concern, this course focuses on the concern of the implementer. Hence, rather than using an API (Application Programming Interface) to build an application, the student is asked to implement a given API. Topics include implementing classes (non-utilities, delegation within the class definition, documentation and API generation, implementing contracts), aggregations (implementing aggregates versus compositions and implementing collections), inheritance hierarchies (attribute visibility, overriding methods, abstract classes versus interfaces, inner classes);\r\napplications of aggregation and inheritance in concurrent programming and event-driven programming; recursion; searching and sorting including quick and merge sorts); stacks and queues; linked lists; binary trees. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS1021 3.00 or LE/EECS 1020 (prior to Fall 2015) 3.00 or LE/EECS1022 3.00 or LE/EECS 1720 3.00. Course credit exclusions: AP/ITEC 2620 3.00. Previously offered as: LE/EECS1030 3.00, LE/CSE 1030 3.00."
         },
         {
             "dept": "eecs",
@@ -182,7 +182,7 @@
             "credit": 3.0,
             "name": "Software Tools",
             "prereqs": "eecs1021 eecs1022 eecs1030 eecs1720",
-            "desc": "Tools commonly used in the software development process: the C language; shell programming; filters and pipes; version control systems and &quot;make&quot;; debugging and testing. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); one of LE/EECS 1021 3.00 or LE/EECS 1022 3.00 or LE/EECS 1030 3.00 or LE/EECS 1720 3.00\n\n"
+            "desc": "Tools commonly used in the software development process: the C language; shell programming; filters and pipes; version control systems and make; debugging and testing. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); one of LE/EECS 1021 3.00 or LE/EECS 1022 3.00 or LE/EECS 1030 3.00 or LE/EECS 1720 3.00\n\n"
         },
         {
             "dept": "eecs",
@@ -190,7 +190,7 @@
             "credit": 4.0,
             "name": "Introduction to Embedded Systems",
             "prereqs": "eecs1021 eecs1022 eecs2021",
-            "desc": "This course introduces students to embedded systems. The students will learn basic features of embedded system architecture, as well as how to design, implement, and test programs for embedded systems. Topics include microcontrollers architectures, peripherals and communication protocols, interfacing, and program development, and testing. Prerequisites: General Prerequisite: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 1021 3.00 , or LE/EECS 1022 3.00, and LE/EECS 2021 4.00.  Course Credit Exclusion LE/EECS 2031 3.00, LE/EECS 3215 4.00, LE/CSE 3215 4.00. Co-requsities: LE/EECS 2030 3.00.\n"
+            "desc": "This course introduces students to embedded systems. The students will learn basic features of embedded system architecture, as well as how to design, implement, and test programs for embedded systems. Topics include microcontrollers architectures, peripherals and communication protocols, interfacing, and program development, and testing. Prerequisites: General Prerequisite: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 1021 3.00 , or LE/EECS 1022 3.00, and LE/EECS 2021 4.00.  Course Credit Exclusion LE/EECS 2031 3.00, LE/EECS 3215 4.00, LE/CSE 3215 4.00. Co-requsities: LE/EECS 2030 3.00.\n"
         },
         {
             "dept": "eecs",
@@ -198,7 +198,7 @@
             "credit": 3.0,
             "name": "Electrical Circuits",
             "prereqs": "phys1010 phys1801",
-            "desc": "This course covers the basic principles of linear circuits. Kirchhoff's laws, circuit equations, RL, RC, and RLC circuits, three-phase circuits, power analysis and power factor, and magnetically coupled circuits. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit&quot;&quot;5&quot;), SC/PHYS 1010 6.00 or SC/PHYS 1801 3.00. Course credit exclusions: SC/PHYS 3050 3.00.\n"
+            "desc": "This course covers the basic principles of linear circuits. Kirchhoff's laws, circuit equations, RL, RC, and RLC circuits, three-phase circuits, power analysis and power factor, and magnetically coupled circuits. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit5), SC/PHYS 1010 6.00 or SC/PHYS 1801 3.00. Course credit exclusions: SC/PHYS 3050 3.00.\n"
         },
         {
             "dept": "eecs",
@@ -206,7 +206,7 @@
             "credit": 3.0,
             "name": "Electronic Circuits and Devices",
             "prereqs": "eng2200",
-            "desc": "This course covers the basic material required in the design of both analog and digital electronic circuits. Diodes, transistors (both BJT and FET), amplifiers, rectifiers. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/ENG 2200 3.00. Course credit exclusion: SC/PHYS 3150 3.00."
+            "desc": "This course covers the basic material required in the design of both analog and digital electronic circuits. Diodes, transistors (both BJT and FET), amplifiers, rectifiers. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/ENG 2200 3.00. Course credit exclusion: SC/PHYS 3150 3.00."
         },
         {
             "dept": "eecs",
@@ -214,7 +214,7 @@
             "credit": 3.0,
             "name": "Software Development Project",
             "prereqs": "eecs1030 eecs2030",
-            "desc": "This course allows students to develop a significant piece of software utilizing all the skills they have acquired so far. This includes requirement elicitation, system specification, implementation, testing, deployment, and user documentation. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 1030 3.00 or LE/EECS 2030 3.00."
+            "desc": "This course allows students to develop a significant piece of software utilizing all the skills they have acquired so far. This includes requirement elicitation, system specification, implementation, testing, deployment, and user documentation. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 1030 3.00 or LE/EECS 2030 3.00."
         },
         {
             "dept": "eecs",
@@ -222,7 +222,7 @@
             "credit": 1.0,
             "name": "Fortran and Scientific Computing",
             "prereqs": "eecs1020 eecs1530",
-            "desc": "Covers computer-based problem solving in a variety of scientific and engineering settings. Introduces the FORTRAN programming language and its interface with scientific libraries. Applications are drawn mainly from scientific areas such as numerical methods, processing experimental data, simulation and data visualization. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (EECS courses with the second digit &quot;5&quot; are not major courses.); One of LE/EECS 1020 3.00 or EECS1021 3.00 or EECS1022 3.00 or LE/EECS 1530 3.00. "
+            "desc": "Covers computer-based problem solving in a variety of scientific and engineering settings. Introduces the FORTRAN programming language and its interface with scientific libraries. Applications are drawn mainly from scientific areas such as numerical methods, processing experimental data, simulation and data visualization. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (EECS courses with the second digit 5 are not major courses.); One of LE/EECS 1020 3.00 or EECS1021 3.00 or EECS1022 3.00 or LE/EECS 1530 3.00. "
         },
         {
             "dept": "eecs",
@@ -246,7 +246,7 @@
             "credit": 3.0,
             "name": "Professional Practice in Computing",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "Professional, legal and ethical issues in the development, deployment and use of computer systems; their impact on society including privacy and security, computer crime, malware, and intellectual property; professional ethics and responsibilities; guest lecturers from industry, government and university. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Course credit exclusions: LE/ENG 4000 6.00, SC/ENG 4000 6.00 (prior to Summer 2013)."
+            "desc": "Professional, legal and ethical issues in the development, deployment and use of computer systems; their impact on society including privacy and security, computer crime, malware, and intellectual property; professional ethics and responsibilities; guest lecturers from industry, government and university. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Course credit exclusions: LE/ENG 4000 6.00, SC/ENG 4000 6.00 (prior to Summer 2013)."
         },
         {
             "dept": "eecs",
@@ -254,7 +254,7 @@
             "credit": 3.0,
             "name": "Design and Analysis of Algorithms",
             "prereqs": "eecs2011 math1090 math1310",
-            "desc": "Review of fundamental data structures. Analysis of algorithms: time and space complexity. Algorithm design paradigms: divide-and-conquer, exploring graphs, greedy methods, local search, dynamic programming, probabilistic algorithms, computational geometry. NP-complete problems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2011 3.00; SC/MATH 1090 3.00; SC/MATH 1310 3.00. Course credit exclusion: LE/SC CSE 3101 3.00."
+            "desc": "Review of fundamental data structures. Analysis of algorithms: time and space complexity. Algorithm design paradigms: divide-and-conquer, exploring graphs, greedy methods, local search, dynamic programming, probabilistic algorithms, computational geometry. NP-complete problems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2011 3.00; SC/MATH 1090 3.00; SC/MATH 1310 3.00. Course credit exclusion: LE/SC CSE 3101 3.00."
         },
         {
             "dept": "eecs",
@@ -286,7 +286,7 @@
             "credit": 3.0,
             "name": "Communication Networks",
             "prereqs": "eecs2030 eecs1030 math1310",
-            "desc": "Introduces the basics of communications and networking. Topics include transmission media; fundamental limits; protocols and hierarchies; the OSI model; encoding of data as signals; error and flow control; medium access; routing; internetworking; transport services; high-level applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; SC/MATH 1310 3.00. Previously offered as: LE/CSE 3213 3.00. PRIOR TO SUMMER 2013: SC/CSE 3213 3.00."
+            "desc": "Introduces the basics of communications and networking. Topics include transmission media; fundamental limits; protocols and hierarchies; the OSI model; encoding of data as signals; error and flow control; medium access; routing; internetworking; transport services; high-level applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; SC/MATH 1310 3.00. Previously offered as: LE/CSE 3213 3.00. PRIOR TO SUMMER 2013: SC/CSE 3213 3.00."
         },
         {
             "dept": "eecs",
@@ -294,7 +294,7 @@
             "credit": 3.0,
             "name": "Computer Network Protocols and Applications",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "This course focuses on the higher-level network protocols, security issues, network programming, and applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; NCR: This course is not open for credit to students who passed LE/EECS 4213 3.00, LE/CSE 4213 3.00, SC/CSE 4213 3.00, LE/CSE 4213 3.00, SC/CSE 4213 3.00."
+            "desc": "This course focuses on the higher-level network protocols, security issues, network programming, and applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; NCR: This course is not open for credit to students who passed LE/EECS 4213 3.00, LE/CSE 4213 3.00, SC/CSE 4213 3.00, LE/CSE 4213 3.00, SC/CSE 4213 3.00."
         },
         {
             "dept": "eecs",
@@ -302,7 +302,7 @@
             "credit": 4.0,
             "name": "Embedded Systems",
             "prereqs": "eecs2031 eecs3201",
-            "desc": "Introduction to the design of embedded systems using both hardware and software. Topics include microcontrollers; their architecture, and programming; design and implementation of embedded systems using field programmable gate arrays. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2031 3.00, LE/EECS 3201 4.00. Course Credit Exclusion: LE/CSE 3215 4.00."
+            "desc": "Introduction to the design of embedded systems using both hardware and software. Topics include microcontrollers; their architecture, and programming; design and implementation of embedded systems using field programmable gate arrays. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2031 3.00, LE/EECS 3201 4.00. Course Credit Exclusion: LE/CSE 3215 4.00."
         },
         {
             "dept": "eecs",
@@ -310,7 +310,7 @@
             "credit": 3.0,
             "name": "Digital Systems Engineering: Modeling, Implementation and Validation",
             "prereqs": "eecs2032 eecs2031 eecs3201",
-            "desc": "This is a project intensive course to introduce students to modeling, implementation, testing, and validation of hardware-based embedded systems. The emphasis in this course is on complex digital systems that interact with physical systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 2032 4.00, or LE/EECS 2031 3.00, and  LE/EECS 3201 3.00."
+            "desc": "This is a project intensive course to introduce students to modeling, implementation, testing, and validation of hardware-based embedded systems. The emphasis in this course is on complex digital systems that interact with physical systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 2032 4.00, or LE/EECS 2031 3.00, and  LE/EECS 3201 3.00."
         },
         {
             "dept": "eecs",
@@ -318,7 +318,7 @@
             "credit": 3.0,
             "name": "Operating System Fundamentals",
             "prereqs": "eecs2030 eecs1030 eecs2021 eecs2031 eecs2032",
-            "desc": "Principles of operating systems. Concurrent processes, CPU scheduling, deadlocks, memory management, file systems, protection and security, and case studies. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2021 4.00 and LE/EECS 2031 3.00 or LE/EECS 2032 4.00. Course Credit Exclusion: LE/CSE 3221 3.00"
+            "desc": "Principles of operating systems. Concurrent processes, CPU scheduling, deadlocks, memory management, file systems, protection and security, and case studies. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2021 4.00 and LE/EECS 2031 3.00 or LE/EECS 2032 4.00. Course Credit Exclusion: LE/CSE 3221 3.00"
         },
         {
             "dept": "eecs",
@@ -326,7 +326,7 @@
             "credit": 3.0,
             "name": "Software Design",
             "prereqs": "eecs2030 eecs1030 eecs2011 math1090 eecs2031 eecs2032",
-            "desc": "A study of design methods and their use in the correct implementation, maintenance and evolution of software systems. Topics include design, implementation, testing, documentation needs and standards, support tools. Students design and implement components of a software system. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; SC/MATH 1090 3.00; LE/EECS 2031 3.00 or LE/EECS 2032 4.00. Course Credit Exclusions: LE/CSE 3311 3.00"
+            "desc": "A study of design methods and their use in the correct implementation, maintenance and evolution of software systems. Topics include design, implementation, testing, documentation needs and standards, support tools. Students design and implement components of a software system. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; SC/MATH 1090 3.00; LE/EECS 2031 3.00 or LE/EECS 2032 4.00. Course Credit Exclusions: LE/CSE 3311 3.00"
         },
         {
             "dept": "eecs",
@@ -334,7 +334,7 @@
             "credit": 3.0,
             "name": "System Specification and Refinement",
             "prereqs": "eecs2030 eecs1030 eecs2011 math1090",
-            "desc": "Theory and tools for specifying computer systems (sequential, concurrent and embedded). Specification (via set theory and predicate logic), modelling, abstraction, refinement and formal reasoning are undertaken before code development so that systems are correct by construction under the stated assumptions. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; SC/MATH 1090 3.00."
+            "desc": "Theory and tools for specifying computer systems (sequential, concurrent and embedded). Specification (via set theory and predicate logic), modelling, abstraction, refinement and formal reasoning are undertaken before code development so that systems are correct by construction under the stated assumptions. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; SC/MATH 1090 3.00."
         },
         {
             "dept": "eecs",
@@ -342,7 +342,7 @@
             "credit": 3.0,
             "name": "Introduction to Artificial Intelligence and Logic Programming",
             "prereqs": "eecs2030 eecs1030 eecs2011",
-            "desc": "Artificial Intelligence (AI) deals with how to build intelligent systems. In this course, we examine fundamental concepts in AI: knowledge representation and reasoning, search, constraint satisfaction, reasoning under uncertainty, etc. The course also introduces logic programming and Prolog. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; MATH 1090 3.00. Previously offered as: LE/CSE 3401 3.00. PRIOR TO FALL 2014: course credit exclusion: LE/CSE 3402 3.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 3401 3.00, SC/CSE 3402 3.00."
+            "desc": "Artificial Intelligence (AI) deals with how to build intelligent systems. In this course, we examine fundamental concepts in AI: knowledge representation and reasoning, search, constraint satisfaction, reasoning under uncertainty, etc. The course also introduces logic programming and Prolog. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; MATH 1090 3.00. Previously offered as: LE/CSE 3401 3.00. PRIOR TO FALL 2014: course credit exclusion: LE/CSE 3402 3.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 3401 3.00, SC/CSE 3402 3.00."
         },
         {
             "dept": "eecs",
@@ -350,7 +350,7 @@
             "credit": 3.0,
             "name": "Introduction to Database Systems",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "Concepts, approaches and techniques in database management systems (DBMS). Logical model of relational databases. An introduction to relational database design. Other topics such as query languages, crash recovery and concurrency control. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; Course credit exclusions: AP/ITEC 3220 3.00. Previously offered as: LE/CSE 3421 3.00. PRIOR TO SUMMER 2013: SC/CSE 3421 3.00."
+            "desc": "Concepts, approaches and techniques in database management systems (DBMS). Logical model of relational databases. An introduction to relational database design. Other topics such as query languages, crash recovery and concurrency control. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; Course credit exclusions: AP/ITEC 3220 3.00. Previously offered as: LE/CSE 3421 3.00. PRIOR TO SUMMER 2013: SC/CSE 3421 3.00."
         },
         {
             "dept": "eecs",
@@ -358,7 +358,7 @@
             "credit": 3.0,
             "name": "Introduction to 3D Computer Graphics",
             "prereqs": "eecs2030 math1025",
-            "desc": "Introduces the fundamental concepts and algorithms of three-dimensional computer graphics, including object modelling, transformations, cameras, visibility and shading. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00;\nSC/MATH 1025 3.00. Course credit exclusions: AK/AS/SC/CSE 4431 3.00."
+            "desc": "Introduces the fundamental concepts and algorithms of three-dimensional computer graphics, including object modelling, transformations, cameras, visibility and shading. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00;\nSC/MATH 1025 3.00. Course credit exclusions: AK/AS/SC/CSE 4431 3.00."
         },
         {
             "dept": "eecs",
@@ -366,7 +366,7 @@
             "credit": 4.0,
             "name": "Signals and Systems",
             "prereqs": "eecs2021 math1310",
-            "desc": "An introduction to the mathematical background in signals and systems; signal and image processing: sampling, discrete Fourier transform, filtering; linear system theory; Kalman filtering; feedback. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2021 4.00, SC/MATH 1310 3.00. Course credit exclusions: SC/MATH 4130B 3.00, SC/PHYS 4060 3.00. Previously offered as: LE/CSE 3451 4.00. PRIOR TO FALL 2014: course credit exclusions: SC/MATH 4830 3.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 3451 4.00, SC/EATS 4020 3.00."
+            "desc": "An introduction to the mathematical background in signals and systems; signal and image processing: sampling, discrete Fourier transform, filtering; linear system theory; Kalman filtering; feedback. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2021 4.00, SC/MATH 1310 3.00. Course credit exclusions: SC/MATH 4130B 3.00, SC/PHYS 4060 3.00. Previously offered as: LE/CSE 3451 4.00. PRIOR TO FALL 2014: course credit exclusions: SC/MATH 4830 3.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 3451 4.00, SC/EATS 4020 3.00."
         },
         {
             "dept": "eecs",
@@ -374,7 +374,7 @@
             "credit": 3.0,
             "name": "User Interfaces",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "Introduces user interfaces and the tools and mechanisms to create and prototype them. Students work in small groups and learn how to design user interfaces, how to realize them and how to evaluate the end result. Prerequisite: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Course credit exclusions: AP/ITEC 3230 3.00. Previously offered as: LE/CSE 3461 3.00. PRIOR TO SUMMER 2013: SC/CSE 3461 3.00."
+            "desc": "Introduces user interfaces and the tools and mechanisms to create and prototype them. Students work in small groups and learn how to design user interfaces, how to realize them and how to evaluate the end result. Prerequisite: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Course credit exclusions: AP/ITEC 3230 3.00. Previously offered as: LE/CSE 3461 3.00. PRIOR TO SUMMER 2013: SC/CSE 3461 3.00."
         },
         {
             "dept": "eecs",
@@ -382,7 +382,7 @@
             "credit": 3.0,
             "name": "Applied Cryptography",
             "prereqs": "eecs2011",
-            "desc": "An overview of cryptographic algorithms and the main cryptosystems in use today, emphasizing the application of cryptographic algorithms to designing secure protocols. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;);  LE/EECS 2011 3.00."
+            "desc": "An overview of cryptographic algorithms and the main cryptosystems in use today, emphasizing the application of cryptographic algorithms to designing secure protocols. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5);  LE/EECS 2011 3.00."
         },
         {
             "dept": "eecs",
@@ -406,7 +406,7 @@
             "credit": 4.0,
             "name": "Electromechanical Energy Conversion",
             "prereqs": "eecs2200 phys2020",
-            "desc": "This course covers the basic construction and principles of operation of different types of electric machines; magnetic circuit analysis, single-phase and poly-phase transformers, principles of electromechanical energy conversion, DC machines, three-phase induction machines, synchronous machines, and special machines (stepper motors, linear motors and brushless DC (BLDC) motors). The transients and dynamics of machines are analyzed. Introduction of Solid-State control of motors. In addition to lectures and tutorials, field trip: six hours. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2200 3.00, SC/PHYS 2020 3.00."
+            "desc": "This course covers the basic construction and principles of operation of different types of electric machines; magnetic circuit analysis, single-phase and poly-phase transformers, principles of electromechanical energy conversion, DC machines, three-phase induction machines, synchronous machines, and special machines (stepper motors, linear motors and brushless DC (BLDC) motors). The transients and dynamics of machines are analyzed. Introduction of Solid-State control of motors. In addition to lectures and tutorials, field trip: six hours. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2200 3.00, SC/PHYS 2020 3.00."
         },
         {
             "dept": "eecs",
@@ -414,7 +414,7 @@
             "credit": 4.0,
             "name": "Electromagnetic theory and wave propagation",
             "prereqs": "math1014 math1025 phys2020",
-            "desc": "Provides the student with an introduction to partial differential equations and the mathematics of wave propagation. Specific applications to electromagnetic waves are discussed. Guided waves, transmission lines, and antennas are also introduced. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); SC/MATH 1014 3.00 or SC/MATH 1025 3.00 or SC/PHYS 2020 3.00."
+            "desc": "Provides the student with an introduction to partial differential equations and the mathematics of wave propagation. Specific applications to electromagnetic waves are discussed. Guided waves, transmission lines, and antennas are also introduced. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); SC/MATH 1014 3.00 or SC/MATH 1025 3.00 or SC/PHYS 2020 3.00."
         },
         {
             "dept": "eecs",
@@ -422,7 +422,7 @@
             "credit": 4.0,
             "name": "Analog Electronics",
             "prereqs": "eecs2210",
-            "desc": "This course focuses on the analysis and design of analog electronic circuits in bipolar and CMOS technology. It covers the aspects of circuit design from single transistor operation to complex amplifiers, operational amplifiers and feedback. Prerequisites: Cumulative GPA of 4.50 or better over all\nmajor EECS courses (without second digit &quot;5&quot;); LE/EECS 2210 3.00."
+            "desc": "This course focuses on the analysis and design of analog electronic circuits in bipolar and CMOS technology. It covers the aspects of circuit design from single transistor operation to complex amplifiers, operational amplifiers and feedback. Prerequisites: Cumulative GPA of 4.50 or better over all\nmajor EECS courses (without second digit 5); LE/EECS 2210 3.00."
         },
         {
             "dept": "eecs",
@@ -430,7 +430,7 @@
             "credit": 4.0,
             "name": "Introduction to Power Systems",
             "prereqs": "eecs2200",
-            "desc": "The course discusses the basic modeling and analysis techniques in electrical energy systems including generation, transmission, and distribution systems. It covers the power system fundamentals consisting of 3-phase systems, complex and phasor quantities, single line diagrams and Per Unit system of calculations. Concept of complex power and active and reactive power are covered and reactive power compensation is also described. Functional descriptions and modeling of generators, transformers, transmission lines, motors and other loads are discussed. Various types of renewable energy systems are also introduced and basic functionality of the critical components of these systems are discussed. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2200 3.00. Course Credit Exclusion LE/EECS 4622 4.00"
+            "desc": "The course discusses the basic modeling and analysis techniques in electrical energy systems including generation, transmission, and distribution systems. It covers the power system fundamentals consisting of 3-phase systems, complex and phasor quantities, single line diagrams and Per Unit system of calculations. Concept of complex power and active and reactive power are covered and reactive power compensation is also described. Functional descriptions and modeling of generators, transformers, transmission lines, motors and other loads are discussed. Various types of renewable energy systems are also introduced and basic functionality of the critical components of these systems are discussed. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2200 3.00. Course Credit Exclusion LE/EECS 4622 4.00"
         },
         {
             "dept": "eecs",
@@ -470,7 +470,7 @@
             "credit": 3.0,
             "name": "Directed Studies ",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "By special arrangement, a student may carry out independent study in a specialized area of computer science or engineering under the direction of a member of the EECS department. The student will be expected to meet regularly with the supervisor throughout the term. In addition to regular meetings with the supervisor, a student is expected to do about 10 hours per week on reading and preparation of assigned work. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 2030 3.00 or LE/EECS 1030 3.00, successful completion of 24 credits in EECS and permission of course coordinator.\n"
+            "desc": "By special arrangement, a student may carry out independent study in a specialized area of computer science or engineering under the direction of a member of the EECS department. The student will be expected to meet regularly with the supervisor throughout the term. In addition to regular meetings with the supervisor, a student is expected to do about 10 hours per week on reading and preparation of assigned work. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 2030 3.00 or LE/EECS 1030 3.00, successful completion of 24 credits in EECS and permission of course coordinator.\n"
         },
         {
             "dept": "eecs",
@@ -478,7 +478,7 @@
             "credit": 3.0,
             "name": "Computer Science Project",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "A project in computer science chosen in consultation with, and supervised by, a member of the department. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; permission of the Instructor. Normally restricted to students who have taken 36 credits in computer science. Course credit exclusions: LE/EECS 4081 6.00, LE/EECS 4082 6.00, LE/EECS 4084 6.00, LE/EECS 4088 6.00, LE/EECS 4480 6.00, LE/ENG 4000 6.00. PRIOR TO FALL 2014: Course credit exclusions: LE/CSE 4081 6.00, SC/CSE 4081 6.00, LE/CSE 4082 6.00, SC/CSE 4082 6.00, LE/CSE 4084 6.00, SC/CSE 4084 6.00, LE/CSE 4088 6.00, SC/CSE 4088 6.00, LE/CSE 4480 3.00, SC/CSE 4480. LE/EECS 4700 6.00, LE/CSE 4700 6.00, LE/ENG 4000 6.00, SC/ENG 4000 6.00."
+            "desc": "A project in computer science chosen in consultation with, and supervised by, a member of the department. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; permission of the Instructor. Normally restricted to students who have taken 36 credits in computer science. Course credit exclusions: LE/EECS 4081 6.00, LE/EECS 4082 6.00, LE/EECS 4084 6.00, LE/EECS 4088 6.00, LE/EECS 4480 6.00, LE/ENG 4000 6.00. PRIOR TO FALL 2014: Course credit exclusions: LE/CSE 4081 6.00, SC/CSE 4081 6.00, LE/CSE 4082 6.00, SC/CSE 4082 6.00, LE/CSE 4084 6.00, SC/CSE 4084 6.00, LE/CSE 4088 6.00, SC/CSE 4088 6.00, LE/CSE 4480 3.00, SC/CSE 4480. LE/EECS 4700 6.00, LE/CSE 4700 6.00, LE/ENG 4000 6.00, SC/ENG 4000 6.00."
         },
         {
             "dept": "eecs",
@@ -486,7 +486,7 @@
             "credit": 6.0,
             "name": "Computer Science Capstone Project",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "A project in computer science chosen in consultation with, and supervised by, a member of the department. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 2030 3.00 or LE/EECS 1030 3.00, permission of the Instructor. Normally restricted to students who have taken 36 credits in computer science. Course credit exclusions: LE/EECS 4080 3.00, LE/EECS 4081 6.00, LE/EECS 4082 6.00, LE/EECS 4084 6.00, LE/EECS 4480 3.00, LE/EECS 4700 6.00, LE/ENG 4000 6.00. PRIOR TO FALL 2014: course credit exclusions: LE/CSE 4080 3.00, LE/CSE 4081 6.00, LE/CSE 4082 6.00, LE/CSE 4084 6.00, LE/CSE 4480 3.00, LE/CSE 4700 6.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 4080 3.00, SC/CSE 4081 6.00, SC/CSE 4082 6.00, SC/CSE 4084 6.00, SC/CSE 4480 3.00, SC/ENG 4000 6.00."
+            "desc": "A project in computer science chosen in consultation with, and supervised by, a member of the department. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 2030 3.00 or LE/EECS 1030 3.00, permission of the Instructor. Normally restricted to students who have taken 36 credits in computer science. Course credit exclusions: LE/EECS 4080 3.00, LE/EECS 4081 6.00, LE/EECS 4082 6.00, LE/EECS 4084 6.00, LE/EECS 4480 3.00, LE/EECS 4700 6.00, LE/ENG 4000 6.00. PRIOR TO FALL 2014: course credit exclusions: LE/CSE 4080 3.00, LE/CSE 4081 6.00, LE/CSE 4082 6.00, LE/CSE 4084 6.00, LE/CSE 4480 3.00, LE/CSE 4700 6.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 4080 3.00, SC/CSE 4081 6.00, SC/CSE 4082 6.00, SC/CSE 4084 6.00, SC/CSE 4480 3.00, SC/ENG 4000 6.00."
         },
         {
             "dept": "eecs",
@@ -502,7 +502,7 @@
             "credit": 3.0,
             "name": "Advanced Data Structures",
             "prereqs": "eecs2030 eecs1030 eecs2001 eecs3101",
-            "desc": "Amortized and worst-case analysis of data structures. Data structuring paradigms: self-adjustment and persistence. Lists: self-adjustment with the move-to-front heuristic. Search trees: splay trees, finger search trees. Heaps: skew heaps, Fibonacci heaps. Union-find trees. Link-and-cut trees. Multidimensional data structures and dynamization. Integrated with: GS/CSE 5101 3.00. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2001 3.00, LE/EECS 3101 3.00. Previously offered as: LE/CSE 4101 3.00. PRIOR TO SUMMER 2013: SC/CSE 4101 3.00."
+            "desc": "Amortized and worst-case analysis of data structures. Data structuring paradigms: self-adjustment and persistence. Lists: self-adjustment with the move-to-front heuristic. Search trees: splay trees, finger search trees. Heaps: skew heaps, Fibonacci heaps. Union-find trees. Link-and-cut trees. Multidimensional data structures and dynamization. Integrated with: GS/CSE 5101 3.00. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2001 3.00, LE/EECS 3101 3.00. Previously offered as: LE/CSE 4101 3.00. PRIOR TO SUMMER 2013: SC/CSE 4101 3.00."
         },
         {
             "dept": "eecs",
@@ -510,7 +510,7 @@
             "credit": 3.0,
             "name": "Automata and Computability",
             "prereqs": "eecs2030 eecs1030 eecs2001 eecs3101",
-            "desc": "Introduction to more advanced topics in theoretical foundations of computer science, including the study of formal languages and automata, formal models of computation, and computational complexity measures. Integrated with: GS/CSE 5111 3.00. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2001 3.00, LE/EECS 3101 3.00. Previously offered as: LE/CSE 4111 3.00."
+            "desc": "Introduction to more advanced topics in theoretical foundations of computer science, including the study of formal languages and automata, formal models of computation, and computational complexity measures. Integrated with: GS/CSE 5111 3.00. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2001 3.00, LE/EECS 3101 3.00. Previously offered as: LE/CSE 4111 3.00."
         },
         {
             "dept": "eecs",
@@ -518,7 +518,7 @@
             "credit": 3.0,
             "name": "Introduction to Quantum Computing",
             "prereqs": "math1025 eecs2021 eecs3101",
-            "desc": "This course presents an overview of the quantum computing field without assuming any prior exposure to quantum mechanics. Drawing parallels between quantum and classical computing, the course covers the physical layer briefly before moving to quantum gates, the circuit model, and quantum algorithms. Quantum information is covered through applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), SC/MATH 1025 3.00, LE/EECS 2021 4.00, LE/EECS 3101 3.00."
+            "desc": "This course presents an overview of the quantum computing field without assuming any prior exposure to quantum mechanics. Drawing parallels between quantum and classical computing, the course covers the physical layer briefly before moving to quantum gates, the circuit model, and quantum algorithms. Quantum information is covered through applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), SC/MATH 1025 3.00, LE/EECS 2021 4.00, LE/EECS 3101 3.00."
         },
         {
             "dept": "eecs",
@@ -526,7 +526,7 @@
             "credit": 3.0,
             "name": "Mathematics of Cryptography",
             "prereqs": "eecs3101",
-            "desc": "Probability, information theory and number theory and applications to cryptography. Classical codes such as Caesar shift, Vigenere, ADFGVX, rectangular substitution, and others. Other topics: comma free codes, perfect secrecy, index of coincidence, public key systems, primality testing and factorization algorithms. Prerequisites: At least 12 credits from 2000-level (or higher) MATH courses (without second digit &quot;5&quot;, or second digit &quot;7&quot;); or LE/EECS 3101 3.00 or permission of the Instructor."
+            "desc": "Probability, information theory and number theory and applications to cryptography. Classical codes such as Caesar shift, Vigenere, ADFGVX, rectangular substitution, and others. Other topics: comma free codes, perfect secrecy, index of coincidence, public key systems, primality testing and factorization algorithms. Prerequisites: At least 12 credits from 2000-level (or higher) MATH courses (without second digit 5, or second digit 7); or LE/EECS 3101 3.00 or permission of the Instructor."
         },
         {
             "dept": "eecs",
@@ -534,7 +534,7 @@
             "credit": 3.0,
             "name": "Computer Architecture",
             "prereqs": "eecs3201 eecs3221",
-            "desc": "The internal structure and design ideas embodied in many computers and the techniques for evaluating them. Fast arithmetic algorithms, memory system designs, pipeline techniques, input-output subsystems and parallel computing structures. Future trends in computer architecture. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 3201 4.00, LE/EECS 3221 3.00. Previously offered as: LE/CSE 4201 3.00."
+            "desc": "The internal structure and design ideas embodied in many computers and the techniques for evaluating them. Fast arithmetic algorithms, memory system designs, pipeline techniques, input-output subsystems and parallel computing structures. Future trends in computer architecture. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 3201 4.00, LE/EECS 3221 3.00. Previously offered as: LE/CSE 4201 3.00."
         },
         {
             "dept": "eecs",
@@ -542,7 +542,7 @@
             "credit": 4.0,
             "name": "Digital Communications",
             "prereqs": "eecs3213 math2030 math2930 eecs3451 eecs3602 esse4020 math4830 phys4060 phys4250",
-            "desc": "Introduces fundamental principles underlying design and analysis of digital communication systems. Develops mathematical/physical understanding from the information source through the transmitter, channel, receiver, and information sink. Topics include baseband transmission, matched filtering, modulation, channel coding, and spread spectrum. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 3213 3.00, One of SC/MATH 2030 3.00 or SC/MATH 2930 3.00, One of LE/EECS 3451 4.00, LE/EECS 3602 4.00, LE/ESSE 4020 3.00, SC/MATH 4830 3.00, SC/PHYS 4060 3.00 or SC/PHYS 4250 3.00. Previously offered as: LE/CSE 4214 4.00. PRIOR TO SUMMER 2013: course credit exclusion: SC/CSE 4214 4.00."
+            "desc": "Introduces fundamental principles underlying design and analysis of digital communication systems. Develops mathematical/physical understanding from the information source through the transmitter, channel, receiver, and information sink. Topics include baseband transmission, matched filtering, modulation, channel coding, and spread spectrum. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 3213 3.00, One of SC/MATH 2030 3.00 or SC/MATH 2930 3.00, One of LE/EECS 3451 4.00, LE/EECS 3602 4.00, LE/ESSE 4020 3.00, SC/MATH 4830 3.00, SC/PHYS 4060 3.00 or SC/PHYS 4250 3.00. Previously offered as: LE/CSE 4214 4.00. PRIOR TO SUMMER 2013: course credit exclusion: SC/CSE 4214 4.00."
         },
         {
             "dept": "eecs",
@@ -550,7 +550,7 @@
             "credit": 3.0,
             "name": "Mobile Communications",
             "prereqs": "eecs2030 eecs1030 eecs3213",
-            "desc": "Provides an overview of the latest developments and trends in wireless mobile communications, and addresses the impact of wireless transmission and user mobility on the design and management of wireless mobile systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3213 3.00."
+            "desc": "Provides an overview of the latest developments and trends in wireless mobile communications, and addresses the impact of wireless transmission and user mobility on the design and management of wireless mobile systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3213 3.00."
         },
         {
             "dept": "eecs",
@@ -558,7 +558,7 @@
             "credit": 3.0,
             "name": "Software Engineering Requirements",
             "prereqs": "eecs2030 eecs1030 eecs3311",
-            "desc": "This course deals with the elicitation, specification and analysis of software requirements and provides a critical description of available methods and tools, and practical exercises on applying these methods and tools to realistic problems. Three lecture hours per week.  One laboratory hour per week. One term. Three credits. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3311 3.00. Course credit exclusions: LE/CSE 4312 3.00, AK/AS/SC/CSE 4312 3.00."
+            "desc": "This course deals with the elicitation, specification and analysis of software requirements and provides a critical description of available methods and tools, and practical exercises on applying these methods and tools to realistic problems. Three lecture hours per week.  One laboratory hour per week. One term. Three credits. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3311 3.00. Course credit exclusions: LE/CSE 4312 3.00, AK/AS/SC/CSE 4312 3.00."
         },
         {
             "dept": "eecs",
@@ -566,7 +566,7 @@
             "credit": 3.0,
             "name": "Software Engineering Testing",
             "prereqs": "eecs2030 eecs1030 eecs3311",
-            "desc": "An introduction to systematic methods of testing and verification, covering a range of static and dynamic techniques and their use within the development process; emphasizes the view that design should be carried out with verification in mind to achieve overall project goals. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS1030 3.00; LE/EECS 3311 3.00. Previously offered as: LE/CSE 4313 3.00."
+            "desc": "An introduction to systematic methods of testing and verification, covering a range of static and dynamic techniques and their use within the development process; emphasizes the view that design should be carried out with verification in mind to achieve overall project goals. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS1030 3.00; LE/EECS 3311 3.00. Previously offered as: LE/CSE 4313 3.00."
         },
         {
             "dept": "eecs",
@@ -574,7 +574,7 @@
             "credit": 3.0,
             "name": "Advanced Software Engineering",
             "prereqs": "eecs2030 eecs1030 eecs3311",
-            "desc": "Advanced software engineering methods, processes and measurements (from requirements through to system evolution) for managing and delivering reliable software on time and within budget. Understanding the different types of systems and their associated technical, ethical and professional issues. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3311 3.00."
+            "desc": "Advanced software engineering methods, processes and measurements (from requirements through to system evolution) for managing and delivering reliable software on time and within budget. Understanding the different types of systems and their associated technical, ethical and professional issues. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3311 3.00."
         },
         {
             "dept": "eecs",
@@ -582,7 +582,7 @@
             "credit": 3.0,
             "name": "Mission-Critical Systems",
             "prereqs": "eecs2030 eecs1030 eecs3342",
-            "desc": "Theory and practical tools underlying deductive and algorithmic methods for ensuring the safety and correctness of mission critical systems (e.g. medical systems, nuclear reactors and train systems) with the practical ability to use verification tools to perform software certification. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3342 3.00."
+            "desc": "Theory and practical tools underlying deductive and algorithmic methods for ensuring the safety and correctness of mission critical systems (e.g. medical systems, nuclear reactors and train systems) with the practical ability to use verification tools to perform software certification. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3342 3.00."
         },
         {
             "dept": "eecs",
@@ -590,7 +590,7 @@
             "credit": 3.0,
             "name": "Artificial Intelligence",
             "prereqs": "eecs2030 eecs1030 eecs3401",
-            "desc": "This is a second course in Artificial intelligence that covers selected topics in this area such as: reasoning about action and planning, uncertain and fuzzy reasoning, knowledge representation, automated reasoning, non-monotonic reasoning and answer set programming, ontologies and description logic, local search methods, Markov decision processes, autonomous agents and multi-agent systems, machine learning, reasoning about beliefs and goals, and expert systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3401 3.00."
+            "desc": "This is a second course in Artificial intelligence that covers selected topics in this area such as: reasoning about action and planning, uncertain and fuzzy reasoning, knowledge representation, automated reasoning, non-monotonic reasoning and answer set programming, ontologies and description logic, local search methods, Markov decision processes, autonomous agents and multi-agent systems, machine learning, reasoning about beliefs and goals, and expert systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3401 3.00."
         },
         {
             "dept": "eecs",
@@ -598,7 +598,7 @@
             "credit": 3.0,
             "name": "Introduction to Machine Learning and Pattern Recognition",
             "prereqs": "eecs2030 eecs1030 math2030 math2930 math1131",
-            "desc": "Machine learning is the study of algorithms that learn how to perform a task from prior experience. This course introduces the student to machine learning concepts and techniques applied to pattern recognition problems in a diversity of application areas. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; one of SC/MATH 2030 3.00 or SC/MATH 2930 3.00 or SC/MATH 1131 3.00."
+            "desc": "Machine learning is the study of algorithms that learn how to perform a task from prior experience. This course introduces the student to machine learning concepts and techniques applied to pattern recognition problems in a diversity of application areas. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; one of SC/MATH 2030 3.00 or SC/MATH 2930 3.00 or SC/MATH 1131 3.00."
         },
         {
             "dept": "eecs",
@@ -606,7 +606,7 @@
             "credit": 3.0,
             "name": "Database Management Systems",
             "prereqs": "eecs2011 eecs2021 eecs2031 eecs2032 eecs3421",
-            "desc": "A study of principles of database management systems. A thorough analysis of theory of normal, relational algebra and calculus and query languages based on these concepts. Other topics: security and integrity issues, concurrency control, distributed systems, query optimization. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2011 3.00; LE/EECS 2021 4.00; LE/EECS 2031 3.00 or LE/EECS 2032 4.00; LE/EECS 3421 3.00. Course Credit Exclusion: LE/CSE 4411 3.00."
+            "desc": "A study of principles of database management systems. A thorough analysis of theory of normal, relational algebra and calculus and query languages based on these concepts. Other topics: security and integrity issues, concurrency control, distributed systems, query optimization. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2011 3.00; LE/EECS 2021 4.00; LE/EECS 2031 3.00 or LE/EECS 2032 4.00; LE/EECS 3421 3.00. Course Credit Exclusion: LE/CSE 4411 3.00."
         },
         {
             "dept": "eecs",
@@ -614,7 +614,7 @@
             "credit": 3.0,
             "name": "Data Mining",
             "prereqs": "eecs2030 eecs1030 eecs3101 eecs3421 math2030 math2930 math1131",
-            "desc": "Introduces and presents basic concepts of data mining, data mining techniques, models and applications. Topics include association rule mining, classification models, sequential pattern mining and clustering. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3101 3.00, LE/EECS 3421 3.00 and one of SC/MATH 2030 3.00 or SC/MATH 2930 3.00 or SC/MATH 1131 3.00. Previously offered as: LE/CSE 4412 3.00."
+            "desc": "Introduces and presents basic concepts of data mining, data mining techniques, models and applications. Topics include association rule mining, classification models, sequential pattern mining and clustering. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3101 3.00, LE/EECS 3421 3.00 and one of SC/MATH 2030 3.00 or SC/MATH 2930 3.00 or SC/MATH 1131 3.00. Previously offered as: LE/CSE 4412 3.00."
         },
         {
             "dept": "eecs",
@@ -622,7 +622,7 @@
             "credit": 3.0,
             "name": "Building E-Commerce Systems",
             "prereqs": "eecs2030 eecs1030",
-            "desc": "A study of the technical infrastructure that underlies Electronic Commerce on the Internet. The foundational concepts are presented through a series of projects that use an industrial-strength framework on the server side, standard-compliant technologies on the client side, and a variety of messaging protocols on the network side. Best practices, security concerns, and performance issues are emphasized throughout. Prerequisite: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Previously offered as: LE/CSE 4413 3.00."
+            "desc": "A study of the technical infrastructure that underlies Electronic Commerce on the Internet. The foundational concepts are presented through a series of projects that use an industrial-strength framework on the server side, standard-compliant technologies on the client side, and a variety of messaging protocols on the network side. Best practices, security concerns, and performance issues are emphasized throughout. Prerequisite: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Previously offered as: LE/CSE 4413 3.00."
         },
         {
             "dept": "eecs",
@@ -630,7 +630,7 @@
             "credit": 3.0,
             "name": "Information Networks",
             "prereqs": "eecs3421 eecs3101 math2030 math2930",
-            "desc": "Information networks are effective representations of pairwise relationships between objects. Examples include technological networks (e.g., World Wide Web), online social networks (e.g., Facebook), and biological networks (e.g., Protein-to-Protein interactions). The study of information networks is an emerging discipline of immense importance that combines graph theory, probability and statistics, data mining and analysis, and computational social science. This course provides students with both theoretical knowledge and practical experience of the field by covering models and algorithms of information networks and their basic properties. In addition, analysis of information networks provides the means to explore large, complex data coming from vastly diverse sources and to inform computational problems and better decisions. Topics include: basic graph theory, network measurements, network models, community detection, graph partitioning, link analysis, link prediction, information cascades & epidemics, influence maximization, network ties, recommendation systems, mining graphs, and connections to problems in the social sciences and economics. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 3421 3.00, LE/EECS 3101 3.00, SC/MATH 2030 3.00 or SC/MATH 2930 3.00.\n\nDate of submission: 2017-03-07"
+            "desc": "Information networks are effective representations of pairwise relationships between objects. Examples include technological networks (e.g., World Wide Web), online social networks (e.g., Facebook), and biological networks (e.g., Protein-to-Protein interactions). The study of information networks is an emerging discipline of immense importance that combines graph theory, probability and statistics, data mining and analysis, and computational social science. This course provides students with both theoretical knowledge and practical experience of the field by covering models and algorithms of information networks and their basic properties. In addition, analysis of information networks provides the means to explore large, complex data coming from vastly diverse sources and to inform computational problems and better decisions. Topics include: basic graph theory, network measurements, network models, community detection, graph partitioning, link analysis, link prediction, information cascades & epidemics, influence maximization, network ties, recommendation systems, mining graphs, and connections to problems in the social sciences and economics. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 3421 3.00, LE/EECS 3101 3.00, SC/MATH 2030 3.00 or SC/MATH 2930 3.00.\n\nDate of submission: 2017-03-07"
         },
         {
             "dept": "eecs",
@@ -638,7 +638,7 @@
             "credit": 3.0,
             "name": "Big Data Systems",
             "prereqs": "eecs3421 eecs3101",
-            "desc": "Storing, managing, and processing datasets are foundational to both computer science and data science. The enormous size of today's data sets and the specific requirements of modern applications necessitated the growth of a new generation of data management systems, where the emphasis is put on distributed and fault-tolerant processing. New programming paradigms have evolved, an abundance of information  platforms offering data management and analysis solutions appeared and a number of novel methods and tools have been developed. This course introduces the fundamentals of big data storage, retrieval, and processing systems. As these fundamentals are introduced, exemplary\ntechnologies are used to illustrate how big data systems can leverage very large data sets that become available through multiple sources and are characterized by diverse levels of volume (terabytes; billion records), velocity (batch; real-time; streaming) and variety (structured; semi-structured; unstructured). The course aims to provide students with both theoretical knowledge and practical experience of the field by covering recent research on big data systems and their basic properties. Students consider both small and large datasets because both are equally important and justify different trade-offs. Topics include: software frameworks for distributed storage and processing of very large data sets, MapReduce programming model, querying of structured data sets, column stores, key-value stores, document stores, graph databases, distributed stream processing frameworks. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 3421 3.00, LE/EECS 3101 3.00"
+            "desc": "Storing, managing, and processing datasets are foundational to both computer science and data science. The enormous size of today's data sets and the specific requirements of modern applications necessitated the growth of a new generation of data management systems, where the emphasis is put on distributed and fault-tolerant processing. New programming paradigms have evolved, an abundance of information  platforms offering data management and analysis solutions appeared and a number of novel methods and tools have been developed. This course introduces the fundamentals of big data storage, retrieval, and processing systems. As these fundamentals are introduced, exemplary\ntechnologies are used to illustrate how big data systems can leverage very large data sets that become available through multiple sources and are characterized by diverse levels of volume (terabytes; billion records), velocity (batch; real-time; streaming) and variety (structured; semi-structured; unstructured). The course aims to provide students with both theoretical knowledge and practical experience of the field by covering recent research on big data systems and their basic properties. Students consider both small and large datasets because both are equally important and justify different trade-offs. Topics include: software frameworks for distributed storage and processing of very large data sets, MapReduce programming model, querying of structured data sets, column stores, key-value stores, document stores, graph databases, distributed stream processing frameworks. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 3421 3.00, LE/EECS 3101 3.00"
         },
         {
             "dept": "eecs",
@@ -646,7 +646,7 @@
             "credit": 3.0,
             "name": "Introduction to Robotics",
             "prereqs": "math1025 math1310 eecs2031",
-            "desc": "An introduction to robotic manipulators and autonomous vehicles. The course covers the kinematics and dynamics of manipulators and autonomous platforms, robot sensors and navigation. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); SC/MATH 1025 3.00, SC/MATH 1310 3.00, LE/EECS 2031 3.00. Previously offered as: LE/CSE 4421 3.00."
+            "desc": "An introduction to robotic manipulators and autonomous vehicles. The course covers the kinematics and dynamics of manipulators and autonomous platforms, robot sensors and navigation. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); SC/MATH 1025 3.00, SC/MATH 1310 3.00, LE/EECS 2031 3.00. Previously offered as: LE/CSE 4421 3.00."
         },
         {
             "dept": "eecs",
@@ -654,7 +654,7 @@
             "credit": 3.0,
             "name": "Computer Vision",
             "prereqs": "math1025 math1310 eecs2031 eecs2032",
-            "desc": "Fundamental concepts of Computer vision and including aspects of biological vision, image formation process, image processing, feature extraction and matching, 3-D parameter estimation, applications and statistical techniques.  Twelve supervised laboratory hours. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); SC/MATH1025 3.00; SC/MATH1310 3.00; LE/EECS2031 3.00 or LE/EECS 2032 4.00."
+            "desc": "Fundamental concepts of Computer vision and including aspects of biological vision, image formation process, image processing, feature extraction and matching, 3-D parameter estimation, applications and statistical techniques.  Twelve supervised laboratory hours. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); SC/MATH1025 3.00; SC/MATH1310 3.00; LE/EECS2031 3.00 or LE/EECS 2032 4.00."
         },
         {
             "dept": "eecs",
@@ -662,7 +662,7 @@
             "credit": 3.0,
             "name": "Human-Computer Interaction",
             "prereqs": "eecs2030 eecs1030 eecs3461",
-            "desc": "Introduces the concepts and technology necessary to design, manage and implement interactive software. Students work in small groups and learn how to design user interfaces, how to realize them and how to evaluate the end result. Both design and evaluation are emphasized. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3461 3.00. Previously offered as: LE/CSE 4441 3.00."
+            "desc": "Introduces the concepts and technology necessary to design, manage and implement interactive software. Students work in small groups and learn how to design user interfaces, how to realize them and how to evaluate the end result. Both design and evaluation are emphasized. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3461 3.00. Previously offered as: LE/CSE 4441 3.00."
         },
         {
             "dept": "eecs",
@@ -670,7 +670,7 @@
             "credit": 3.0,
             "name": "Mobile User Interfaces",
             "prereqs": "eecs2030 eecs1030 eecs3461",
-            "desc": "The design and implementation of user interfaces for touchscreen devices and tablet computers. Students develop user interfaces that include touch, multi-touch, vibration, device motion, position, and orientation, environment sensing, video capture, and audio capture. Twelve Supervised laboratory hours that emphasize these topics in a practical manner. Prerequisites: General prerequisite; LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3461 3.00. (NOTE: The General Prerequisite is a cumulative GPA of 4.50 or better over all major EECS courses.  EECS courses with the second digit &quot;5&quot; are not major courses.)"
+            "desc": "The design and implementation of user interfaces for touchscreen devices and tablet computers. Students develop user interfaces that include touch, multi-touch, vibration, device motion, position, and orientation, environment sensing, video capture, and audio capture. Twelve Supervised laboratory hours that emphasize these topics in a practical manner. Prerequisites: General prerequisite; LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3461 3.00. (NOTE: The General Prerequisite is a cumulative GPA of 4.50 or better over all major EECS courses.  EECS courses with the second digit 5 are not major courses.)"
         },
         {
             "dept": "eecs",
@@ -686,7 +686,7 @@
             "credit": 3.0,
             "name": "Hypermedia and Multimedia Technology",
             "prereqs": "eecs2030 eecs1030 eecs3461",
-            "desc": "Design and application of computer systems which provide information resources for learning, online-help, conceptual exploration, visualization and entertainment; e.g. hypertext/hypermedia, networked information-servers, systems for collaborative work, and &quot;virtual reality&quot;. One or two topics are discussed in depth using current research literature. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3461 3.00. Previously offered as: LE/CSE 4461 3.00."
+            "desc": "Design and application of computer systems which provide information resources for learning, online-help, conceptual exploration, visualization and entertainment; e.g. hypertext/hypermedia, networked information-servers, systems for collaborative work, and virtual reality. One or two topics are discussed in depth using current research literature. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3461 3.00. Previously offered as: LE/CSE 4461 3.00."
         },
         {
             "dept": "eecs",
@@ -702,7 +702,7 @@
             "credit": 4.0,
             "name": "Computer Security Laboratory",
             "prereqs": "eecs2030 eecs1030 eecs3214",
-            "desc": "Provides a thorough understanding of the technical aspects of computer security. It covers network, operating systems, and application software security. Computer laboratory projects provide exposure to various tools in a hands-on setting. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3214 3.00. Note: Students with background equivalent to the stated prerequisites are encouraged to seek permission to enrol."
+            "desc": "Provides a thorough understanding of the technical aspects of computer security. It covers network, operating systems, and application software security. Computer laboratory projects provide exposure to various tools in a hands-on setting. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3214 3.00. Note: Students with background equivalent to the stated prerequisites are encouraged to seek permission to enrol."
         },
         {
             "dept": "eecs",
@@ -718,7 +718,7 @@
             "credit": 3.0,
             "name": "Simulation and Animation for Computer Games",
             "prereqs": "eecs2030 eecs1030 eecs3431 math1310",
-            "desc": "Introduction to simulation and animation techniques used in computer games, with a focus on the algorithms and methods that support moving objects in the virtual environments. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3431 3.00, SC/MATH 1310 3.00."
+            "desc": "Introduction to simulation and animation techniques used in computer games, with a focus on the algorithms and methods that support moving objects in the virtual environments. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3431 3.00, SC/MATH 1310 3.00."
         },
         {
             "dept": "eecs",
@@ -726,7 +726,7 @@
             "credit": 4.0,
             "name": "Power Electronics",
             "prereqs": "eecs2210",
-            "desc": "The objective of this course is to understand the basic operating principles of power conversion using advanced electronic devices. The structure and characteristics of several switching devices are reviewed. Basic power electronic converters and inverters such as AC/DC rectifiers, DC/DC switch mode converters and voltage source DC/AC inverters are studied. Resonant DC/DC converters are introduced. Computation of circuit quantities such as average and RMS value, average power, power factor, total harmonics distortion and power efficiency are also studied. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;), LE/EECS 2210 3.00. Corequisite: LE/EECS 3603 4.00."
+            "desc": "The objective of this course is to understand the basic operating principles of power conversion using advanced electronic devices. The structure and characteristics of several switching devices are reviewed. Basic power electronic converters and inverters such as AC/DC rectifiers, DC/DC switch mode converters and voltage source DC/AC inverters are studied. Resonant DC/DC converters are introduced. Computation of circuit quantities such as average and RMS value, average power, power factor, total harmonics distortion and power efficiency are also studied. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5), LE/EECS 2210 3.00. Corequisite: LE/EECS 3603 4.00."
         },
         {
             "dept": "eecs",
@@ -734,7 +734,7 @@
             "credit": 4.0,
             "name": "Introduction to Energy Systems",
             "prereqs": "eecs2200 eecs3603 phy2020",
-            "desc": "Introduction to basic modeling and analysis techniques in electricity generation, transmission and distribution. Introduction to 3-phase systems, single line diagrams and Per Unit system of calculations. Functional descriptions and modeling of generators, transformers, transmission lines, motors and other loads are discussed. Load Flow study, Gauss-Seidel and Newton-Raphson iterative methods; Symmetrical fault analysis, symmetrical components, unsymmetrical fault analysis; introduction of protection relays and Circuit Breakers; power systems stability analysis; introduction to distribution systems and distributed generation. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit &quot;5&quot;); LE/EECS 2200 3.00, LE/EECS 3603 4.00, SC/PHY 2020 3.00."
+            "desc": "Introduction to basic modeling and analysis techniques in electricity generation, transmission and distribution. Introduction to 3-phase systems, single line diagrams and Per Unit system of calculations. Functional descriptions and modeling of generators, transformers, transmission lines, motors and other loads are discussed. Load Flow study, Gauss-Seidel and Newton-Raphson iterative methods; Symmetrical fault analysis, symmetrical components, unsymmetrical fault analysis; introduction of protection relays and Circuit Breakers; power systems stability analysis; introduction to distribution systems and distributed generation. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit 5); LE/EECS 2200 3.00, LE/EECS 3603 4.00, SC/PHY 2020 3.00."
         },
         {
             "dept": "eecs",
@@ -782,7 +782,7 @@
             "credit": 3.0,
             "name": "Computer Vision ",
             "prereqs": "",
-            "desc": "Introduces the basic concepts in Computer Vision. Primarily a survey of current computational methods, we begin by examining methods for measuring visual data (image based operators, edge detection, feature extraction), and low-level processes for feature aggregation (optic flow, segmentation, correspondence). Finally, we consider some issues in &quot;high-level&quot; vision by examining current high-level vision systems."
+            "desc": "Introduces the basic concepts in Computer Vision. Primarily a survey of current computational methods, we begin by examining methods for measuring visual data (image based operators, edge detection, feature extraction), and low-level processes for feature aggregation (optic flow, segmentation, correspondence). Finally, we consider some issues in high-level vision by examining current high-level vision systems."
         },
         {
             "dept": "eecs",

@@ -198,7 +198,7 @@
             "credit": 3.0,
             "name": "Life-cycle Analysis and Sustainability",
             "prereqs": "envs2150 esse2210",
-            "desc": "This course discusses the notion of &quot;triple bottom-line&quot; or triple-E (energy, environment, economics), life Cycle inventory, computational structure of LC inventory, case studies and execution of a mini- LCA, as well as strengths, weaknesses and appropriate uses of LCA. Prerequisites: ES/ENVS 2150 3.00 or LE/ESSE 2210 3.00. Corequisite: LE/MECH 4401 3.00."
+            "desc": "This course discusses the notion of triple bottom-line or triple-E (energy, environment, economics), life Cycle inventory, computational structure of LC inventory, case studies and execution of a mini- LCA, as well as strengths, weaknesses and appropriate uses of LCA. Prerequisites: ES/ENVS 2150 3.00 or LE/ESSE 2210 3.00. Corequisite: LE/MECH 4401 3.00."
         },
         {
             "dept": "mech",
