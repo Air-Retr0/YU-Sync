@@ -13,8 +13,8 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# parse env file, replace my filepath to the env with yours
-load_dotenv('C:\\Users\\Jahiem\\vscode\\yorku-book-finder\\Yu-Sync\\keys.env')
+# parse env file, fill in load_dotenv() with your env filepath
+load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
