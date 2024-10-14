@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface Course {
-    dept: string;
-    code: string;
+    prefix: string;
     name: string;
+    credit: number;
     ratings?: number;
     difficulty?: number;
     avgGrade?: number;
@@ -28,7 +28,6 @@ const CourseList: React.FC<CourseListProps> = ({
     sortOrder,
     handleSort
 }) => {
-    // Filter courses based on Rating and Difficulty
     const filteredCourses = courses.filter(course => {
         const ratingCondition = course.ratings === undefined || course.ratings >= minRating;
         const difficultyCondition = course.difficulty === undefined || course.difficulty <= maxDifficulty;
@@ -36,23 +35,11 @@ const CourseList: React.FC<CourseListProps> = ({
         return ratingCondition && difficultyCondition;
     });
 
-
     const sortedCourses = filteredCourses.sort((a, b) => {
         if (sortCriteria === '') return 0;
 
-        // Sort by department
-        if (sortCriteria === 'dept') {
-            return sortOrder ? a.dept.localeCompare(b.dept) : b.dept.localeCompare(a.dept);
-        }
-
-        // Sort by course code (first character)
-        if (sortCriteria === 'code') {
-            const aYear = parseInt(a.code.charAt(0), 10) || 9;
-            const bYear = parseInt(b.code.charAt(0), 10) || 9;
-            if (a.dept === b.dept) {
-                return sortOrder ? aYear - bYear : bYear - aYear;
-            }
-            return sortOrder ? a.dept.localeCompare(b.dept) : b.dept.localeCompare(a.dept);
+        if (sortCriteria === 'prefix') {
+            return sortOrder ? a.prefix.localeCompare(b.prefix) : b.prefix.localeCompare(a.prefix);
         }
 
         if (sortCriteria === 'ratings') {
@@ -71,6 +58,17 @@ const CourseList: React.FC<CourseListProps> = ({
         return 0; // Base case
     });
 
+    const getCreditColor = (credit: number) => {
+        if (credit <= 2) {
+            return 'text-red-500';
+        } else if (credit === 3) {
+            return 'text-blue-500';
+        } else if (credit >= 6) {
+            return 'text-purple-500';
+        }
+        return 'text-black';
+    };
+
     return (
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="p-4 text-gray-700 font-bold">
@@ -80,9 +78,9 @@ const CourseList: React.FC<CourseListProps> = ({
                 <table className="min-w-full">
                     <thead className="bg-gray-200">
                         <tr>
-                            <th onClick={() => handleSort('dept')} className="py-2 px-4 text-left cursor-pointer text-red-600">Dept</th>
-                            <th onClick={() => handleSort('code')} className="py-2 px-4 text-left cursor-pointer text-red-600">Code</th>
+                            <th onClick={() => handleSort('prefix')} className="py-2 px-4 text-left cursor-pointer text-red-600">Prefix</th>
                             <th onClick={() => handleSort('name')} className="py-2 px-4 text-left cursor-pointer">Name</th>
+                            <th onClick={() => handleSort('credit')} className="py-2 px-4 text-left cursor-pointer">Credits</th>
                             <th onClick={() => handleSort('ratings')} className="py-2 px-4 text-left cursor-pointer">Rating</th>
                             <th onClick={() => handleSort('difficulty')} className="py-2 px-4 text-left cursor-pointer">Difficulty</th>
                             <th onClick={() => handleSort('avgGrade')} className="py-2 px-4 text-left cursor-pointer">Grade</th>
@@ -93,12 +91,12 @@ const CourseList: React.FC<CourseListProps> = ({
                         {sortedCourses.map((course, index) => (
                             <tr key={index} className="border-b">
                                 <td className="py-2 px-4 text-red-600">
-                                    <Link to={`/explore/${course.dept.toLowerCase()}`}>{course.dept}</Link>
-                                </td>
-                                <td className="py-2 px-4 text-red-600">
-                                    <Link to={`/explore/${course.dept.toLowerCase()}/${course.code}`}>{course.code}</Link>
+                                    <Link to={`/explore/${course.prefix.toLowerCase()}`}>{course.prefix}</Link>
                                 </td>
                                 <td className="py-2 px-4 text-black">{course.name}</td>
+                                <td className={`py-2 px-4 ${getCreditColor(course.credit)}`}>
+                                    {course.credit !== undefined ? course.credit : '-'}
+                                </td>
                                 <td className="py-2 px-4">{course.ratings !== undefined ? course.ratings : '-'}</td>
                                 <td className="py-2 px-4">{course.difficulty !== undefined ? course.difficulty : '-'}</td>
                                 <td className="py-2 px-4">{course.avgGrade !== undefined ? course.avgGrade : '-'}</td>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ExploreNavBar = () => {
     return (
         <nav className="bg-red-600 p-4 flex items-center text-white">
-            {/* Navbar Start with Dropdown */}
+            {/* Dropdown */}
             <div className="flex items-center space-x-4">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle text-white">
@@ -31,7 +31,7 @@ const ExploreNavBar = () => {
                     </ul>
                 </div>
 
-                {/* Navbar Branding */}
+                {/* Hotkey for Name in Navbar -> Home */}
                 <div className="text-2xl font-bold">
                     <Link to="/" className="text-white">YU-Sync</Link>
                 </div>

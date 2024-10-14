@@ -37,6 +37,19 @@ class CourseDetailView(View):
         }
         return JsonResponse(data)
 
+class SubPageCourseDept(generics.ListAPIView):
+    serializer_class = CourseSerializer
+
+    def get_queryset(self):
+        dept = self.kwargs['dept']
+        return Course.objects.filter(dept=dept)
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = CourseSerializer(queryset, many=True)  # Add many=True here
+        return JsonResponse(serializer.data, safe=False)
+
+
 class SubPageCourseDetails(generics.RetrieveAPIView):
     serializer_class = CourseSerializer
 

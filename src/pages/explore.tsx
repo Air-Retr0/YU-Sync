@@ -11,6 +11,7 @@ interface Course {
     difficulty?: number;
     avgGrade?: number;
     enjoyed?: number;
+    credit: number; // Added credit property
 }
 
 const Explore: React.FC = () => {
@@ -58,7 +59,7 @@ const Explore: React.FC = () => {
                     <CourseList
                         courses={courses.map(course => ({
                             ...course,
-                            dept: course.dept.toUpperCase()
+                            prefix: `${course.dept.toUpperCase()} ${course.code}` // Create prefix from dept and code
                         }))}
                         minRating={minRating}
                         maxDifficulty={maxDifficulty}
