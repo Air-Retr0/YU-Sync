@@ -9,13 +9,12 @@ interface Course {
 
 const SearchBar: React.FC = () => {
   const [input, setInput] = useState<string>('');
-  const [coursesData, setCoursesData] = useState<Course[]>([]);  // Array
-  const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);  // Filtered array
+  const [coursesData, setCoursesData] = useState<Course[]>([]);
+  const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  // Fetch courses from Django backend
   useEffect(() => {
     const fetchCourses = async () => {
       try {
@@ -39,32 +38,29 @@ const SearchBar: React.FC = () => {
     fetchCourses();
   }, []);
 
-  // Filter courses based on input
   useEffect(() => {
-    if (input.trim() === '') {
-      setFilteredCourses([]);
-    } else {
+    if (input.length >= 4) {
       const filtered = coursesData.filter(
         (course) =>
           course.dept.toLowerCase().includes(input.toLowerCase()) ||
           course.code.toLowerCase().includes(input.toLowerCase())
       );
-      setFilteredCourses(filtered);
+      setFilteredCourses(filtered.slice(0, 5));
+    } else {
+      setFilteredCourses([]);
     }
   }, [input, coursesData]);
 
-  // Handle input change
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
 
-  // Handle course selection
   const handleSelectCourse = (course: Course) => {
     navigate(`/courses/${course.dept}/${course.code}`);
   };
 
   if (loading) {
-    return <div>Loading courses...</div>;
+    return <div><span className="loading loading-dots loading-sm"></span></div>;
   }
 
   if (error) {
@@ -72,7 +68,7 @@ const SearchBar: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="relative">
       <label className="input input-bordered flex items-center gap-2">
         <input
           type="text"
@@ -95,16 +91,31 @@ const SearchBar: React.FC = () => {
         </svg>
       </label>
 
-      {filteredCourses.length > 0 ? (
-        <ul>
+      {filteredCourses.length > 0 && (
+        <ul className="absolute top-full left-0 z-10 w-full bg-base-100 shadow-lg rounded-lg mt-1 max-h-60 overflow-auto">
           {filteredCourses.map((course) => (
-            <li key={course.code} onClick={() => handleSelectCourse(course)}>
-              {course.dept} {course.code} - {course.name}
+            <li key={course.code} className="p-2 border-b hover:bg-gray-100">
+              <button
+                className="w-full text-left"
+                onClick={() => handleSelectCourse(course)}
+              >
+                {course.dept} | {course.code}
+                <br />
+                {course.name}
+              </button>
             </li>
           ))}
+          {input.length >= 4 && (
+            <li className="p-2 hover:bg-gray-100">
+              <button
+                className="w-full text-left"
+                onClick={() => navigate(`/explore/${input}`)}
+              >
+                Explore all courses with "{input}"
+              </button>
+            </li>
+          )}
         </ul>
-      ) : (
-        input && <div>No matches found for "{input}".</div>
       )}
     </div>
   );
