@@ -11,7 +11,7 @@ const Footer = () => {
                 <a className="link link-hover">Course Matcher</a>
             </nav>
             <nav>
-                <h6 className="footer-title">YU-Sync Team</h6>
+                <h6 className="footer-title">YU Sync Team</h6>
                 <a className="link link-hover"><Link to='/about'>About us</Link></a>
                 <a className="link link-hover">Contact</a>
                 <a className="link link-hover">Error report</a>
