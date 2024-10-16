@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import FilterCard from '../components/filtercard';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import ExploreNavBar from '../components/explore_navbar';
+import BreadCrumbs from '../components/breadcrumbs';
 
 interface Course {
     dept: string;
@@ -90,47 +92,51 @@ const SubPageExplore: React.FC = () => {
     };
 
     return (
-        <div className="flex flex-col bg-neutral-100 min-h-screen">
-            <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
-                <div className="col-span-3 bg-neutral-100">
-                    <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Courses in {dept?.toUpperCase()}</h1>
+        <>
+            <ExploreNavBar />
+            <div className="flex flex-col bg-neutral-100 min-h-screen">
+                <BreadCrumbs />
+                <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
+                    <div className="col-span-3 bg-neutral-100">
+                        <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Courses in {dept?.toUpperCase()}</h1>
 
-                    {/* Course List */}
-                    <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-                        <thead className="bg-gray-200">
-                            <tr>
-                                <th className="px-4 py-2" onClick={() => handleSort('dept')}>Department</th>
-                                <th className="px-4 py-2" onClick={() => handleSort('code')}>Course Code</th>
-                                <th className="px-4 py-2" onClick={() => handleSort('credit')}>Credits</th>
-                                <th className="px-4 py-2" onClick={() => handleSort('name')}>Course Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {courses.map((course, index) => (
-                                <tr key={index} className="bg-gray-100">
-                                    <td className="border px-4 py-2 text-red-500">{course.dept}</td>
-                                    <td className="border px-4 py-2 text-red-500">{course.code}</td>
-                                    <td className={`py-2 px-4 ${getCreditColor(course.credit)}`}>
-                                        {course.credit !== undefined ? course.credit : '-'}
-                                    </td>
-                                    <td className="border px-4 py-2 text-black">{course.name}</td>
+                        {/* Course List */}
+                        <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+                            <thead className="bg-gray-200">
+                                <tr>
+                                    <th className="px-4 py-2" onClick={() => handleSort('dept')}>Department</th>
+                                    <th className="px-4 py-2" onClick={() => handleSort('code')}>Course Code</th>
+                                    <th className="px-4 py-2" onClick={() => handleSort('credit')}>Credits</th>
+                                    <th className="px-4 py-2" onClick={() => handleSort('name')}>Course Name</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
+                            </thead>
+                            <tbody>
+                                {courses.map((course, index) => (
+                                    <tr key={index} className="bg-gray-100">
+                                        <td className="border px-4 py-2 text-red-500">{course.dept}</td>
+                                        <td className="border px-4 py-2 text-red-500">{course.code}</td>
+                                        <td className={`py-2 px-4 ${getCreditColor(course.credit)}`}>
+                                            {course.credit !== undefined ? course.credit : '-'}
+                                        </td>
+                                        <td className="border px-4 py-2 text-black">{course.name}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
 
-                {/* Filter Card on the right */}
-                <div className="col-span-1">
-                    <FilterCard
-                        minRating={minRating}
-                        maxDifficulty={maxDifficulty}
-                        setMinRating={setMinRating}
-                        setMaxDifficulty={setMaxDifficulty}
-                    />
+                    {/* Filter Card on the right */}
+                    <div className="col-span-1">
+                        <FilterCard
+                            minRating={minRating}
+                            maxDifficulty={maxDifficulty}
+                            setMinRating={setMinRating}
+                            setMaxDifficulty={setMaxDifficulty}
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -7,7 +7,7 @@ interface Course {
   name: string;
 }
 
-const SearchBar: React.FC = () => {
+const HomeSearchBar: React.FC = () => {
   const [input, setInput] = useState<string>('');
   const [coursesData, setCoursesData] = useState<Course[]>([]);
   const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
@@ -72,7 +72,7 @@ const SearchBar: React.FC = () => {
       <div className="flex items-center gap-2 border-b-2 p-2 bg-transparent">
         <input
           type="text"
-          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-white focus:outline-none focus:border-transparent"
+          className="flex-grow px-2 py-1 text-lg bg-transparent text-black placeholder-black focus:border-transparent"
           placeholder="Search"
           value={input}
           onChange={handleChange}
@@ -81,7 +81,7 @@ const SearchBar: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="h-6 w-6 text-white"
+          className="h-6 w-6 text-black"
         >
           <path
             fillRule="evenodd"
@@ -117,4 +117,4 @@ const SearchBar: React.FC = () => {
   );
 };
 
-export default SearchBar;
+export default HomeSearchBar;
