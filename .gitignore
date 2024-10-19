@@ -28,4 +28,6 @@ backend/settings.py
 *.sln
 *.sw?
 backend/coursedata/migrations/*
-gi!backend/coursedata/migrations/*.py
+!backend/coursedata/migrations/*.py
+**/__pycache__/
+**/settings.py

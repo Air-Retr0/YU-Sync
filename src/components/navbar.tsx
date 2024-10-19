@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SignInCard from './signincard';
 
 const Navbar = () => {
     return (
@@ -52,6 +53,7 @@ const Navbar = () => {
                     <span className="badge badge-xs badge-primary indicator-item"></span>
                 </div>
             </button>
+            <SignInCard />
         </div>
     );
 };
