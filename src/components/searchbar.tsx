@@ -45,7 +45,7 @@ const SearchBar: React.FC = () => {
           course.dept.toLowerCase().includes(input.toLowerCase()) ||
           course.code.toLowerCase().includes(input.toLowerCase())
       );
-      setFilteredCourses(filtered.slice(0, 4)); // Limit results
+      setFilteredCourses(filtered.slice(0, 5));
     } else {
       setFilteredCourses([]);
     }
@@ -60,7 +60,7 @@ const SearchBar: React.FC = () => {
   };
 
   if (loading) {
-    return <div><span><span className="loading loading-dots loading-sm"></span></span></div>;
+    return <div><span className="loading loading-dots loading-sm"></span></div>;
   }
 
   if (error) {
@@ -69,10 +69,10 @@ const SearchBar: React.FC = () => {
 
   return (
     <div className="relative">
-      <div className="flex items-center gap-2 border-b-2 p-2 bg-transparent">
+      <label className="input input-bordered flex items-center gap-2">
         <input
           type="text"
-          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-white focus:outline-none focus:border-transparent"
+          className="grow"
           placeholder="Search"
           value={input}
           onChange={handleChange}
@@ -81,7 +81,7 @@ const SearchBar: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="h-6 w-6 text-white"
+          className="h-4 w-4 opacity-70"
         >
           <path
             fillRule="evenodd"
@@ -89,28 +89,32 @@ const SearchBar: React.FC = () => {
             clipRule="evenodd"
           />
         </svg>
-      </div>
+      </label>
 
       {filteredCourses.length > 0 && (
-        <ul className="absolute top-full left-0 w-full border bg-white shadow-lg rounded-lg mt-1 p-2 max-h-96 overflow-visible">
+        <ul className="absolute top-full left-0 z-10 w-full bg-base-100 shadow-lg rounded-lg mt-1 max-h-60 overflow-auto">
           {filteredCourses.map((course) => (
             <li key={course.code} className="p-2 border-b hover:bg-gray-100">
               <button
-                className="w-full text-left text-black"
+                className="w-full text-left"
                 onClick={() => handleSelectCourse(course)}
               >
-                <span className="font-bold text-red-500">{course.dept.toUpperCase()} {course.code}</span> — {course.name}
+                {course.dept} | {course.code}
+                <br />
+                {course.name}
               </button>
             </li>
           ))}
-          <li className="p-2 hover:bg-gray-100">
-            <button
-              className="w-full text-left text-red-500 font-medium"
-              onClick={() => navigate(`/explore/${input.toLowerCase()}`)}
-            >
-              Explore all courses with "{input}"
-            </button>
-          </li>
+          {input.length >= 4 && (
+            <li className="p-2 hover:bg-gray-100">
+              <button
+                className="w-full text-left"
+                onClick={() => navigate(`/explore/${input}`)}
+              >
+                Explore all courses with "{input}"
+              </button>
+            </li>
+          )}
         </ul>
       )}
     </div>

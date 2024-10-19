@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import FilterCard from '../components/filtercard';
 import ExploreNavBar from '../components/explore_navbar';
 import CourseList from '../components/courselist';
-import BreadCrumbs from '../components/breadcrumbs';
 
 interface Course {
     dept: string;
@@ -12,7 +11,7 @@ interface Course {
     difficulty?: number;
     avgGrade?: number;
     enjoyed?: number;
-    credit: number;
+    credit: number; // Added credit property
 }
 
 const Explore: React.FC = () => {
@@ -51,7 +50,6 @@ const Explore: React.FC = () => {
     return (
         <div className="flex flex-col bg-neutral-100 min-h-screen">
             <ExploreNavBar />
-            <BreadCrumbs />
             <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
                 {/* Courses Table */}
                 <div className="col-span-3 bg-neutral-100">

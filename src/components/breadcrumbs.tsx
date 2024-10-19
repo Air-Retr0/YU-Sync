@@ -1,33 +1,24 @@
 import { Link, useLocation } from "react-router-dom";
 
 const BreadCrumbs = () => {
-  const location = useLocation(); // finds current path location
+  const location = useLocation();  // finds current path location
   const pathnames = location.pathname.split("/").filter((x) => x); // splits path into chunks  
 
-  const capitalizeFirstLetter = (string: string) => {
-    if (!string) return '';
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  };
-
   return (
-    <div className="breadcrumbs text-sm bg-transparent text-black">
+    <div className="breadcrumbs text-sm">
       <ul>
         <li>
-          <Link to="/" className="hover:underline">Home</Link>
+          <Link to="/">Home</Link>  {/* default case*/}
         </li>
-        {
-          pathnames.map((value, index) => {
-            const to = `/${pathnames.slice(0, index + 1).join("/")}`; // create the breadcrumb path
+        {pathnames.map((value, index) => {
+          const to = `/${pathnames.slice(0, index + 1).join("/")}`; // create the breadcrumb path
 
-            return (
-              <li key={to}>
-                <Link to={to} className="hover:underline">
-                  {capitalizeFirstLetter(value)}
-                </Link>
-              </li>
-            );
-          })
-        }
+          return (
+            <li key={to}>
+              <Link to={to}>{value}</Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

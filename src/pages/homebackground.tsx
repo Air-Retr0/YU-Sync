@@ -1,17 +1,15 @@
 import Navbar from "../components/navbar";
 import SignInCard from "../components/signincard";
-import HomeSearchBar from "../components/home_searchbar";
+import SearchBar from "../components/searchbar";
 
 function Homebackground() {
     return (
         <>
             <Navbar />
-            <div className="hero bg-white min-h-screen flex items-center justify-center space-x-10">
-                <HomeSearchBar />
-                <div className="flex items-start justify-start">
-                    <SignInCard />
-                </div>
-            </div >
+            <div className="hero bg-white min-h-screen flex items-center justify-center">
+                <SearchBar />
+                <SignInCard />
+            </div>
         </>
     );
 }

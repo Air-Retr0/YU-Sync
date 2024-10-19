@@ -7,7 +7,6 @@ import Privacy from './pages/privacy';
 import Cookies from './pages/cookies';
 import SubPageExplore from './pages/subpagedept';
 import CourseSubPage from './pages/subpagecourses';
-import SignUp from './components/signup';
 
 const AppRoutes = () => {
     return (
@@ -21,7 +20,6 @@ const AppRoutes = () => {
                 <Route path='/cookies' element={<Cookies />} />
                 <Route path='/explore/:dept' element={<SubPageExplore />} />
                 <Route path='/explore/:dept/:code' element={<CourseSubPage />} />
-                <Route path='/signup' element={<SignUp />} />
                 <Route path="*" element={<Navigate to="/lost" />} />
             </Routes>
         </Router>
