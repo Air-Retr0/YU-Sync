@@ -4,7 +4,7 @@ import Lost from './pages/lost';
 import About from './pages/about';
 import Privacy from './pages/privacy';
 import SubPageExplore from './pages/subpagedept';
-import CourseSubPage from './pages/coursepage/subpagecourses';
+import CourseSubPage from './pages/subpagecourses';
 import UserSignUp from './pages/signup';
 import UserSignIn from './pages/signin';
 

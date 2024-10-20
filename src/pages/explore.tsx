@@ -3,7 +3,6 @@ import FilterCard from '../components/filtercard';
 import ExploreNavBar from '../components/explore_navbar';
 import CourseList from '../components/courselist';
 
-
 interface Course {
     dept: string;
     code: string;
@@ -12,7 +11,7 @@ interface Course {
     difficulty?: number;
     avgGrade?: number;
     enjoyed?: number;
-    credit: number;
+    credit: number; // Added credit property
 }
 
 const Explore: React.FC = () => {

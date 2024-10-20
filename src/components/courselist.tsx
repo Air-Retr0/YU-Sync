@@ -60,13 +60,13 @@ const CourseList: React.FC<CourseListProps> = ({
 
     const getCreditColor = (credit: number) => {
         if (credit <= 2) {
-            return 'className=badge badge-outline badge-success';
-        } else if (credit == 3) {
-            return 'className=badge badge-outline badge-primary';
+            return 'text-red-500';
+        } else if (credit === 3) {
+            return 'text-blue-500';
         } else if (credit >= 6) {
-            return 'className=badge  badge-outline badge-error';
+            return 'text-purple-500';
         }
-        return "-";
+        return 'text-black';
     };
 
     return (
@@ -94,10 +94,8 @@ const CourseList: React.FC<CourseListProps> = ({
                                     <Link to={`/explore/${course.prefix.toLowerCase()}`}>{course.prefix}</Link>
                                 </td>
                                 <td className="py-2 px-4 text-black">{course.name}</td>
-                                <td className="py-2 px-4">
-                                    <span className={`data-theme=sunset badge ${getCreditColor(course.credit)}`}>
-                                        {course.credit !== undefined ? course.credit : '-'}
-                                    </span>
+                                <td className={`py-2 px-4 ${getCreditColor(course.credit)}`}>
+                                    {course.credit !== undefined ? course.credit : '-'}
                                 </td>
                                 <td className="py-2 px-4">{course.ratings !== undefined ? course.ratings : '-'}</td>
                                 <td className="py-2 px-4">{course.difficulty !== undefined ? course.difficulty : '-'}</td>

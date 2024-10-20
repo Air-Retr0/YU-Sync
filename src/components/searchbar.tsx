@@ -1,6 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 interface Course {
   dept: string;
   code: string;
@@ -39,28 +38,25 @@ const SearchBar: React.FC = () => {
 
   useEffect(() => {
     if (input.length >= 4) {
-      const filtered = coursesData.filter((course) =>
-        course.dept.toLowerCase().includes(input.toLowerCase()) ||
-        course.code.toString().includes(input)
+      const filtered = coursesData.filter(
+        (course) =>
+          course.dept.toLowerCase().includes(input.toLowerCase()) ||
+          course.code.toLowerCase().includes(input.toLowerCase())
       );
-      setFilteredCourses(filtered.slice(0, 4));
+      setFilteredCourses(filtered.slice(0, 4)); // Limit results
     } else {
       setFilteredCourses([]);
     }
   }, [input, coursesData]);
-
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
-
   const handleSelectCourse = (course: Course) => {
     navigate(`/courses/${course.dept}/${course.code}`);
   };
-
   if (loading) {
     return <div><span><span className="loading loading-dots loading-sm"></span></span></div>;
   }
-
   if (error) {
     return <div>Error: {error}</div>;
   }
@@ -70,7 +66,7 @@ const SearchBar: React.FC = () => {
       <div className="flex items-center gap-2 border-b-2 border-white p-2 bg-transparent">
         <input
           type="text"
-          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-white focus:border-transparent"
+          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-red-500 focus:border-transparent"
           placeholder="Search"
           value={input}
           onChange={handleChange}
@@ -113,5 +109,4 @@ const SearchBar: React.FC = () => {
     </div>
   );
 };
-
 export default SearchBar;

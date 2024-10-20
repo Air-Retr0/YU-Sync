@@ -46,7 +46,7 @@ class SubPageCourseDept(generics.ListAPIView):
 
     def list(self, request, *args, **kwargs):
         queryset = self.get_queryset()
-        serializer = CourseSerializer(queryset, many=True)  
+        serializer = CourseSerializer(queryset, many=True)  # Add many=True here
         return JsonResponse(serializer.data, safe=False)
 
 
