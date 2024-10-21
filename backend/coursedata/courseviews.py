@@ -5,6 +5,7 @@ from coursedata.models import Course
 from backend.serializers import CourseSerializer
 from django.shortcuts import get_object_or_404
 from rest_framework import generics
+from accounts.models import UserReview
 
 class CourseListView(View):
     def get(self, request):
@@ -58,3 +59,8 @@ class SubPageCourseDetails(generics.RetrieveAPIView):
         dept = self.kwargs['dept']
         code = self.kwargs['code']
         return get_object_or_404(queryset, dept=dept, code=code)
+    
+    def display_review(review_id):
+        review = UserReview.objects.get(id=review_id)
+        user = review.clerk_user
+        return f"Review by {user.display_name or user.first_name} on {review.course}"
