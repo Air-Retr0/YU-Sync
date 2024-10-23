@@ -11,7 +11,7 @@ interface Course {
     difficulty?: number;
     avgGrade?: number;
     enjoyed?: number;
-    credit: number; // Added credit property
+    credit: number;
 }
 
 const Explore: React.FC = () => {

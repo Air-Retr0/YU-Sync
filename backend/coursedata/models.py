@@ -10,3 +10,6 @@ class Course(models.Model):
 
     def __str__(self):
         return f"{self.dept} {self.code} - {self.name}"
+    
+    def average_score(self):
+        return self.userreview_set.aggregate(Avg('rating'))['rating__avg']
