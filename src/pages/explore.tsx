@@ -55,7 +55,6 @@ const Explore: React.FC = () => {
                 <div className="col-span-3 bg-neutral-100">
                     <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Courses</h1>
 
-                    {/* Course List */}
                     <CourseList
                         courses={courses.map(course => ({
                             ...course,
@@ -69,7 +68,6 @@ const Explore: React.FC = () => {
                     />
                 </div>
 
-                {/* Filter Card on the right */}
                 <div className="col-span-1">
                     <FilterCard
                         minRating={minRating}

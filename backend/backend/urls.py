@@ -16,13 +16,10 @@ Including another URLconf
 """
 from django.urls import path
 from coursedata.courseviews import CourseListView, SubPageCourseDept, SubPageCourseDetails
-from accounts.views import clerk_webhook
 
 urlpatterns = [
     path('api/courses/', CourseListView.as_view(), name='course-list'),
     path('api/courses/<str:dept>/', SubPageCourseDept.as_view(), name='course-dept'),
     path('api/courses/<str:dept>/<str:code>/', SubPageCourseDetails.as_view(), name='course-details'),
-    path('api/clerk/webhook/', clerk_webhook, name='clerk-webhook'),
-    path('api/clerk/webhook', clerk_webhook,),
 ]
 

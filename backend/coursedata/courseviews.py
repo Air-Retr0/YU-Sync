@@ -5,7 +5,6 @@ from coursedata.models import Course
 from backend.serializers import CourseSerializer
 from django.shortcuts import get_object_or_404
 from rest_framework import generics
-from accounts.models import UserReview
 
 class CourseListView(View):
     def get(self, request):
