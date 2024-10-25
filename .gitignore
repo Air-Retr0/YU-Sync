@@ -27,7 +27,6 @@ backend/settings.py
 *.njsproj
 *.sln
 *.sw?
-backend/coursedata/migrations/*
-!backend/coursedata/migrations/*.py
+**/migrations
 **/__pycache__/
 **/settings.py

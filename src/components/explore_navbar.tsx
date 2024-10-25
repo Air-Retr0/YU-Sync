@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import SearchBar from './searchbar';
-import SignInCard from './signincard';
 
 const ExploreNavBar = () => {
     return (
@@ -103,7 +102,6 @@ const ExploreNavBar = () => {
                         </svg>
                     </label>
                 </ul>
-                <SignInCard />
             </div>
         </nav>
     );

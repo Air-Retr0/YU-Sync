@@ -1,25 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import App from './page.tsx'
 import './index.css'
-import { ClerkProvider } from '@clerk/clerk-react'
-import { neobrutalism } from '@clerk/themes'
+import { createRoot } from 'react-dom/client'
 
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
-if (!PUBLISHABLE_KEY) {
-  throw new Error("Missing Publishable Key")
-}
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ClerkProvider
-      publishableKey={PUBLISHABLE_KEY}
-      afterSignOutUrl="/"
-      appearance={{
-        baseTheme: neobrutalism,
-      }}>
-      <App />
-    </ClerkProvider>
-  </React.StrictMode>,
+    <App />
+  </React.StrictMode>
 )

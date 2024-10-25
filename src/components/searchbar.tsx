@@ -63,10 +63,10 @@ const SearchBar: React.FC = () => {
 
   return (
     <div className="relative">
-      <div className="flex items-center gap-2 border-b-2 border-white p-2 bg-transparent">
+      <div className="flex items-center gap-2 border-b-2 border-red-500 p-2 bg-transparent">
         <input
           type="text"
-          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-white focus:border-transparent"
+          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-red-500 focus:border-transparent"
           placeholder="Search"
           value={input}
           onChange={handleChange}

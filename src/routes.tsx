@@ -5,15 +5,13 @@ import About from './pages/about';
 import Privacy from './pages/privacy';
 import SubPageExplore from './pages/subpagedept';
 import CourseSubPage from './pages/subpagecourses';
-import UserSignUp from './pages/signup';
-import UserSignIn from './pages/signin';
+import Homebackground from './pages/homebackground';
 
 const AppRoutes = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<UserSignUp />} />
-                <Route path='/signin' element={<UserSignIn />} />
+                <Route path="/" element={<Homebackground />} />
                 <Route path='/explore' element={<Explore />} />
                 <Route path='/lost' element={<Lost />} />
                 <Route path='/about' element={<About />} />

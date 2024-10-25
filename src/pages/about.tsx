@@ -18,11 +18,9 @@ const About = () => {
                 <div className="timeline-start mb-10 md:text-end">
                     <time className="font-mono italic">September 19th, 2024</time>
                     <div className="text-lg font-black">
-                        Ideal
+                        Filler
                     </div>
-                    YU Sync was never intended to end up the way it was. In fact, it's original purpose was to allow YorkU students to find courses using descriptive words, and display them with corresponding PDF's, because the creator
-                    (that mighttt just be me) has a chronic Reddit doomscrolling addiction and got annoyed of the amount of "GIMME BOOK" posts. It was quite saddening to know that someone else had taken my amazing, fabulous idea. But it was
-                    through that sadness that I found the concept of "YU Sync", an all in one display for YorkU students.
+
                 </div>
                 <hr />
             </li>
@@ -42,8 +40,7 @@ const About = () => {
                 </div>
                 <div className="timeline-end mb-10">
                     <time className="font-mono italic">September 27th, 2024</time>
-                    <div className="text-lg font-black">Recruiting?</div>
-                    From here my friends grouped up to help me.. something I'll fill in later
+                    <div className="text-lg font-black">Filler?</div>
                 </div>
                 <hr />
             </li>

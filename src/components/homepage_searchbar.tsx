@@ -66,7 +66,7 @@ const HomeSearchBar: React.FC = () => {
       <div className="flex items-center gap-2 border-b-2 p-2 bg-transparent">
         <input
           type="text"
-          className="flex-grow px-2 py-1 text-lg bg-transparent text-black placeholder-black focus:border-transparent"
+          className="flex-grow px-2 py-1 text-lg bg-transparent text-red-500 placeholder-red-500 focus:border-transparent"
           placeholder="Search"
           value={input}
           onChange={handleChange}
@@ -75,7 +75,7 @@ const HomeSearchBar: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="h-6 w-6 text-black"
+          className="h-6 w-6 text-red-500"
         >
           <path
             fillRule="evenodd"
