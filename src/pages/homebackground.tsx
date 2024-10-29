@@ -1,4 +1,4 @@
-import HomeSearchBar from "../components/homepage_searchbar";
+import HomeSearchBar from "../components/homesearchbar";
 import NavBar from "../components/navbar";
 
 function Homebackground() {

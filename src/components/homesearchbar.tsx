@@ -1,5 +1,7 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
+import callAPI from '../utils/apicall';
+
 interface Course {
   dept: string;
   code: string;
@@ -16,12 +18,12 @@ const HomeSearchBar: React.FC = () => {
 
   useEffect(() => {
     const fetchCourses = async () => {
-      try {
-        const response = await fetch('http://127.0.0.1:8000/api/courses');
-        if (!response.ok) {
-          throw new Error('Failed to fetch courses data');
+      try { // do NOT touch this try-catch block, it will suck, badly.
+        const response = await callAPI.from('courses').select('dept, code, name');
+        if (response.error) {
+          throw response.error;
         }
-        const data: Course[] = await response.json();
+        const data: Course[] = response.data;
         setCoursesData(data);
         setLoading(false);
       } catch (error: unknown) {
@@ -43,7 +45,7 @@ const HomeSearchBar: React.FC = () => {
           course.dept.toLowerCase().includes(input.toLowerCase()) ||
           course.code.toLowerCase().includes(input.toLowerCase())
       );
-      setFilteredCourses(filtered.slice(0, 4)); // Limit results
+      setFilteredCourses(filtered.slice(0, 4)); // Limit results, 4 looks good enough
     } else {
       setFilteredCourses([]);
     }
@@ -63,7 +65,7 @@ const HomeSearchBar: React.FC = () => {
 
   return (
     <div className="relative">
-      <div className="flex items-center gap-2 border-b-2 p-2 bg-transparent">
+      <div className="flex items-center gap-2 border-b-2 border-red-500 p-2 bg-transparent">
         <input
           type="text"
           className="flex-grow px-2 py-1 text-lg bg-transparent text-red-500 placeholder-red-500 focus:border-transparent"
@@ -75,7 +77,7 @@ const HomeSearchBar: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="h-6 w-6 text-red-500"
+          className="h-6 w-6 text-white"
         >
           <path
             fillRule="evenodd"

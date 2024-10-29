@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
-import ExploreNavBar from '../components/explore_navbar';
+import NavBar from '../components/navbar';
 import BreadCrumbs from '../components/breadcrumbs';
+import callAPI from '../utils/apicall';
 
 interface SubPageCourseDetails {
     dept: string;
@@ -19,8 +19,15 @@ function CourseSubPage() {
     useEffect(() => {
         const fetchCourseData = async () => {
             try {
-                const response = await axios.get<SubPageCourseDetails>(`/api/courses/${dept}/${code}/`);
-                setCourseData(response.data);
+                const response = await callAPI.from(`courses`).select(`*`).eq('dept', dept).eq('code', code);
+                if (response.error) {
+                    console.error("Error fetching course data:", response.error);
+                } else if (response.data.length > 0) {
+                    setCourseData(response.data[0]);
+
+                } else {
+                    console.error("Course not found");
+                }
             } catch (error) {
                 console.error("Error fetching course data:", error);
             }
@@ -33,7 +40,7 @@ function CourseSubPage() {
 
     return (
         <>
-            <ExploreNavBar />
+            <NavBar />
             <BreadCrumbs />
             <div className='hero bg-white min-h-screen'>
                 <div className='p-9'>
@@ -50,6 +57,8 @@ function CourseSubPage() {
                         <p className="text-gray-700 text-base leading-relaxed">{courseData.desc}</p>
                     </section >
                 </div>
+
+                { /* 
                 <section>
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">User Reviews</h2>
                     <div className="space-y-6">
@@ -85,6 +94,7 @@ function CourseSubPage() {
                         </div>
                     </div>
                 </section>
+                */}
             </div >
         </>
     );

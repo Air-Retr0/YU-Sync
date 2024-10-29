@@ -1,5 +1,7 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
+import callAPI from '../utils/apicall';
+
 interface Course {
   dept: string;
   code: string;
@@ -17,11 +19,11 @@ const SearchBar: React.FC = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/courses');
-        if (!response.ok) {
-          throw new Error('Failed to fetch courses data');
+        const response = await callAPI.from('courses').select('dept, code, name');
+        if (response.error) {
+          throw response.error;
         }
-        const data: Course[] = await response.json();
+        const data: Course[] = response.data;
         setCoursesData(data);
         setLoading(false);
       } catch (error: unknown) {
@@ -43,17 +45,20 @@ const SearchBar: React.FC = () => {
           course.dept.toLowerCase().includes(input.toLowerCase()) ||
           course.code.toLowerCase().includes(input.toLowerCase())
       );
-      setFilteredCourses(filtered.slice(0, 4)); // Limit results
+      setFilteredCourses(filtered.slice(0, 4));
     } else {
       setFilteredCourses([]);
     }
   }, [input, coursesData]);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
+
   const handleSelectCourse = (course: Course) => {
-    navigate(`/courses/${course.dept}/${course.code}`);
+    navigate(`/explore/${course.dept.toLowerCase()}/${course.code}`);
   };
+
   if (loading) {
     return <div><span><span className="loading loading-dots loading-sm"></span></span></div>;
   }
@@ -63,10 +68,10 @@ const SearchBar: React.FC = () => {
 
   return (
     <div className="relative">
-      <div className="flex items-center gap-2 border-b-2 border-red-500 p-2 bg-transparent">
+      <div className="flex items-center gap-2 border-b-2 border-white p-2 bg-transparent">
         <input
           type="text"
-          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-red-500 focus:border-transparent"
+          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-white focus:border-transparent"
           placeholder="Search"
           value={input}
           onChange={handleChange}
@@ -109,4 +114,5 @@ const SearchBar: React.FC = () => {
     </div>
   );
 };
+
 export default SearchBar;

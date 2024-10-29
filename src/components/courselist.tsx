@@ -1,6 +1,4 @@
-// Do not touch anything related to pagination, cuz this mf will get slowwwwwwwwwwwww
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface Course {
@@ -23,8 +21,6 @@ interface CourseListProps {
     handleSort: (criteria: string) => void;
 }
 
-const PAGE_SIZE = 73; // evenly divides into total course amt
-
 const CourseList: React.FC<CourseListProps> = ({
     courses = [],
     minRating,
@@ -33,10 +29,6 @@ const CourseList: React.FC<CourseListProps> = ({
     sortOrder,
     handleSort
 }) => {
-    const [displayedCourses, setDisplayedCourses] = useState<Course[]>([]);
-    const [page, setPage] = useState(1);
-    const [hasMore, setHasMore] = useState(true);
-
     const filteredCourses = courses.filter(course => {
         const ratingCondition = course.ratings === undefined || course.ratings >= minRating;
         const difficultyCondition = course.difficulty === undefined || course.difficulty <= maxDifficulty;
@@ -53,42 +45,6 @@ const CourseList: React.FC<CourseListProps> = ({
         return 0;
     });
 
-    useEffect(() => {
-        const loadMoreCourses = () => {
-            const startIndex = (page - 1) * PAGE_SIZE;
-            const nextCourses = sortedCourses.slice(startIndex, startIndex + PAGE_SIZE);
-
-            if (nextCourses.length > 0) {
-                setDisplayedCourses(prevCourses => [...prevCourses, ...nextCourses]);
-                if (startIndex + PAGE_SIZE >= filteredCourses.length) {
-                    setHasMore(false); // No more courses to load
-                }
-            } else {
-                setHasMore(false);
-            }
-        };
-
-        loadMoreCourses();
-    }, [page, sortedCourses, filteredCourses.length]);
-
-    // Handle scroll event to detect when to load more courses
-    useEffect(() => {
-        const handleScroll = () => {
-            if (
-                window.innerHeight + document.documentElement.scrollTop
-                >= document.documentElement.offsetHeight
-                && hasMore
-            ) {
-                setPage(prevPage => prevPage + 1);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [hasMore]);
-
     const getCreditColor = (credit: number) => {
         if (credit <= 2) {
             return 'text-red-500';
@@ -103,9 +59,9 @@ const CourseList: React.FC<CourseListProps> = ({
     return (
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="p-4 text-gray-700 font-bold">
-                Total Courses: {displayedCourses.length} / {filteredCourses.length}
+                Total Courses: {sortedCourses.length} / {filteredCourses.length} {/* If you wanna hard code it -> 5183 */}
             </div>
-            {displayedCourses.length > 0 ? (
+            {sortedCourses.length > 0 ? (
                 <table className="min-w-full">
                     <thead className="bg-gray-200">
                         <tr>
@@ -119,7 +75,7 @@ const CourseList: React.FC<CourseListProps> = ({
                         </tr>
                     </thead>
                     <tbody>
-                        {displayedCourses.map((course, index) => (
+                        {sortedCourses.map((course, index) => (
                             <tr key={index} className="border-b">
                                 <td className="py-2 px-6 text-red-600 flex items-center space-x-2">
                                     <Link to={`/explore/${course.dept.toLowerCase()}/${course.code.toLowerCase()}`}>
@@ -141,7 +97,6 @@ const CourseList: React.FC<CourseListProps> = ({
             ) : (
                 <p>No courses available.</p>
             )}
-            {!hasMore && <p>No more courses available.</p>}
         </div>
     );
 };

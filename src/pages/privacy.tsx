@@ -1,10 +1,10 @@
 import BreadCrumbs from "../components/breadcrumbs";
-import ExploreNavBar from "../components/explore_navbar"
+import NavBar from "../components/navbar";
 
 const Privacy = () => {
     return (
         <div>
-            <ExploreNavBar />
+            <NavBar />
             <BreadCrumbs />
             <div className="hero bg-white min-h-screen">
                 <div className="text-center hero-content">
@@ -13,7 +13,7 @@ const Privacy = () => {
                         <p className="mb-5">
                             The YU Sync team is dedicated to transparency and user privacy. This Privacy Policy will highlight how and what data the YU Sync site collects, uses,
                             and stores, user information; in relation to you, cookies, third-party entities, and non-identifiable personal information. By using services provided
-                            by our website, you agree to the terms and conditions outlined in the Policy, should you have general questions or concerns about any information in our Privacy Policy, please reach out to  <a className="link link-error">help@yusync.com</a></p>
+                            by our website, you agree to the terms and conditions outlined in the Policy, should you have general questions or concerns about any information in our Privacy Policy, please reach out to  <a className="link link-error">help@YU-Sync.com</a></p>
                         <h2 className="mb-5 text-3xl font-bold text-red-500">1. Information Collection</h2>
                         <p className="mb-5">
                             When you visit the site, information may be collected to improve your experience. This information may include your IP address. This information is collected to
@@ -40,7 +40,7 @@ const Privacy = () => {
                             account. This method is secure and does not share your password with YU Sync. The OAuth method is used to ensure that your account is secure and
                             that your information is not shared with any third-party entities. YU Sync does not share your information with any third-party entities, and we
                             do not sell your information to any third-party entities. If you have any questions or concerns about the security of your account,
-                            please reach out to <a className="link link-error">help@yusync.com</a>
+                            please reach out to <a className="link link-error">help@YU-Sync.com</a>
                         </p>
                         <h2 className="mb-5 text-2xl font-bold text-red-500">2. Information Usage</h2>
                         <p className="mb-5">
@@ -58,12 +58,12 @@ const Privacy = () => {
                                 <li>add more if needed</li>
                             </ul>
                         </p>
-                        <h2 className="mb-5 text-2xl font-bold text-red-500">3. User Security</h2>
+                        <h2 className="mb-5 text-2xl font-bold text-red-500">4. User Security</h2>
                         <p className="mb-5">
                             We at YU Sync take the security of your account seriously, and measures to prevent any loss, misuse, leakage, or otherwise unauthorized access
                             of data are implemented for protection. However, no web-based service is 100% secure, and as such, we cannot guarantee the
                             security of your information.</p>
-                        <h2 className="mb-5 text-2xl font-bold text-red-500">4. Third-Party's</h2>
+                        <h2 className="mb-5 text-2xl font-bold text-red-500">5. Third-Party's</h2>
                         <p className="mb-5">
                             YU Sync uses a variety of third-party services to improve the quality and usage of the site, we may share non-identifiable information with third-party
                             service providers. YU Sync's Privacy Policy does not apply to external software or services. We recommend you review the privacy policies of
