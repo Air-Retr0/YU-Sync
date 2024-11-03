@@ -1,1 +1,0 @@
-// once YU Sync is hosted, This file will hold simplfied versions of API Calls for different situations.

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FilterCard from '../components/filtercard';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import callAPI from '../utils/apicall';
 
 interface Course {
     dept: string;
@@ -29,12 +29,12 @@ const SubPageExplore: React.FC = () => {
         const fetchCourses = async () => {
             if (!dept) return;
             try {
-                const response = await axios.get<Course[]>(`http://127.0.0.1:8000/api/courses/${dept}/`);
-                const updatedCourses = response.data.map(course => ({
+                const response = await callAPI.from(`courses`).select(`*`).eq('dept', dept);
+                const updatedCourses = Array.isArray(response.data) ? response.data.map(course => ({
                     ...course,
                     prefix: `${course.dept} ${course.code}`,
                     dept: course.dept.toUpperCase()
-                }));
+                })) : [];
                 setCourses(updatedCourses);
             } catch (error) {
                 console.error('Error fetching courses:', error);

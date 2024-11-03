@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SearchBar from './searchbar';
+import ButtonMailto from '../utils/email';
 
 const NavBar = () => {
   return (
@@ -21,22 +22,20 @@ const NavBar = () => {
             </svg>
           </div>
           <ul className="menu menu-sm dropdown-content absolute bg-red-500 rounded-box z-[1] mt-3 w-52 p-2 text-black">
-            <li className='text-xl text-white'>Services</li>
-            <li><Link className='text-white' to='/explore'>Explore Courses</Link></li>
-            <li className='text-white'>Elective Matcher (TBD)</li>
-            <li className='text-xl text-white'>Information</li>
-            <li><Link className='text-white' to='/privacy'>Privacy Policy</Link></li>
-            <li><Link className='text-white' to='/about'>About</Link></li>
-            <div className='tooltip' data-tip="help@YU-Sync.com">
-              <li><a className='text-white btn btn-sm btn-outline bg-red-500'>Contact Us</a></li>
-            </div>
+            <li className='text-xl text-white mb-2'>Services</li>
+            <li><Link className='text-white mb-2' to='/explore'>Explore Courses</Link></li>
+            <li><Link className='text-white mb-2' to='/explore'>Elective Finder (TBR)</Link></li>
+            <li className='text-xl text-white mb-2'>Information</li>
+            <li><Link className='text-white mb-2' to='/privacy'>Privacy Policy</Link></li>
+            <li><Link className='text-white mb-2' to='/about'>About</Link></li>
+            <ButtonMailto mailto="help@YU-Sync.com" label="Contact Us" />
           </ul>
         </div>
 
         <div className="text-2xl font-bold">
           <Link to="/" className="text-white">YU Sync</Link>
         </div>
-      </div>
+      </div >
 
       <div className="flex items-center justify-center flex-grow">
         <SearchBar />
@@ -83,7 +82,7 @@ const NavBar = () => {
           </label>
         </ul>
       </div>
-    </nav>
+    </nav >
   );
 };
 
