@@ -77,7 +77,7 @@ const Explore: React.FC = () => {
                         setMaxDifficulty={setMaxDifficulty}
                     />
                 </div>
-            </div> {/* I have no clue how make this stretch across all pages cuz I ain't copy pasting all that */}
+            </div>
             <div className="join flex items-center justify-center">
                 <input
                     className="join-item btn btn-square bg-white"

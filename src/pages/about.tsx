@@ -1,7 +1,11 @@
+import BreadCrumbs from "../components/breadcrumbs";
+import NavBar from "../components/navbar";
 
 const About = () => {
     return (
         <>
+            <NavBar />
+            <BreadCrumbs />
             <div className="hero min-h-screen bg-white">
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li>

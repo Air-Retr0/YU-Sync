@@ -5,7 +5,7 @@ const BreadCrumbs = () => {
   const pathnames = location.pathname.split("/").filter((x) => x); // splits path into chunks  
 
   return (
-    <div className="breadcrumbs text-sm">
+    <div className="breadcrumbs text-sm text-white bg-red-600">
       <ul>
         <li>
           <Link to="/">Home</Link>  {/* default case*/}

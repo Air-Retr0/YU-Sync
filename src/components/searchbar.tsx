@@ -2,6 +2,8 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import callAPI from '../utils/apicall';
 
+// imagine the google search bar, it must be impossible giving how simple the end result of this is.
+
 interface Course {
   dept: string;
   code: string;

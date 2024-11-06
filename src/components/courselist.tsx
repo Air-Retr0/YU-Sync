@@ -57,46 +57,41 @@ const CourseList: React.FC<CourseListProps> = ({
     };
 
     return (
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <div className="p-4 text-gray-700 font-bold">
-                Total Courses: {sortedCourses.length} / {filteredCourses.length} {/* If you wanna hard code it -> 5183 */}
-            </div>
-            {sortedCourses.length > 0 ? (
-                <table className="min-w-full">
-                    <thead className="bg-gray-200">
-                        <tr>
-                            <th onClick={() => handleSort('dept')} className="py-2 px-4 text-left cursor-pointer text-red-600">Prefix</th>
-                            <th onClick={() => handleSort('name')} className="py-2 px-4 text-left cursor-pointer text-red-600">Name</th>
-                            <th onClick={() => handleSort('credit')} className="py-2 px-4 text-left cursor-pointer text-red-600">Credits</th>
-                            <th onClick={() => handleSort('ratings')} className="py-2 px-4 text-left cursor-pointer text-red-600">Rating</th>
-                            <th onClick={() => handleSort('difficulty')} className="py-2 px-4 text-left cursor-pointer text-red-600">Difficulty</th>
-                            <th onClick={() => handleSort('avgGrade')} className="py-2 px-4 text-left cursor-pointer text-red-600">Grade</th>
-                            <th onClick={() => handleSort('enjoyed')} className="py-2 px-4 text-left cursor-pointer text-red-600">Enjoyed</th>
+        <div className="overflow-x-auto bg-white shadow-md rounded-lg">
+            <table className="table table-lg min-w-full">
+                <thead className="bg-gray-200 text-red-500">
+                    <tr>
+                        <th></th>
+                        <th onClick={() => handleSort('dept')} className="py-2 px-4 cursor-pointer">Prefix</th>
+                        <th onClick={() => handleSort('name')} className="py-2 px-4 cursor-pointer">Name</th>
+                        <th onClick={() => handleSort('credit')} className="py-2 px-4 cursor-pointer">Credits</th>
+                        <th onClick={() => handleSort('ratings')} className="py-2 px-4 cursor-pointer">Rating</th>
+                        <th onClick={() => handleSort('difficulty')} className="py-2 px-4 cursor-pointer">Difficulty</th>
+                        <th onClick={() => handleSort('avgGrade')} className="py-2 px-4 cursor-pointer">Grade</th>
+                        <th onClick={() => handleSort('enjoyed')} className="py-2 px-4 cursor-pointer">Enjoyed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {sortedCourses.map((course, index) => (
+                        <tr key={index} className="border-b">
+                            <th>{index + 1}</th>
+                            <td className="py-2 px-4">
+                                <Link to={`/explore/${course.dept.toLowerCase()}/${course.code.toLowerCase()}`}>
+                                    <span className='text-red-500'>{course.dept.toUpperCase()}</span> <span className='text-red-700'>{course.code}</span>
+                                </Link>
+                            </td>
+                            <td className="py-2 px-4 text-black">{course.name}</td>
+                            <td className={`py-2 px-4 ${getCreditColor(course.credit)}`}>
+                                {course.credit !== undefined ? course.credit : '-'}
+                            </td>
+                            <td className="py-2 px-4">{course.ratings !== undefined ? course.ratings : '-'}</td>
+                            <td className="py-2 px-4">{course.difficulty !== undefined ? course.difficulty : '-'}</td>
+                            <td className="py-2 px-4">{course.avgGrade !== undefined ? course.avgGrade : '-'}</td>
+                            <td className="py-2 px-4">{course.enjoyed !== undefined ? course.enjoyed : '-'}</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        {sortedCourses.map((course, index) => (
-                            <tr key={index} className="border-b">
-                                <td className="py-2 px-6 text-red-600 flex items-center space-x-2">
-                                    <Link to={`/explore/${course.dept.toLowerCase()}/${course.code.toLowerCase()}`}>
-                                        <span>{course.dept.toUpperCase()}</span> <span>{course.code}</span>
-                                    </Link>
-                                </td>
-                                <td className="py-2 px-4 text-black">{course.name}</td>
-                                <td className={`py-2 px-4 ${getCreditColor(course.credit)}`}>
-                                    {course.credit !== undefined ? course.credit : '-'}
-                                </td>
-                                <td className="py-2 px-4">{course.ratings !== undefined ? course.ratings : '-'}</td>
-                                <td className="py-2 px-4">{course.difficulty !== undefined ? course.difficulty : '-'}</td>
-                                <td className="py-2 px-4">{course.avgGrade !== undefined ? course.avgGrade : '-'}</td>
-                                <td className="py-2 px-4">{course.enjoyed !== undefined ? course.enjoyed : '-'}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            ) : (
-                <p>No courses available.</p>
-            )}
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 };
