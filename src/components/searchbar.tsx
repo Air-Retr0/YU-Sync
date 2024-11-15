@@ -1,10 +1,10 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Fuse from 'fuse.js';
+import { debounce } from 'lodash';
 import callAPI from '../utils/apicall';
 
-// imagine the google search bar, it must be impossible giving how simple the end result of this is.
-
-interface Course {
+interface Course { // imagine what google search looks like lmao
   dept: string;
   code: string;
   name: string;
@@ -18,43 +18,42 @@ const SearchBar: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchCourses = async () => {
-      try {
-        const response = await callAPI.from('courses').select('dept, code, name');
-        if (response.error) {
-          throw response.error;
-        }
-        const data: Course[] = response.data;
-        setCoursesData(data);
-        setLoading(false);
-      } catch (error: unknown) {
-        if (error instanceof Error) {
-          setError(error.message);
-        } else {
-          setError('An unknown error occurred');
-        }
-        setLoading(false);
+  const fetchCourses = async () => {
+    try {
+      const response = await callAPI.from('courses').select('dept, code, name');
+      if (response.error) {
+        throw response.error;
       }
-    };
+      const data: Course[] = response.data;
+      setCoursesData(data);
+      setLoading(false);
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'An unknown error occurred');
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
     fetchCourses();
   }, []);
 
-  useEffect(() => {
-    if (input.length >= 4) {
-      const filtered = coursesData.filter(
-        (course) =>
-          course.dept.toLowerCase().includes(input.toLowerCase()) ||
-          course.code.toLowerCase().includes(input.toLowerCase())
-      );
-      setFilteredCourses(filtered.slice(0, 4));
+  const debouncedSearch = debounce((searchTerm: string) => {
+    if (searchTerm.length >= 4) {
+      const fuse = new Fuse(coursesData, {
+        keys: ['dept', 'code', 'name'],
+        threshold: 0.3,
+      });
+      const result = fuse.search(searchTerm).slice(0, 4).map((r) => r.item);
+      setFilteredCourses(result);
     } else {
       setFilteredCourses([]);
     }
-  }, [input, coursesData]);
+  }, 300);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setInput(e.target.value);
+    const value = e.target.value;
+    setInput(value);
+    debouncedSearch(value); // Trigger the debounced search
   };
 
   const handleSelectCourse = (course: Course) => {

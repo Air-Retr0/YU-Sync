@@ -4,7 +4,7 @@ import ButtonMailto from '../utils/email';
 
 const NavBar = () => {
   return (
-    <nav className="bg-red-600 p-4 flex items-center text-white">
+    <nav className="bg-red-600 p-4 flex items-center text-white sticky top-0 z-50">
       <div className="flex items-center space-x-4">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle text-white">
@@ -21,13 +21,13 @@ const NavBar = () => {
                 d="M4 6h16M4 12h16M4 18h7" />
             </svg>
           </div>
-          <ul className="menu menu-sm dropdown-content absolute bg-black rounded-box z-[1] mt-3 w-52 p-2 text-black">
-            <li className='text-xl text-white mb-2'>Services</li>
-            <li><Link className='text-white mb-2' to='/explore'>Explore Courses</Link></li>
-            <li><Link className='text-white mb-2' to='/explore'>Elective Finder (TBR)</Link></li>
-            <li className='text-xl text-white mb-2'>Information</li>
-            <li><Link className='text-white mb-2' to='/privacy'>Privacy Policy</Link></li>
-            <li><Link className='text-white mb-2' to='/about'>About</Link></li>
+          <ul className="menu menu-sm dropdown-content absolute text-white bg-red-500 rounded-box z-[1] mt-3 w-52 p-2">
+            <li className='text-xl mb-2'>Services</li>
+            <li><Link className='mb-2' to='/explore'>Explore Courses</Link></li>
+            <li><Link className='mb-2' to='/explore'>Elective Finder (TBR)</Link></li>
+            <li className='text-xl mb-2'>Information</li>
+            <li><Link className='mb-2' to='/privacy'>Privacy Policy</Link></li>
+            <li><Link className='mb-2' to='/about'>About</Link></li>
             <ButtonMailto mailto="help@YU-Sync.com" label="Contact Us" />
           </ul>
         </div>

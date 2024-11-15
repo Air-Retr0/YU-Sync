@@ -12,7 +12,7 @@ const TextAnimation = () => {
                 'Find it all here',
             ]}
             wrapper="span"
-            className="text-3xl inline-block bg-gradient-to-r text-red-500 bg-clip-text text-transparent"
+            className="text-3xl inline-block bg-gradient-to-r text-red-500 bg-clip"
             repeat={0}
         />
     );
