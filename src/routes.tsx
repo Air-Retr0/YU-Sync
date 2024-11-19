@@ -6,7 +6,7 @@ import Privacy from './pages/privacy';
 import SubPageExplore from './pages/subpagedept';
 import CourseSubPage from './pages/subpagecourses';
 import Homebackground from './pages/homepage';
-import ElectiveHome from './pages/elective-finder/home';
+import ElectiveHome from './elective-finder/home';
 
 const AppRoutes = () => {
     return (

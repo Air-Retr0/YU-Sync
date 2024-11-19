@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-interface ButtonMailtoProps {
+interface ButtonMailtoProps { // shoutout that one friend who gets everything from stackoverflow
   mailto: string;
   label: string;
 }
@@ -16,7 +16,7 @@ const ButtonMailto: React.FC<ButtonMailtoProps> = ({ mailto, label }) => {
         }}
       >
         <li>
-          <a className='text-white btn btn-sm btn-outline bg-red-500'>
+          <a className='btn btn-sm btn-default bg-red-500'>
             {label}
           </a>
         </li>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// yea i'ma just learn firmware dev, I can't do this anymore
+
 interface Course {
     dept: string;
     code: string;
@@ -61,7 +63,7 @@ const CourseList: React.FC<CourseListProps> = ({
             <table className="table table-lg min-w-full">
                 <thead className="bg-gray-200 text-red-500">
                     <tr>
-                        <th></th>
+                        <th></th> {/* None of this shit workssssssssssssss */}
                         <th onClick={() => handleSort('dept')} className="py-2 px-4 cursor-pointer">Prefix</th>
                         <th onClick={() => handleSort('name')} className="py-2 px-4 cursor-pointer">Name</th>
                         <th onClick={() => handleSort('credit')} className="py-2 px-4 cursor-pointer">Credits</th>

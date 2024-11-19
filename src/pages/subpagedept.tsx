@@ -31,7 +31,7 @@ const SubPageExplore: React.FC = () => {
         const fetchCourses = async () => {
             if (!dept) return;
             try {
-                const response = await callAPI.from(`courses`).select(`*`).eq('dept', dept);
+                const response = await callAPI.from(`courses`).select(`*`).eq('dept', dept).order('code');
                 const updatedCourses = Array.isArray(response.data) ? response.data.map(course => ({
                     ...course,
                     prefix: `${course.dept} ${course.code}`,
@@ -47,7 +47,7 @@ const SubPageExplore: React.FC = () => {
     }, [dept]);
 
     const handleSort = (criteria: keyof Course) => {
-        const sortedCourses = [...courses].sort((a, b) => { // ... syntax, truely a syntax of all times
+        const sortedCourses = [...courses].sort((a, b) => { // ... syntax, truly a syntax of all times
             let valueA = a[criteria];
             let valueB = b[criteria];
 

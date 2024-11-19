@@ -41,7 +41,7 @@ const SearchBar: React.FC = () => {
     if (searchTerm.length >= 4) {
       const fuse = new Fuse(coursesData, {
         keys: ['dept', 'code', 'name'],
-        threshold: 0.3,
+        threshold: 0.3, // if you change this the search gets all sorts of fucked, pls leave it
       });
       const result = fuse.search(searchTerm).slice(0, 4).map((r) => r.item);
       setFilteredCourses(result);
@@ -53,7 +53,7 @@ const SearchBar: React.FC = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInput(value);
-    debouncedSearch(value); // Trigger the debounced search
+    debouncedSearch(value);
   };
 
   const handleSelectCourse = (course: Course) => {

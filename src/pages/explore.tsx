@@ -3,6 +3,7 @@ import FilterCard from '../components/filtercard';
 import NavBar from '../components/navbar';
 import CourseList from '../components/courselist';
 import callAPI from '../utils/apicall';
+import Footer from '../components/footer';
 
 interface Course {
     dept: string;
@@ -52,14 +53,13 @@ const Explore: React.FC = () => {
         <div className="flex flex-col bg-neutral-100 min-h-screen">
             <NavBar />
             <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
-                {/* Courses Table */}
                 <div className="col-span-3 bg-neutral-100">
                     <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Courses</h1>
 
                     <CourseList
                         courses={courses.map(course => ({
                             ...course,
-                            prefix: `${course.dept.toUpperCase()} ${course.code}` // Create prefix from dept and code
+                            prefix: `${course.dept.toUpperCase()} ${course.code}` // Create prefix from dept and code, weird logic amirite
                         }))}
                         minRating={minRating}
                         maxDifficulty={maxDifficulty}
@@ -78,17 +78,7 @@ const Explore: React.FC = () => {
                     />
                 </div>
             </div>
-            <div className="join flex items-center justify-center">
-                <input
-                    className="join-item btn btn-square bg-white"
-                    type="radio"
-                    name="options"
-                    aria-label="1"
-                    defaultChecked />
-                <input className="join-item btn btn-square bg-white" type="radio" name="options" aria-label="2" />
-                <input className="join-item btn btn-square bg-white" type="radio" name="options" aria-label="3" />
-                <input className="join-item btn btn-square bg-white" type="radio" name="options" aria-label="4" />
-            </div>
+            <Footer />
         </div>
     );
 };

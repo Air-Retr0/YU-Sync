@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import NavBar from "../components/navbar";
 
+// i'll make this look pretty i promise
 const Lost = () => {
     return (
         <>

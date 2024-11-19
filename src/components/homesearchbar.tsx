@@ -1,5 +1,7 @@
-import React, { useState, useEffect, ChangeEvent } from 'react';
+import React, { useState, useEffect, useRef, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Fuse from 'fuse.js';
+import { debounce } from 'lodash';
 import callAPI from '../utils/apicall';
 
 interface Course {
@@ -8,54 +10,78 @@ interface Course {
   name: string;
 }
 
-const HomeSearchBar: React.FC = () => {
+const SearchBar: React.FC = () => {
   const [input, setInput] = useState<string>('');
   const [coursesData, setCoursesData] = useState<Course[]>([]);
   const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [dropdown, setDropdown] = useState<boolean>(false);
   const navigate = useNavigate();
+  const searchRef = useRef<HTMLDivElement>(null);
+
+  const fetchCourses = async () => {
+    try {
+      const response = await callAPI.from('courses').select('dept, code, name');
+      if (response.error) {
+        throw response.error;
+      }
+      const data: Course[] = response.data;
+      setCoursesData(data);
+      setLoading(false);
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'An unknown error occurred');
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchCourses = async () => {
-      try { // do NOT touch this try-catch block, it will suck, badly.
-        const response = await callAPI.from('courses').select('dept, code, name');
-        if (response.error) {
-          throw response.error;
-        }
-        const data: Course[] = response.data;
-        setCoursesData(data);
-        setLoading(false);
-      } catch (error: unknown) {
-        if (error instanceof Error) {
-          setError(error.message);
-        } else {
-          setError('An unknown error occurred');
-        }
-        setLoading(false);
-      }
-    };
     fetchCourses();
   }, []);
 
-  useEffect(() => {
-    if (input.length >= 4) {
-      const filtered = coursesData.filter(
-        (course) =>
-          course.dept.toLowerCase().includes(input.toLowerCase()) ||
-          course.code.toLowerCase().includes(input.toLowerCase())
-      );
-      setFilteredCourses(filtered.slice(0, 4)); // Limit results, 4 looks good enough
+  const debouncedSearch = debounce((searchTerm: string) => {
+    if (searchTerm.length >= 4) {
+      const fuse = new Fuse(coursesData, {
+        keys: ['dept', 'code', 'name'],
+        threshold: 0.3,
+      });
+      const result = fuse.search(searchTerm).slice(0, 4).map((r) => r.item);
+      setFilteredCourses(result);
     } else {
       setFilteredCourses([]);
     }
-  }, [input, coursesData]);
+  }, 300);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setInput(e.target.value);
+    const value = e.target.value;
+    setInput(value);
+    debouncedSearch(value);
+    setDropdown(true);
   };
+
   const handleSelectCourse = (course: Course) => {
-    navigate(`/courses/${course.dept}/${course.code}`);
+    navigate(`/explore/${course.dept.toLowerCase()}/${course.code}`);
+    setDropdown(false);
   };
+
+  const handleExploreAll = () => {
+    navigate('/explore');
+    setDropdown(false);
+  };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+      setDropdown(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   if (loading) {
     return <div><span><span className="loading loading-dots loading-sm"></span></span></div>;
   }
@@ -64,7 +90,7 @@ const HomeSearchBar: React.FC = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative" ref={searchRef}>
       <div className="flex items-center gap-2 border-b-2 border-red-500 p-2 bg-transparent">
         <input
           type="text"
@@ -72,12 +98,13 @@ const HomeSearchBar: React.FC = () => {
           placeholder="Search"
           value={input}
           onChange={handleChange}
+          onClick={() => setDropdown(true)}
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="h-6 w-6 text-white"
+          className="h-6 w-6 text-red-500"
         >
           <path
             fillRule="evenodd"
@@ -86,8 +113,17 @@ const HomeSearchBar: React.FC = () => {
           />
         </svg>
       </div>
-      {filteredCourses.length > 0 && (
+
+      {dropdown && (
         <ul className="absolute top-full left-0 w-full border bg-white shadow-lg rounded-lg mt-1 p-2 max-h-96 overflow-visible">
+          <li className="p-2 hover:bg-gray-100 flex items-center">
+            <button
+              className="w-full text-left text-red-500 font-medium"
+              onClick={handleExploreAll}
+            >
+              Explore all courses
+            </button>
+          </li>
           {filteredCourses.map((course) => (
             <li key={course.code} className="p-2 border-b hover:bg-gray-100">
               <button
@@ -98,17 +134,10 @@ const HomeSearchBar: React.FC = () => {
               </button>
             </li>
           ))}
-          <li className="p-2 hover:bg-gray-100">
-            <button
-              className="w-full text-left text-red-500 font-medium"
-              onClick={() => navigate(`/explore/${input.toLowerCase()}`)}
-            >
-              Explore all courses with "{input}"
-            </button>
-          </li>
         </ul>
       )}
     </div>
   );
 };
-export default HomeSearchBar;
+
+export default SearchBar;

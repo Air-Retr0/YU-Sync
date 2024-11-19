@@ -21,11 +21,11 @@ const NavBar = () => {
                 d="M4 6h16M4 12h16M4 18h7" />
             </svg>
           </div>
-          <ul className="menu menu-sm dropdown-content absolute text-white bg-red-500 rounded-box z-[1] mt-3 w-52 p-2">
-            <li className='text-xl mb-2'>Services</li>
+          <ul className="menu menu-sm dropdown-content absolute text-red-500 bg-white rounded-box z-[1] mt-3 w-52 p-2">
+            <li className='text-xl mb-2 text-gray-500'>Services</li>
             <li><Link className='mb-2' to='/explore'>Explore Courses</Link></li>
-            <li><Link className='mb-2' to='/explore'>Elective Finder (TBR)</Link></li>
-            <li className='text-xl mb-2'>Information</li>
+            <li><Link className='mb-2' to='/find'>Elective Finder (TBR)</Link></li>
+            <li className='text-xl mb-2 text-gray-500'>Information</li>
             <li><Link className='mb-2' to='/privacy'>Privacy Policy</Link></li>
             <li><Link className='mb-2' to='/about'>About</Link></li>
             <ButtonMailto mailto="help@YU-Sync.com" label="Contact Us" />

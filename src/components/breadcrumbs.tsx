@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 
 const BreadCrumbs = () => {
-  const location = useLocation();  // finds current path location
-  const pathnames = location.pathname.split("/").filter((x) => x); // splits path into chunks  
+  const location = useLocation();
+  const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
     <div className="breadcrumbs text-sm text-white bg-red-600">
@@ -11,7 +11,7 @@ const BreadCrumbs = () => {
           <Link to="/">Home</Link>  {/* default case*/}
         </li>
         {pathnames.map((value, index) => {
-          const to = `/${pathnames.slice(0, index + 1).join("/")}`; // create the breadcrumb path
+          const to = `/${pathnames.slice(0, index + 1).join("/")}`;
 
           return (
             <li key={to}>
