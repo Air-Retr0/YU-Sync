@@ -1,0 +1,6 @@
+env
+*/headers.py
+.idea
+School*
+*.csv
+__pycache__
