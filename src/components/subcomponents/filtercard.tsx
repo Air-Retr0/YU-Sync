@@ -17,7 +17,7 @@ const FilterCard: React.FC<FilterCardProps> = ({
     setMinRating,
     setMaxDifficulty,
 }) => {
-    const marks = ["<=1", 50, 100, 250, 500];
+    const marks = [1, 50, 100, 250, 500];
     const maxIndex = marks.length - 1;
 
     const getMarkValue = (index: number) => marks[index];

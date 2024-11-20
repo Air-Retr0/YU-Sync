@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import SearchBar from './searchbar';
 import ButtonMailto from '../utils/email';
 
+// drop down is ugly but readable
+
 const NavBar = () => {
   return (
     <nav className="bg-red-600 p-4 flex items-center text-white sticky top-0 z-50">
@@ -21,15 +23,37 @@ const NavBar = () => {
                 d="M4 6h16M4 12h16M4 18h7" />
             </svg>
           </div>
-          <ul className="menu menu-sm dropdown-content absolute text-red-500 bg-white rounded-box z-[1] mt-3 w-52 p-2">
-            <li className='text-xl mb-2 text-gray-500'>Services</li>
-            <li><Link className='mb-2' to='/explore'>Explore Courses</Link></li>
-            <li><Link className='mb-2' to='/find'>Elective Finder (TBR)</Link></li>
-            <li className='text-xl mb-2 text-gray-500'>Information</li>
-            <li><Link className='mb-2' to='/privacy'>Privacy Policy</Link></li>
-            <li><Link className='mb-2' to='/about'>About</Link></li>
-            <ButtonMailto mailto="help@YU-Sync.com" label="Contact Us" />
+          <ul className="menu menu-sm dropdown-content absolute bg-zinc-100 rounded-box shadow-lg z-[1] mt-3 w-52 p-4">
+            <li className="text-lg font-semibold text-gray-600 mb-3">Services</li>
+            <li>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore">
+                Explore Courses
+              </Link>
+            </li>
+            <li>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/find">
+                Elective Finder (TBR)
+              </Link>
+            </li>
+            <li className="text-lg font-semibold text-gray-600 mt-4 mb-3">Information</li>
+            <li>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/privacy">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <ButtonMailto
+                mailto="help@YU-Sync.com"
+                label="Contact Us"
+              />
+            </li>
           </ul>
+
         </div>
 
         <div className="text-2xl font-bold">

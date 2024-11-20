@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import FilterCard from '../components/filtercard';
+import FilterCard from '../components/subcomponents/filtercard';
 import { useParams } from 'react-router-dom';
 import callAPI from '../utils/apicall';
 import NavBar from '../components/navbar';

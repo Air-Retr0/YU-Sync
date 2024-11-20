@@ -38,7 +38,7 @@ const SearchBar: React.FC = () => {
   }, []);
 
   const debouncedSearch = debounce((searchTerm: string) => {
-    if (searchTerm.length >= 4) {
+    if (searchTerm.length >= 3) {
       const fuse = new Fuse(coursesData, {
         keys: ['dept', 'code', 'name'],
         threshold: 0.3, // if you change this the search gets all sorts of fucked, pls leave it
@@ -107,7 +107,7 @@ const SearchBar: React.FC = () => {
               className="w-full text-left text-red-500 font-medium"
               onClick={() => navigate(`/explore/${input.toLowerCase()}`)}
             >
-              Explore all courses with "{input}"
+              Explore all courses in {input.toUpperCase()}
             </button>
           </li>
         </ul>

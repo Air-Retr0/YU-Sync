@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import FilterCard from '../components/filtercard';
+import FilterCard from '../components/subcomponents/filtercard';
 import NavBar from '../components/navbar';
 import CourseList from '../components/courselist';
 import callAPI from '../utils/apicall';

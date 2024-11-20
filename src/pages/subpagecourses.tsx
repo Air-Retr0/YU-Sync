@@ -60,7 +60,6 @@ function CourseSubPage() {
                         <p className="text-gray-700 text-base leading-relaxed mt-4">{courseData.desc}</p>
                     </section>
 
-                    {/* Statistics Section */}
                     <section className="flex space-x-4 mb-8">
                         <div className="stat bg-white p-6 rounded-lg shadow-md w-1/3">
                             <div className="stat-figure text-primary">

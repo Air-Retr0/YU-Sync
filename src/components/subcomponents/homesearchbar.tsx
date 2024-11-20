@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Fuse from 'fuse.js';
 import { debounce } from 'lodash';
-import callAPI from '../utils/apicall';
+import callAPI from '../../utils/apicall';
 
 interface Course {
   dept: string;
@@ -10,7 +10,7 @@ interface Course {
   name: string;
 }
 
-const SearchBar: React.FC = () => {
+const HomeSearchBar: React.FC = () => {
   const [input, setInput] = useState<string>('');
   const [coursesData, setCoursesData] = useState<Course[]>([]);
   const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
@@ -140,4 +140,4 @@ const SearchBar: React.FC = () => {
   );
 };
 
-export default SearchBar;
+export default HomeSearchBar;

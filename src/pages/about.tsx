@@ -6,123 +6,46 @@ const About = () => {
         <>
             <NavBar />
             <BreadCrumbs />
-            <div className="hero min-h-screen bg-white">
-                <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-                    <li>
-                        <div className="timeline-middle">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill=""
-                                className="h-5 w-5">
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        <div className="timeline-start mb-10 md:text-end">
-                            <time className="font-mono italic">September 19th, 2024</time>
-                            <div className="text-lg font-black">
-                                Filler
-                            </div>
+            <div className="hero bg-white min-h-screen relative">
+                <div className="hero-content flex flex-col items-center text-center">
+                    <div className="text-4xl font-bold absolute top-4 left-60 text-red-500 ">
+                        About
+                    </div>
 
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-middle">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                className="h-5 w-5">
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        <div className="timeline-end mb-10">
-                            <time className="font-mono italic">September 27th, 2024</time>
-                            <div className="text-lg font-black">Filler?</div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-middle">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                className="h-5 w-5">
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        <div className="timeline-start mb-10 md:text-end">
-                            <time className="font-mono italic">2001</time>
-                            <div className="text-lg font-black">iPod</div>
-                            The iPod is a discontinued series of portable media players and multi-purpose mobile devices
-                            designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
-                            8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
-                            million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
-                            over 20 years, the iPod brand is the oldest to be discontinued by Apple
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-middle">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                className="h-5 w-5">
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        <div className="timeline-end mb-10">
-                            <time className="font-mono italic">2007</time>
-                            <div className="text-lg font-black">iPhone</div>
-                            iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
-                            operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
-                            January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
-                            of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
-                            accounts for 15.6% of global smartphone market share
-                        </div>
-                        <hr />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className="timeline-middle">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                className="h-5 w-5">
-                                <path
-                                    fillRule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        <div className="timeline-start mb-10 md:text-end">
-                            <time className="font-mono italic">2015</time>
-                            <div className="text-lg font-black">Apple Watch</div>
-                            The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
-                            tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
-                            iOS and other Apple products and services
-                        </div>
-                    </li>
-                </ul>
+                    <div className="text-2xl mt-20 text-red-500 font-semibold">
+                        Warm Welcomes!
+                    </div>
+                    <div className="mt-6 text-lg text-gray-700">
+                        <p>
+                            What is YU Sync?
+                            It's exactly as it sounds, YU (as in You) sync your experiences with every prof and course you've taken at York University.
+                            Our platform is here to help you explore courses, share insights, and make better academic decisions.
+                            Whether you're a first-year student or a seasoned senior, YU Sync is your go-to resource for all courses @ York.
+                            <br /> <br />
+                            Had a great experience with a professor? Share it with the community! Had a tough time with a course? Let others know!
+                            We encourage you to be honest, respectful, and helpful in your reviews. Together, we can build a better academic community.
+                        </p>
+                    </div>
+
+                    <div className="text-2xl mt-16 text-red-500 font-semibold">
+                        The Story Behind YU Sync
+                    </div>
+                    <div className="mt-6 text-lg text-gray-700">
+                        <p>
+                            YU Sync was born from a simple idea, to make academic planning easier and more collaborative.
+                            We noticed how challenging it was to find reliable information about courses and professors, so we built a platform where students can share reviews, learn from each other's experiences, and navigate their education with confidence.
+                            <br /> <br />
+                            The origins of that idea can be traced back to the Markham Campus, and the SSADC @ York, where the very first iteration of YU Sync was started; as a simple textbook finder & exchange platform.
+                            While plans for the platform have changed, our mission remains the same: to help students make informed decisions about their academic journey.
+                        </p>
+                    </div>
+                    <div className="text-2xl mt-16 text-red-500 font-semibold">
+                        Meet the team
+                    </div>
+                    <div className="mt-6 text-lg text-gray-700">
+                        Placeholder
+                    </div>
+                </div>
             </div>
         </>
     );
