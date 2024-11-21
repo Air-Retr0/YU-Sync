@@ -78,7 +78,7 @@ const CourseList: React.FC<CourseListProps> = ({
                         <tr key={index} className="border-b">
                             <th>{index + 1}</th>
                             <td className="py-2 px-4">
-                                <Link to={`/explore/${course.dept.toLowerCase()}/${course.code.toLowerCase()}`}>
+                                <Link to={`/explore/courses/${course.dept.toLowerCase()}/${course.code.toLowerCase()}`}>
                                     <span className='text-red-500'>{course.dept.toUpperCase()}</span> <span className='text-red-700'>{course.code}</span>
                                 </Link>
                             </td>

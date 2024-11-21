@@ -26,8 +26,14 @@ const NavBar = () => {
           <ul className="menu menu-sm dropdown-content absolute bg-zinc-100 rounded-box shadow-lg z-[1] mt-3 w-52 p-4">
             <li className="text-lg font-semibold text-gray-600 mb-3">Services</li>
             <li>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/courses">
+                Explore All Courses
+              </Link>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/professors">
+                Explore All Professors
+              </Link>
               <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore">
-                Explore Courses
+                Explore Popular Courses
               </Link>
             </li>
             <li>
@@ -47,6 +53,9 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/faq">
+                FAQ
+              </Link>
               <ButtonMailto
                 mailto="help@YU-Sync.com"
                 label="Contact Us"

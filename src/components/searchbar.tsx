@@ -4,49 +4,74 @@ import Fuse from 'fuse.js';
 import { debounce } from 'lodash';
 import callAPI from '../utils/apicall';
 
-interface Course { // imagine what google search looks like lmao
+interface Course {
+  type: 'course';
   dept: string;
   code: string;
   name: string;
 }
 
+interface Professor {
+  type: 'professor';
+  dept: string;
+  first: string;
+  last: string;
+}
+
+type SearchItem = Course | Professor;
+
 const SearchBar: React.FC = () => {
   const [input, setInput] = useState<string>('');
-  const [coursesData, setCoursesData] = useState<Course[]>([]);
-  const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
+  const [searchData, setSearchData] = useState<SearchItem[]>([]);
+  const [filteredResults, setFilteredResults] = useState<SearchItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const fetchCourses = async () => {
+  const fetchData = async () => {
     try {
-      const response = await callAPI.from('courses').select('dept, code, name');
-      if (response.error) {
-        throw response.error;
-      }
-      const data: Course[] = response.data;
-      setCoursesData(data);
+      setLoading(true);
+
+      const coursesResponse = await callAPI.from('courses').select('dept, code, name');
+      if (coursesResponse.error) throw coursesResponse.error;
+
+      const courses: Course[] = coursesResponse.data.map((course) => ({
+        ...course,
+        type: 'course',
+      }));
+
+      const profsResponse = await callAPI.from('profs').select('dept, first, last');
+      if (profsResponse.error) throw profsResponse.error;
+
+      const professors: Professor[] = profsResponse.data.map((prof) => ({
+        ...prof,
+        type: 'professor',
+      }));
+
+
+      setSearchData([...courses, ...professors]);
       setLoading(false);
-    } catch (error: unknown) {
-      setError(error instanceof Error ? error.message : 'An unknown error occurred');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An unknown error occurred');
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchCourses();
+    fetchData();
   }, []);
 
   const debouncedSearch = debounce((searchTerm: string) => {
     if (searchTerm.length >= 3) {
-      const fuse = new Fuse(coursesData, {
-        keys: ['dept', 'code', 'name'],
-        threshold: 0.3, // if you change this the search gets all sorts of fucked, pls leave it
+      const fuse = new Fuse(searchData, {
+        keys: ['dept', 'code', 'name', 'first', 'last'],
+        threshold: 0.3,
       });
-      const result = fuse.search(searchTerm).slice(0, 4).map((r) => r.item);
-      setFilteredCourses(result);
+
+      const results = fuse.search(searchTerm).slice(0, 3).map((result) => result.item);
+      setFilteredResults(results);
     } else {
-      setFilteredCourses([]);
+      setFilteredResults([]);
     }
   }, 300);
 
@@ -56,8 +81,20 @@ const SearchBar: React.FC = () => {
     debouncedSearch(value);
   };
 
-  const handleSelectCourse = (course: Course) => {
-    navigate(`/explore/${course.dept.toLowerCase()}/${course.code}`);
+  const handleSelectItem = (item: SearchItem) => {
+    if (item.type === 'course') {
+      navigate(`/explore/${item.dept.toLowerCase()}/${item.code}`);
+    } else if (item.type === 'professor') {
+      navigate(`/explore/professors/${item.first.toLowerCase()}-${item.last.toLowerCase()}`);
+    }
+  };
+
+  const handleExploreAllCourses = (dept: string) => {
+    navigate(`/explore/courses/${dept.toLowerCase()}`);
+  };
+
+  const handleExploreAllProfs = (dept: string) => {
+    navigate(`/explore/professors/${dept.toLowerCase()}`);
   };
 
   if (loading) {
@@ -90,26 +127,46 @@ const SearchBar: React.FC = () => {
           />
         </svg>
       </div>
-      {filteredCourses.length > 0 && (
-        <ul className="absolute top-full left-0 w-full border bg-white shadow-lg rounded-lg mt-1 p-2 max-h-96 overflow-visible">
-          {filteredCourses.map((course) => (
-            <li key={course.code} className="p-2 border-b hover:bg-gray-100">
+      {(filteredResults.length > 0 || input.length >= 3) && (
+        <ul className="absolute top-full left-0 w-full border bg-white shadow-lg rounded-lg mt-1 p-2 max-h-96 overflow-auto">
+          {filteredResults.map((item, index) => (
+            <li key={index} className="p-2 border-b hover:bg-gray-100">
               <button
                 className="w-full text-left text-black"
-                onClick={() => handleSelectCourse(course)}
+                onClick={() => handleSelectItem(item)}
               >
-                <span className="font-bold text-red-500">{course.dept.toUpperCase()} {course.code}</span> — {course.name}
+                {item.type === 'course' ? (
+                  <span>
+                    <span className="font-bold text-red-500">{item.dept.toUpperCase()} {item.code}</span> — {item.name}
+                  </span>
+                ) : (
+                  <span>
+                    <span className="font-bold text-blue-500">{item.first} {item.last}</span> ({item.dept})
+                  </span>
+                )}
               </button>
             </li>
           ))}
-          <li className="p-2 hover:bg-gray-100">
-            <button
-              className="w-full text-left text-red-500 font-medium"
-              onClick={() => navigate(`/explore/${input.toLowerCase()}`)}
-            >
-              Explore all courses in {input.toUpperCase()}
-            </button>
-          </li>
+          {input.length >= 3 && (
+            <>
+              <li className="p-2 hover:bg-gray-100">
+                <button
+                  className="w-full text-left text-red-500 font-medium"
+                  onClick={() => handleExploreAllCourses(input)}
+                >
+                  Explore all courses in {input.toUpperCase()}
+                </button>
+              </li>
+              <li className="p-2 hover:bg-gray-100">
+                <button
+                  className="w-full text-left text-blue-500 font-medium"
+                  onClick={() => handleExploreAllProfs(input)}
+                >
+                  See all professors in {input.toUpperCase()}
+                </button>
+              </li>
+            </>
+          )}
         </ul>
       )}
     </div>
