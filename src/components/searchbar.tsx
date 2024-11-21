@@ -83,7 +83,7 @@ const SearchBar: React.FC = () => {
 
   const handleSelectItem = (item: SearchItem) => {
     if (item.type === 'course') {
-      navigate(`/explore/${item.dept.toLowerCase()}/${item.code}`);
+      navigate(`/explore/courses/${item.dept.toLowerCase()}/${item.code}`);
     } else if (item.type === 'professor') {
       navigate(`/explore/professors/${item.first.toLowerCase()}-${item.last.toLowerCase()}`);
     }

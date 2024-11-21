@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import callAPI from "../utils/apicall";
 import NavBar from "../components/navbar";
+import BreadCrumbs from "../components/breadcrumbs";
 
 interface Professor {
   dept: string;
@@ -69,6 +70,7 @@ const ProfessorsPage: React.FC = () => {
   return (
     <>
       <NavBar />
+      <BreadCrumbs />
       <div className="hero bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4 py-6">
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Professors</h1>

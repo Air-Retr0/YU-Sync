@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import callAPI from '../utils/apicall';
 import NavBar from '../components/navbar';
+import BreadCrumbs from '../components/breadcrumbs';
 
 interface Course {
   dept: string;
@@ -77,6 +78,7 @@ const CoursesPage: React.FC = () => {
   return (
     <>
       <NavBar />
+      <BreadCrumbs />
       <div className="hero bg-white shadow-md rounded-lg">
         <div className="container mx-auto px-4 py-6">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Courses</h1>
