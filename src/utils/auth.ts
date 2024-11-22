@@ -9,6 +9,8 @@ const supabase_key = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 export const supabase: SupabaseClient = createClient(supabase_url, supabase_key)
 
+// this is also the ONLY file where callAPI refused to work 
+
 export interface UserProfile {
   id: string
   username: string

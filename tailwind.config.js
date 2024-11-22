@@ -10,7 +10,7 @@ export default {
   plugins: [require('daisyui')],
 
   daisyui: {
-    themes: [
+    themes: [ // themes to eventually be used for DARK MODE
       "light",
       "dark",
       "cupcake",

@@ -25,13 +25,13 @@ You may see there are various files and what not, mainly being the *src* and *sc
 **scraper**: You only really need to touch *ratemyprof_api* and *headers.py*, the scraper will take some time to work, and ensure you run headers.py with the **absolute** filepath to your csv file, relative has errors (at least for me).
 
 ## Links
-See below for link navigation, as found in *routes.tsx*
+See below for link navigation, as found in *routes.tsx* <br>
 **http://localhost:5173/** is the *home* page <br>
 **http://localhost:5173/explore** is where *popular courses* are visible <br>
 **http://localhost:5173/explore/courses** is where *all courses* are visible <br>
 **http://localhost:5173/explore/professors** is where all professor info is visible <br>
-**http://localhost:5173/explore/dept** is where all courses with the corresponding *dept* are shown <br>
-**http://localhost:5173/explore/dept/code** is where a singular course is shown, this is where the *bulk of users* will dump data <br>
+**http://localhost:5173/explore/courses/dept** is where all courses with the corresponding *dept* are shown <br>
+**http://localhost:5173/explore/courses/dept/code** is where a singular course is shown <br>
 **http://localhost:5173/*** and/or **http://localhost:5173/lost** help redirect the user back to the homepage <br>
 **http://localhost:5173/faq** leads to the *faq* page  <br>
 **http://localhost:5173/about** leads to the *about* page,<br>

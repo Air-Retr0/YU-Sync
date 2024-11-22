@@ -1,0 +1,6 @@
+databaseName=
+databaseUser=
+databaseUserPassword=
+databaseHost=
+databasePort=
+djangoKey=

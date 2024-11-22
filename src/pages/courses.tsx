@@ -65,7 +65,10 @@ const CoursesPage: React.FC = () => {
     return (
       <div>
         <span>
-          <span className="loading loading-dots loading-sm"></span>
+          <span className="hero bg-white min-h-screen">
+            <div className='loading loading-spinner-large'>
+            </div>
+          </span>
         </span>
       </div>
     );
