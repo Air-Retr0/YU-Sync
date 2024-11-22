@@ -1,6 +1,6 @@
 import pandas as pd
 
-input_file = "C:\\Users\\Jahiem\\profs.csv"
+input_file = "User/File/Path.csv"
 output_file = "cleaned_data.csv"
 
 correct_headers = ["dept", "first", "last", "numratings", "prof", "overall_rating"]
