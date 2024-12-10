@@ -35,6 +35,12 @@ const NavBar = () => {
               <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore">
                 Explore Popular Courses
               </Link>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/programs">
+                Explore Undergrad Programs
+              </Link>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/programs/grad">
+                Explore Grad Programs
+              </Link>
             </li>
             <li>
               <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/find">

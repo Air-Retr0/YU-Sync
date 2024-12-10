@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-interface ButtonMailtoProps { // shoutout that one friend who gets everything from stackoverflow
+interface ButtonMailtoProps {
   mailto: string;
   label: string;
 }

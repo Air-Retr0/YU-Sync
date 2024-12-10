@@ -10,6 +10,8 @@ import Homebackground from './pages/homepage';
 import ElectiveHome from './elective-finder/home';
 import Faq from './pages/faq';
 import ProfessorsPage from './pages/profs';
+import UndergradPrograms from './pages/programs';
+import GradPrograms from './pages/gradprograms';
 
 const AppRoutes = () => {
     return (
@@ -20,6 +22,8 @@ const AppRoutes = () => {
                 <Route path='explore/courses' element={<CoursesPage />} />
                 <Route path='/explore/courses/:dept' element={<SubPageExplore />} />
                 <Route path='/explore/courses/:dept/:code' element={<CourseSubPage />} />
+                <Route path='/explore/programs/' element={<UndergradPrograms />} />
+                <Route path='/explore/programs/grad' element={<GradPrograms />} />
                 <Route path='/explore/professors' element={<ProfessorsPage />} />
                 <Route path='/faq' element={<Faq />} />
                 <Route path='/about' element={<About />} />
