@@ -32,6 +32,9 @@ const NavBar = () => {
               <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/professors">
                 Explore All Professors
               </Link>
+              <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/faculty">
+                Explore All Faculties
+              </Link>
               <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore">
                 Explore Popular Courses
               </Link>
@@ -44,7 +47,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/find">
-                Elective Finder (TBR)
+                Elective Finder (TBD)
               </Link>
             </li>
             <li className="text-lg font-semibold text-gray-600 mt-4 mb-3">Information</li>

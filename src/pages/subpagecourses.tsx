@@ -20,7 +20,11 @@ function CourseSubPage() {
     useEffect(() => {
         const fetchCourseData = async () => {
             try {
-                const response = await callAPI.from(`courses`).select(`*`).eq('dept', dept).eq('code', code);
+                const response = await callAPI
+                    .from(`courses`)
+                    .select(`*`)
+                    .eq('dept', dept)
+                    .eq('code', code);
                 if (response.error) {
                     console.error("Error fetching course data:", response.error);
                 } else if (response.data.length > 0) {
@@ -36,7 +40,13 @@ function CourseSubPage() {
         fetchCourseData();
     }, [dept, code]);
 
-    if (!courseData) return <span className="loading loading-spinner text-error"></span>;
+    if (!courseData) return (
+        <div className="hero min-h-screen bg-gray-50 flex justify-center items-center">
+            <span>
+                <span className="loading loading-spinner loading-lg"></span>
+            </span>
+        </div>
+    );
 
     return (
         <>
@@ -63,23 +73,22 @@ function CourseSubPage() {
                     <section className="flex space-x-4 mb-8">
                         <div className="stat bg-white p-6 rounded-lg shadow-md w-1/3">
                             <div className="stat-figure text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-8 w-8 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" className="inline-block h-8 w-8 stroke-current">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                 </svg>
                             </div>
-                            <div className="stat-title">Difficulty</div>
-                            <div className="stat-value text-primary">x/5</div>
+                            <div className="stat-title text-black">Difficulty</div>
+                            <div className="stat-value text-purple-400">x/5</div>
                             <div className="stat-desc text-gray-600"></div>
                         </div>
                         <div className="stat bg-white p-6 rounded-lg shadow-md w-1/3">
                             <div className="stat-figure text-secondary">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-8 w-8 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" className="inline-block h-8 w-8 stroke-current">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                 </svg>
                             </div>
-                            <div className="stat-title">Course Rating</div>
-                            <div className="stat-value text-secondary">3.8</div>
-                            <div className="stat-desc text-gray-600">Placeholder</div>
+                            <div className="stat-title text-black">Course Rating</div>
+                            <div className="stat-value text-rose-300">3.8</div>
                         </div>
                         <div className="stat bg-white p-6 rounded-lg shadow-md w-1/3">
                             <div className="stat-figure text-secondary">
@@ -89,8 +98,8 @@ function CourseSubPage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="stat-value text-gray-900">86%</div>
-                            <div className="stat-title">Average Grade</div>
+                            <div className="stat-title text-black">Average Grade</div>
+                            <div className="stat-value text-gray-900">Test</div>
                             <div className="stat-desc text-gray-600">will replace with ? operator</div>
                         </div>
                     </section>

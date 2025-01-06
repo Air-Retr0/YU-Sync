@@ -28,4 +28,4 @@ dist-ssr
 *.sw?
 **/migrations
 **/__pycache__/
-**/scraper/*
+elective-finder

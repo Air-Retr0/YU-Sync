@@ -100,7 +100,6 @@ const SubPageExplore: React.FC = () => {
                     <div className="col-span-3 bg-neutral-100">
                         <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Courses in {dept?.toUpperCase()}</h1>
 
-                        {/* Course List */}
                         <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
                             <thead className="bg-gray-200">
                                 <tr>
@@ -125,7 +124,6 @@ const SubPageExplore: React.FC = () => {
                         </table>
                     </div>
 
-                    {/* Filter Card on the right */}
                     <div className="col-span-1">
                         <FilterCard
                             minRating={minRating}

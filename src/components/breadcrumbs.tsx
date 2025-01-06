@@ -8,7 +8,7 @@ const BreadCrumbs = () => {
     <div className="breadcrumbs text-sm text-white bg-red-600">
       <ul>
         <li>
-          <Link to="/">Home</Link>  {/* default case*/}
+          <Link to="/">Home</Link>
         </li>
         {pathnames.map((value, index) => {
           const to = `/${pathnames.slice(0, index + 1).join("/")}`;

@@ -30,7 +30,10 @@ const ProfessorsPage: React.FC = () => {
 
       if (response.error) throw response.error;
 
-      const totalProfessorsResponse = await callAPI.from("profs").select("*", { count: "exact" });
+      const totalProfessorsResponse = await callAPI
+        .from("profs")
+        .select("*", { count: "exact" })
+        .order('last', { ascending: true });
 
       setProfessors(response.data);
       setTotalPages(Math.ceil((totalProfessorsResponse.count ?? 0) / pageSize));
@@ -57,7 +60,7 @@ const ProfessorsPage: React.FC = () => {
     return (
       <div className="hero min-h-screen bg-gray-50 flex justify-center items-center">
         <span>
-          <span className="loading loading-dots loading-lg"></span>
+          <span className="loading loading-spinner loading-lg"></span>
         </span>
       </div>
     );

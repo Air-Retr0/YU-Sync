@@ -72,7 +72,7 @@ const Privacy = () => {
                             <ul>
                                 <li>Google: <a className="link link-success">https://policies.google.com/privacy</a></li>
                                 <li>Facebook: <a className="link link-info">https://www.facebook.com/privacy/policy/</a></li>
-                                <li>Github: <a className="linl link-neutral">https://docs.github.com/en/site-policy/privacy-policies</a></li>
+                                <li>Github: <a className="link link-neutral">https://docs.github.com/en/site-policy/privacy-policies</a></li>
                             </ul>
                         </p>
                     </div>

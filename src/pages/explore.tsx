@@ -54,7 +54,7 @@ const Explore: React.FC = () => {
             <NavBar />
             <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
                 <div className="col-span-3 bg-neutral-100">
-                    <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Courses</h1>
+                    <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Popular Courses</h1>
 
                     <CourseList
                         courses={courses.map(course => ({

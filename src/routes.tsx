@@ -12,6 +12,7 @@ import Faq from './pages/faq';
 import ProfessorsPage from './pages/profs';
 import UndergradPrograms from './pages/programs';
 import GradPrograms from './pages/gradprograms';
+import Faculties from './pages/faculties';
 
 const AppRoutes = () => {
     return (
@@ -25,6 +26,7 @@ const AppRoutes = () => {
                 <Route path='/explore/programs/' element={<UndergradPrograms />} />
                 <Route path='/explore/programs/grad' element={<GradPrograms />} />
                 <Route path='/explore/professors' element={<ProfessorsPage />} />
+                <Route path='/explore/faculty' element={<Faculties />} />
                 <Route path='/faq' element={<Faq />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/privacy' element={<Privacy />} />

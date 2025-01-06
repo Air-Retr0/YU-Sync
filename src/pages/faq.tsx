@@ -10,7 +10,7 @@ const Faq: React.FC = () => {
       answer: "YU Sync is a course catalog, management, and review platform designed to help students explore and organize their academic paths effectively.",
     },
     {
-      question: "How do I search for a course?",
+      question: "How do I search for a course or prof?",
       answer: "Use the search bar at the top of the Courses page or through the searchbar in the Navbar. You can search by course code, department, or professor.",
     },
     {
@@ -19,12 +19,12 @@ const Faq: React.FC = () => {
     },
     {
       question: "How frequently is the data updated?",
-      answer: "The course data is not updated, the data is static and will not change over time. However, user reviews and ratings are updated in real-time.",
+      answer: "The course data is not updated, the data is static and will not change over time, exceptions only for new programs. However, user reviews and ratings are updated in real-time.",
     },
     {
       question: "What if I can't find a course or professor?",
       answer: "If you can't find a course or professor, it is possible that the course is not available in the database. Please contact us at help@YUSync for further assistance.",
-    }
+    },
   ];
 
   return (

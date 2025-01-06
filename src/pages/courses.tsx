@@ -30,6 +30,7 @@ const CoursesPage: React.FC = () => {
       const response = await callAPI
         .from('courses')
         .select('dept, code, name')
+        .order('dept, code')
         .range(offset, offset + pageSize - 1);
 
       if (response.error) throw response.error;
@@ -40,7 +41,7 @@ const CoursesPage: React.FC = () => {
       setTotalPages(Math.ceil((totalCoursesResponse.count ?? 0) / pageSize));
       setLoading(false);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'An unknown error occurred');
+      setError(err instanceof Error ? err.message : 'This should never have happened, Thou destroyer of my code, refresh and report :)');
       setLoading(false);
     }
   };
@@ -121,7 +122,7 @@ const CoursesPage: React.FC = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };
