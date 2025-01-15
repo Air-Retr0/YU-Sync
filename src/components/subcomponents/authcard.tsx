@@ -63,7 +63,7 @@ const SignUpForm: React.FC = () => {
               <button
                 type="button"
                 onClick={togglePasswordVisibility}
-                className="absolute right-3 top-3 text-black hover:text-gray-600"
+                className="absolute right-3 top-3 text-black hover:text-gray-600 text-sm"
               >
                 {isPasswordVisible ? 'Hide' : 'Show'}
               </button>
@@ -74,9 +74,14 @@ const SignUpForm: React.FC = () => {
               Sign Up
             </button>
           </div>
-          <div className='text-sm text-gray-600 mt-2'>
+          <div className='text-sm text-black mt-2'>
             <label htmlFor="forgot-password-modal" className="cursor-pointer text-left">
               Forgot password?
+            </label>
+          </div>
+          <div className='text-sm text-black'>
+            <label className='cursor-pointer text-right'>
+              Sign In
             </label>
           </div>
 
@@ -98,13 +103,13 @@ const SignUpForm: React.FC = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="input input-bordered w-full placeholder-slate-400"
+            className="input input-bordered w-full placeholder-white bg-slate-800 text-white"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <div className="modal-action">
-            <label htmlFor="forgot-password-modal" className="btn btn-info text-white">Close</label>
-            <button className="btn btn-error text-white" onClick={() => alert('Password reset instructions sent.')}>
+            <label htmlFor="forgot-password-modal" className="btn btn-ghost border-transparent bg-transparent text-black mr-4">Close</label>
+            <button className="btn  btn-ghost border-transparent bg-transparent text-black" onClick={() => alert('Password reset instructions sent.')}>
               Send Reset Link
             </button>
           </div>

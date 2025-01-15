@@ -109,7 +109,7 @@ const SearchBar: React.FC = () => {
       <div className="flex items-center gap-2 border-b-2 border-white p-2 bg-transparent">
         <input
           type="text"
-          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-white focus:border-transparent"
+          className="flex-grow px-2 py-1 text-lg bg-transparent text-white placeholder-white focus:border-transparent outline-none"
           placeholder="Search"
           value={input}
           onChange={handleChange}

@@ -13,43 +13,42 @@ const Lost = () => {
                     <h1 className="text-4xl font-bold text-black">404</h1>
                     <h2 className="text-2xl font-bold text-gray-800">Page Not Found</h2>
                     <div className="chat chat-start mt-12">
-                        <div className="chat-bubble bg-orange-500">
+                        <div className="chat-bubble bg-orange-500 text-white">
                             <Link to='/'>
                                 Head on Home
                             </Link>
                         </div>
                     </div>
                     <div className="chat chat-start mt-4">
-                        <div className="chat-bubble bg-emerald-500">
+                        <div className="chat-bubble bg-emerald-500 text-white">
                             <Link to='/explore/courses'>
                                 Find all courses
                             </Link>
                         </div>
                     </div>
                     <div className="chat chat-start mt-6">
-                        <div className="chat-bubble chat-bubble-accent">
+                        <div className="chat-bubble bg-fuchsia-500 text-white">
                             <Link to='/explore/professors'>
                                 Find a Professor
                             </Link>
                         </div>
                     </div>
 
-                    <div className="chat chat-end mt-8">
-                        <div className="chat-bubble chat-bubble-info">
-                            <Link to='/find'>
-                                Find a elective
-                            </Link>
+                    {/* If this is removed the chat bubble will merge together, idk why */}
+                    <div className="chat chat-end">
+                        <div className="chat-bubble bg-transparent text-white">
                         </div>
                     </div>
-                    <div className="chat chat-end mt-5">
-                        <div className="chat-bubble chat-bubble-success">
+
+                    <div className="chat chat-end">
+                        <div className="chat-bubble chat-bubble-success text-white">
                             <Link to='/privacy'>
                                 Privacy Policy, no spyware here!
                             </Link>
                         </div>
                     </div>
                     <div className="chat chat-end mt-5">
-                        <div className="chat-bubble bg-indigo-600">
+                        <div className="chat-bubble bg-indigo-600 text-white">
                             <Link to='/about'>
                                 How about a history lesson?
                             </Link>
