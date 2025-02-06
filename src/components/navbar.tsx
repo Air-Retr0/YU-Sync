@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SearchBar from './searchbar';
-import ButtonMailto from '../utils/email';
+import DropdownMenu from './dropdown';
+import { FiStar } from "react-icons/fi";
 
 // drop down is ugly but readable
 
@@ -24,64 +25,13 @@ const NavBar = () => {
                   d="M4 6h16M4 12h16M4 18h7" />
               </svg>
             </div>
-            <ul className="menu menu-sm dropdown-content absolute bg-zinc-100 rounded-box shadow-lg z-[1] mt-3 w-52 p-4">
-              <li className="text-lg font-semibold text-gray-600 mb-3">Services</li>
-              <li>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/courses">
-                  Explore All Courses
-                </Link>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/professors">
-                  Explore All Professors
-                </Link>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/faculty">
-                  Explore All Faculties
-                </Link>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore">
-                  Explore Popular Courses
-                </Link>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/programs">
-                  Explore Undergrad Programs
-                </Link>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/explore/programs/grad">
-                  Explore Grad Programs
-                </Link>
-              </li>
-              <li>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/find">
-                  Elective Finder (TBD)
-                </Link>
-              </li>
-              <li className="text-lg font-semibold text-gray-600 mt-2 mb-3">
-                Information</li>
-              <li>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/privacy">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/about">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link className="text-red-500 hover:text-red-600 transition-colors mb-2" to="/faq">
-                  FAQ
-                </Link>
-                <ButtonMailto
-                  mailto="help@YU-Sync.com"
-                  label="Contact Us"
-                />
-              </li>
-            </ul>
-
+            <DropdownMenu />
           </div>
 
           <div className="text-2xl font-bold">
             <Link to="/" className="text-white">YU Sync</Link>
           </div>
         </div >
-
-
 
         <div className="flex items-center justify-center flex-grow">
           <SearchBar />
@@ -99,28 +49,7 @@ const NavBar = () => {
               </svg>
             </label>
           </ul>
-        </div>
-
-        <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-            </div>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
+          <FiStar size={29} />
         </div>
       </nav >
     </>

@@ -4,6 +4,7 @@ import NavBar from '../components/navbar';
 import CourseList from '../components/courselist';
 import callAPI from '../utils/apicall';
 import Footer from '../components/footer';
+import BreadCrumbs from '../components/breadcrumbs';
 
 interface Course {
     dept: string;
@@ -50,36 +51,39 @@ const Explore: React.FC = () => {
     };
 
     return (
-        <div className="flex flex-col bg-neutral-100 min-h-screen">
-            <NavBar />
-            <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
-                <div className="col-span-3 bg-neutral-100">
-                    <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Popular Courses</h1>
+        <>
+            <div className="flex flex-col bg-neutral-100 min-h-screen">
+                <NavBar />
+                <BreadCrumbs />
+                <div className="flex-1 p-6 container mx-auto grid grid-cols-4 gap-4">
+                    <div className="col-span-3 bg-neutral-100">
+                        <h1 className="text-2xl font-bold mb-4 text-red-500">Explore Popular Courses</h1>
 
-                    <CourseList
-                        courses={courses.map(course => ({
-                            ...course,
-                            prefix: `${course.dept.toUpperCase()} ${course.code}` // Create prefix from dept and code, weird logic amirite
-                        }))}
-                        minRating={minRating}
-                        maxDifficulty={maxDifficulty}
-                        sortCriteria={sortCriteria}
-                        sortOrder={sortOrder}
-                        handleSort={handleSort}
-                    />
-                </div>
+                        <CourseList
+                            courses={courses.map(course => ({
+                                ...course,
+                                prefix: `${course.dept.toUpperCase()} ${course.code}` // Create prefix from dept and code, weird logic amirite
+                            }))}
+                            minRating={minRating}
+                            maxDifficulty={maxDifficulty}
+                            sortCriteria={sortCriteria}
+                            sortOrder={sortOrder}
+                            handleSort={handleSort}
+                        />
+                    </div>
 
-                <div className="col-span-1">
-                    <FilterCard
-                        minRating={minRating}
-                        maxDifficulty={maxDifficulty}
-                        setMinRating={setMinRating}
-                        setMaxDifficulty={setMaxDifficulty}
-                    />
+                    <div className="col-span-1">
+                        <FilterCard
+                            minRating={minRating}
+                            maxDifficulty={maxDifficulty}
+                            setMinRating={setMinRating}
+                            setMaxDifficulty={setMaxDifficulty}
+                        />
+                    </div>
                 </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
+        </>
     );
 };
 

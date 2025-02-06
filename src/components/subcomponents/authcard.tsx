@@ -35,7 +35,7 @@ const SignUpForm: React.FC = () => {
             <input
               type="text"
               placeholder="Username"
-              className="input input-bordered bg-gray-50 placeholder-slate-400"
+              className="input input-bordered bg-gray-50 placeholder-slate-400 text-black"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -45,7 +45,7 @@ const SignUpForm: React.FC = () => {
             <input
               type="email"
               placeholder="Email"
-              className="input input-bordered bg-gray-50 placeholder-slate-400"
+              className="input input-bordered bg-gray-50 placeholder-slate-400 text-black"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -56,7 +56,7 @@ const SignUpForm: React.FC = () => {
               <input
                 type={isPasswordVisible ? 'text' : 'password'}
                 placeholder="Password"
-                className="input input-bordered bg-gray-50 placeholder-slate-400 pr-12"
+                className="input input-bordered bg-gray-50 placeholder-slate-400 pr-12 text-black"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
