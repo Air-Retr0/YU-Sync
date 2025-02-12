@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.3.0",
     "@supabase/supabase-js": "^2.45.6",
     "axios": "^1.7.7",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.4.0",
     "fuse.js": "^7.0.0",
     "lodash": "^4.17.21",

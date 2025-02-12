@@ -4,6 +4,7 @@ import NavBar from '../components/navbar';
 import BreadCrumbs from '../components/breadcrumbs';
 import callAPI from '../utils/apicall';
 import StatsSection from '../components/subcomponents/stats';
+import CommentsBox from '../auth/comments';
 
 interface SubPageCourseDetails {
     dept: string;
@@ -72,43 +73,8 @@ function CourseSubPage() {
                     </section>
 
                     <StatsSection />
+                    <CommentsBox courseId={courseData.code} courseDept={courseData.dept} />
 
-                    {/* User Reviews Section | this is most likely gonna be a component.*/}
-                    <section>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">User Reviews</h2>
-                        <div className="space-y-6">
-                            <div className="bg-white p-6 shadow-lg rounded-lg flex items-start space-x-4">
-                                <img className="w-12 h-12 rounded-full" src="/path-to-avatar.jpg" alt="User Avatar" />
-                                <div>
-                                    <p className="text-gray-700">“This course was very insightful. Loved it!”</p>
-                                    <div className="text-red-600 text-lg mt-2">
-                                        <div className="rating">
-                                            <input type="radio" name="rating-1" className="mask mask-star bg-red-500" />
-                                            <input type="radio" name="rating-1" className="mask mask-star bg-red-500" defaultChecked />
-                                            <input type="radio" name="rating-1" className="mask mask-star bg-red-500" />
-                                            <input type="radio" name="rating-1" className="mask mask-star bg-red-500" />
-                                            <input type="radio" name="rating-1" className="mask mask-star bg-red-500" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bg-white p-6 shadow-lg rounded-lg flex items-start space-x-4">
-                                <img className="w-12 h-12 rounded-full" src="/path-to-avatar2.jpg" alt="User Avatar" />
-                                <div>
-                                    <p className="text-gray-700">“Found the assignments challenging but rewarding.”</p>
-                                    <div className="text-red-600 text-lg mt-2">
-                                        <div className="rating">
-                                            <input type="radio" name="rating-2" className="mask mask-star bg-red-500" />
-                                            <input type="radio" name="rating-2" className="mask mask-star bg-red-500" defaultChecked />
-                                            <input type="radio" name="rating-2" className="mask mask-star bg-red-500" />
-                                            <input type="radio" name="rating-2" className="mask mask-star bg-red-500" />
-                                            <input type="radio" name="rating-2" className="mask mask-star bg-red-500" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </div>
         </>

@@ -1,4 +1,3 @@
-import SignUpForm from "../components/subcomponents/authcard";
 import TextAnimation from "../components/subcomponents/textanimation";
 import NavBar from "../components/navbar";
 import HomeSearchBar from "../components/subcomponents/homesearchbar";
@@ -14,9 +13,6 @@ function Homebackground() {
                 </div>
                 <div className="mr-10 ml-10">
                     <HomeSearchBar />
-                </div>
-                <div className="mr-10 ml-10">
-                    <SignUpForm />
                 </div>
             </div>
         </>
